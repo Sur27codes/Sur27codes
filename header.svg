@@ -239,9 +239,9 @@
   <circle cx="24" cy="24" r="4.5" fill="#00FF88" filter="url(#pGlow)">
     <animate attributeName="opacity" values="1;0.05;1" dur="1.3s" repeatCount="indefinite"/>
   </circle>
-  <text x="35" y="29" font-family="monospace" font-size="9" fill="#00FF88" opacity="0.95">ONLINE</text>
-  <text x="18" y="48" font-family="monospace" font-size="7.5" fill="#7B9EFF" opacity="0.55">SYS v2026.5</text>
-  <text x="18" y="60" font-family="monospace" font-size="7"   fill="#7B9EFF" opacity="0.28">AI_BUILD_0517</text>
+  <text x="35" y="29" font-family="monospace" font-size="9" fill="#00FF88" opacity="0.95">OPEN TO WORK</text>
+  <text x="18" y="48" font-family="monospace" font-size="7.5" fill="#7B9EFF" opacity="0.55">Stony Brook · 2027</text>
+  <text x="18" y="60" font-family="monospace" font-size="7"   fill="#7B9EFF" opacity="0.28">MS Data Science</text>
 
   <path d="M 882 96 L 882 18 L 804 18" stroke="#7B9EFF" stroke-width="2.2" fill="none">
     <animate attributeName="opacity" values="0.45;1;0.45" dur="3.9s" repeatCount="indefinite"/>
@@ -249,9 +249,9 @@
   <circle cx="876" cy="24" r="4.5" fill="#36BCF7" filter="url(#pGlow)">
     <animate attributeName="opacity" values="1;0.08;1" dur="2.2s" repeatCount="indefinite"/>
   </circle>
-  <text x="812" y="29" font-family="monospace" font-size="9" fill="#36BCF7" opacity="0.95">AI: READY</text>
-  <text x="812" y="48" font-family="monospace" font-size="7.5" fill="#7B9EFF" opacity="0.55">MISSIONS: 5</text>
-  <text x="812" y="60" font-family="monospace" font-size="7"   fill="#7B9EFF" opacity="0.28">DEPLOY: OK</text>
+  <text x="812" y="29" font-family="monospace" font-size="9" fill="#36BCF7" opacity="0.95">AI ENGINEER</text>
+  <text x="812" y="48" font-family="monospace" font-size="7.5" fill="#7B9EFF" opacity="0.55">5 Projects</text>
+  <text x="812" y="60" font-family="monospace" font-size="7"   fill="#7B9EFF" opacity="0.28">LLM · RAG · MLOps</text>
 
   <path d="M 18 174 L 18 258 L 96 258"  stroke="#7B9EFF" stroke-width="1" fill="none" opacity="0.25"/>
   <path d="M 882 174 L 882 258 L 804 258" stroke="#7B9EFF" stroke-width="1" fill="none" opacity="0.25"/>

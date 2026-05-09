@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72">
+  <defs>
+    <filter id="pg" x="-30%" y="-200%" width="160%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ag" x="-50%" y="-300%" width="200%" height="700%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Gradient for flowing arrow line -->
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#60A5FA" stop-opacity="0.2"/>
+      <stop offset="30%"  stop-color="#A78BFA" stop-opacity="0.8"/>
+      <stop offset="70%"  stop-color="#60A5FA" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="72" rx="8" fill="#080d14"/>
+  <rect x="0.75" y="0.75" width="898.5" height="70.5" rx="7.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
+
+  <!-- Connecting baseline -->
+  <line x1="60" y1="36" x2="840" y2="36" stroke="#1a2438" stroke-width="1.5"/>
+
+  <!-- Animated flow pulse -->
+  <line x1="60" y1="36" x2="840" y2="36" stroke="url(#flow)" stroke-width="2"
+        stroke-dasharray="160 620" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" from="780" to="-780" dur="3.5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- NODE 1: Ingest — x=90 -->
+  <rect x="32" y="20" width="96" height="32" rx="6" fill="#0f1520" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="80" y="40" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#60A5FA" letter-spacing="0.5">Ingest</text>
+  <!-- Arrow -->
+  <text x="145" y="40" font-family="monospace" font-size="11" fill="#1a2438">──›</text>
+
+  <!-- NODE 2: Learn — x=234 -->
+  <rect x="180" y="20" width="96" height="32" rx="6" fill="#0f1520" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="228" y="40" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#A78BFA" letter-spacing="0.5">Learn</text>
+  <text x="293" y="40" font-family="monospace" font-size="11" fill="#1a2438">──›</text>
+
+  <!-- NODE 3: Reason — x=378 -->
+  <rect x="328" y="20" width="96" height="32" rx="6" fill="#0f1520" stroke="#818CF8" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="376" y="40" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#818CF8" letter-spacing="0.5">Reason</text>
+  <text x="441" y="40" font-family="monospace" font-size="11" fill="#1a2438">──›</text>
+
+  <!-- NODE 4: Serve — x=522 -->
+  <rect x="476" y="20" width="96" height="32" rx="6" fill="#0f1520" stroke="#F472B6" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="524" y="40" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#F472B6" letter-spacing="0.5">Serve</text>
+  <text x="589" y="40" font-family="monospace" font-size="11" fill="#1a2438">──›</text>
+
+  <!-- NODE 5: Monitor — x=666 -->
+  <rect x="624" y="20" width="96" height="32" rx="6" fill="#0f1520" stroke="#34D399" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="672" y="40" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#34D399" letter-spacing="0.5">Monitor</text>
+  <text x="737" y="40" font-family="monospace" font-size="11" fill="#1a2438">──›</text>
+
+  <!-- NODE 6: Improve — x=810 -->
+  <rect x="772" y="20" width="96" height="32" rx="6" fill="#0f1520" stroke="#FBBF24" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="820" y="40" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#FBBF24" letter-spacing="0.5">Improve</text>
+
+  <!-- Traveling dot on the baseline -->
+  <circle cy="36" r="4" fill="#60A5FA" filter="url(#ag)" opacity="0">
+    <animate attributeName="cx"      values="80;228;376;524;672;820;820" keyTimes="0;0.16;0.33;0.5;0.66;0.83;1" dur="3.5s" repeatCount="indefinite"
+             calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0;0"/>
+    <animate attributeName="opacity" values="0;0.9;0.9;0.9;0.9;0.9;0" keyTimes="0;0.06;0.3;0.5;0.7;0.86;1" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="fill"
+             values="#60A5FA;#60A5FA;#A78BFA;#818CF8;#F472B6;#34D399;#FBBF24"
+             keyTimes="0;0.16;0.33;0.5;0.66;0.83;1" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
