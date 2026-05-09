@@ -232,6 +232,14 @@
     <animate attributeName="opacity" values="1;0.5;1"    dur="8s" repeatCount="indefinite"/>
   </ellipse>
 
+  <!-- ══════════════ ORBITAL RINGS ══════════════ -->
+  <ellipse cx="450" cy="132" rx="390" ry="94" fill="none" stroke="#7B9EFF" stroke-width="0.8" stroke-dasharray="8 20" opacity="0.2">
+    <animateTransform attributeName="transform" type="rotate" from="0 450 132" to="360 450 132" dur="24s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="450" cy="132" rx="270" ry="62" fill="none" stroke="#a259ff" stroke-width="0.6" stroke-dasharray="5 16" opacity="0.18">
+    <animateTransform attributeName="transform" type="rotate" from="0 450 132" to="-360 450 132" dur="17s" repeatCount="indefinite"/>
+  </ellipse>
+
   <!-- ══════════════ HUD CORNERS ══════════════ -->
   <path d="M 18 96 L 18 18 L 96 18" stroke="#7B9EFF" stroke-width="2.2" fill="none">
     <animate attributeName="opacity" values="0.45;1;0.45" dur="3s" repeatCount="indefinite"/>

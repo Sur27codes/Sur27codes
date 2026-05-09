@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2200&pause=700&color=60A5FA&center=true&vCenter=true&multiline=false&width=860&lines=MS+Data+Science+%E2%80%94+Stony+Brook+University;AI+%2F+ML+Engineer+%C2%B7+Data+Scientist+%C2%B7+Software+Engineer;Building+LLM+%2F+RAG+Systems+%C2%B7+Forecasting+%C2%B7+MLOps;Open+to+AI%2FML+Engineer+%C2%B7+Applied+Scientist+%C2%B7+SWE+roles)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2200&pause=700&color=60A5FA&center=true&vCenter=true&width=860&lines=MS+Data+Science+%E2%80%94+Stony+Brook+University;Building+AI+Systems+%C2%B7+LLM+%C2%B7+RAG+%C2%B7+MLOps;AI%2FML+Engineer+%C2%B7+Data+Scientist+%C2%B7+Full-Stack;Open+to+AI+Engineer+%C2%B7+Applied+Scientist+%C2%B7+SWE)](https://git.io/typing-svg)
 
 </div>
 
@@ -35,54 +35,70 @@ I'm drawn to teams who care about curiosity, clarity, and meaningful engineering
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## What I Build
+## Skills
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<div align="center">
 
-**AI / ML Systems**
+**Languages**
 
-End-to-end production ML — time-series forecasting, classification, clustering, computer vision, NLP. Ensemble methods (XGBoost, Prophet, ARIMA), model tracking with MLflow, drift monitoring, and scalable MLOps pipelines on AWS/Docker.
-
-</td>
-<td width="50%" valign="top">
-
-**LLM & RAG Applications**
-
-Production retrieval-augmented generation, agentic tool use, voice AI, and multimodal systems. Integrations with Claude, OpenAI, Groq, LangChain, and FAISS. FastMCP servers, structured outputs, and 4-layer recovery logic.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**Data Science & Analytics**
-
-Statistical modeling, geospatial ML, SHAP explainability, business intelligence dashboards, and applied research. Python, R, XGBoost, Pandas, Plotly, GeoPandas, NetworkX.
-
-</td>
-<td width="50%" valign="top">
-
-**Software Engineering**
-
-FastAPI/Flask backends, Dockerized service stacks, AWS deployments, Redis streaming, PostgreSQL, WebSocket APIs, React/Next.js frontends. Web3 with Solidity, Ethereum, and Cloudflare Workers.
-
-</td>
-</tr>
-</table>
+[![Languages](https://skillicons.dev/icons?i=python,r,js,ts,java,cpp&theme=dark)](https://skillicons.dev)
 
 <br/>
 
+**AI · ML · Data**
+
+[![AI ML](https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn&theme=dark)](https://skillicons.dev)
+
+&nbsp;
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
+
+<br/>
+
+**Backend · Cloud · Infrastructure**
+
+[![Backend](https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark)](https://skillicons.dev)
+
+<br/>
+
+**Frontend**
+
+[![Frontend](https://skillicons.dev/icons?i=react,nextjs,tailwind&theme=dark)](https://skillicons.dev)
+
+&nbsp;
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+
+<br/>
+
+**Web3**
+
+[![Web3](https://skillicons.dev/icons?i=solidity&theme=dark)](https://skillicons.dev)
+
+&nbsp;
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
+![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square&logo=hardhat&logoColor=black)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+
+</div>
+
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
+
+## AI Product Pipeline
+
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/pipeline.svg" width="100%" alt="AI Product Pipeline"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/pipeline.svg" width="100%" alt="AI Product Pipeline — DATA · FEAT · MODEL · APIS · CLOUD · PROD"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
 ## Featured Projects
 
-### [SAARTHI](https://github.com/Sur27codes/SAARTHI) &nbsp; — &nbsp; AI Voice Clinical Monitoring Platform
+### [SAARTHI](https://github.com/Sur27codes/SAARTHI) &nbsp;—&nbsp; AI Voice Clinical Monitoring Platform
 
 > Voice-first rare-disease symptom tracking. Retell AI places daily automated calls; Claude Haiku extracts structured clinical scores from transcripts; personalized ML models generate real-time risk baselines.
 
@@ -100,11 +116,11 @@ FastAPI/Flask backends, Dockerized service stacks, AWS deployments, Redis stream
 
 ---
 
-### [InsightX](https://github.com/Sur27codes/Insight-X) &nbsp; — &nbsp; Real-Time Forecasting & Intelligence Platform
+### [InsightX](https://github.com/Sur27codes/Insight-X) &nbsp;—&nbsp; Real-Time Forecasting & Intelligence Platform
 
 > Enterprise forecasting platform combining multi-model ensembles, real-time streaming, scenario simulation, and an AI copilot for interactive business analytics.
 
-- **Modeling:** Prophet + XGBoost + ARIMA/STL ensemble · P10/P90 confidence intervals · drift-aware retraining · 33% reported accuracy gain
+- **Modeling:** Prophet + XGBoost + ARIMA/STL ensemble · P10/P90 confidence intervals · drift-aware retraining · 33% accuracy gain
 - **Infrastructure:** Redis Pub/Sub + WebSocket streaming · 7-service Docker stack · MLflow experiment tracking · live data ingestion
 - **Intelligence:** War Games crisis simulator for 4 economic scenarios · A2UI / MCP AI copilot · live React charts in chat
 
@@ -117,7 +133,7 @@ FastAPI/Flask backends, Dockerized service stacks, AWS deployments, Redis stream
 
 ---
 
-### [EchoMindAI](https://github.com/Sur27codes/EchoMindAI) &nbsp; — &nbsp; Multimodal RAG Assistant
+### [EchoMindAI](https://github.com/Sur27codes/EchoMindAI) &nbsp;—&nbsp; Multimodal RAG Assistant
 
 > Multimodal RAG assistant with hybrid vector search, 16 live agentic tools, voice, vision, document ingestion, and a custom Streamlit UI with 4-layer recovery logic.
 
@@ -134,7 +150,7 @@ FastAPI/Flask backends, Dockerized service stacks, AWS deployments, Redis stream
 
 ---
 
-### [LI Traffic Accident Cluster & Severity Analytics](https://github.com/shaneap/AMS-597-Project) &nbsp; — &nbsp; Geospatial ML · AMS 597
+### [LI Traffic Accident Cluster & Severity Analytics](https://github.com/shaneap/AMS-597-Project) &nbsp;—&nbsp; Geospatial ML · AMS 597
 
 > Applied ML research on 33,228 Long Island accident records — unsupervised clustering, supervised severity modeling, SHAP explainability, and road-network risk analysis.
 
@@ -150,7 +166,7 @@ FastAPI/Flask backends, Dockerized service stacks, AWS deployments, Redis stream
 
 ---
 
-### [Decentralized Escrow Platform](https://github.com/Sur27codes/Decentralized_Escrow_Website) &nbsp; — &nbsp; Full-Stack Web3
+### [Decentralized Escrow Platform](https://github.com/Sur27codes/Decentralized_Escrow_Website) &nbsp;—&nbsp; Full-Stack Web3
 
 > Trustless P2P escrow on Ethereum Sepolia — dual-party approval, locked ETH management, serverless metadata indexing, and full MetaMask integration.
 
@@ -166,88 +182,6 @@ FastAPI/Flask backends, Dockerized service stacks, AWS deployments, Redis stream
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## Experience
-
-| Company | Role | Period |
-|---|---|---|
-| **Adani Enterprises Ltd.** | Data Science & AI Intern | Jan 2025 – Jul 2025 |
-| **Tech Micra** | Python Machine Learning Intern | Jun 2024 – Jul 2024 |
-| **Shaligram Infotech** | Web Development Intern | Jun 2023 – Jul 2023 |
-
-<details>
-<summary><b>Expand details</b></summary>
-
-<br/>
-
-**Adani Enterprises Ltd. — Data Science & AI Intern** `Jan 2025 – Jul 2025`
-
-Contributed to an AI-powered sales and revenue forecasting platform. Built ML workflows using Python, Scikit-learn, Pandas, NumPy, and Matplotlib; implemented automated model retraining pipelines; deployed services on AWS; and built dashboards for business analysis. Analysis time reduced by 34%, deployment overhead reduced by 44%, 78% model accuracy on held-out evaluation sets.
-
-**Tech Micra — Python Machine Learning Intern** `Jun 2024 – Jul 2024`
-
-Developed end-to-end ML workflows: data preprocessing, feature engineering, regression modeling, cross-validation, Grid Search hyperparameter tuning, Ridge Regression, and model evaluation using R², MSE, and learning curves. Improved interpretability by 42% and reduced overfitting by 35%.
-
-**Shaligram Infotech — Web Development Intern** `Jun 2023 – Jul 2023`
-
-Built responsive client-facing web pages and MySQL-backed applications using HTML, CSS, JavaScript, MySQL, and WordPress. Load efficiency improved 48%, client satisfaction improved 45%.
-
-</details>
-
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
-
-## Technical Stack
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-
-**AI / ML / Data**
-
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-
-**Backend / Cloud / Infrastructure**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-
-**Web3**
-
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
-![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square&logo=hardhat&logoColor=black)
-![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
-
 ## GitHub Activity
 
 <div align="center">
@@ -260,6 +194,10 @@ Built responsive client-facing web pages and MySQL-backed applications using HTM
 
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=Sur27codes&hide_border=true&background=080d14&stroke=1a2438&ring=60A5FA&fire=A78BFA&currStreakLabel=60A5FA&sideLabels=94A3B8&dates=4A5568&currStreakNum=F8FAFC&sideNums=F8FAFC" width="55%"/>
+</div>
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sur27codes&bg_color=080d14&color=60A5FA&line=A78BFA&point=60A5FA&area=true&hide_border=true" width="100%"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
