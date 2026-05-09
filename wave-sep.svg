@@ -1,35 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="50" viewBox="0 0 900 50">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="60" viewBox="0 0 900 60">
   <defs>
-    <filter id="gw" x="-5%" y="-150%" width="110%" height="400%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+    <filter id="gw1" x="-5%" y="-100%" width="110%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="gw2" x="-5%" y="-100%" width="110%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Fade mask: invisible at edges, solid in middle -->
     <linearGradient id="fx" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0"    stop-color="#fff" stop-opacity="0"/>
-      <stop offset="0.08" stop-color="#fff" stop-opacity="1"/>
-      <stop offset="0.92" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.06" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.94" stop-color="#fff" stop-opacity="1"/>
       <stop offset="1"    stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
-    <mask id="mx"><rect width="900" height="50" fill="url(#fx)"/></mask>
+    <mask id="mx"><rect width="900" height="60" fill="url(#fx)"/></mask>
   </defs>
 
-  <rect width="900" height="50" fill="#0d1117"/>
+  <rect width="900" height="60" fill="#0d1117"/>
 
   <g mask="url(#mx)">
-    <!-- dim static base wave -->
-    <path d="M 0,25 C 50,10 100,40 150,25 C 200,10 250,40 300,25 C 350,10 400,40 450,25 C 500,10 550,40 600,25 C 650,10 700,40 750,25 C 800,10 850,40 900,25"
-          stroke="#7B9EFF" stroke-width="1.2" fill="none" opacity="0.18"/>
+    <!-- Dim static base wave -->
+    <path d="M0,30 C75,10 150,50 225,30 C300,10 375,50 450,30 C525,10 600,50 675,30 C750,10 825,50 900,30"
+          stroke="#7B9EFF" stroke-width="1" fill="none" opacity="0.12"/>
 
-    <!-- blue pulse -->
-    <path d="M 0,25 C 50,10 100,40 150,25 C 200,10 250,40 300,25 C 350,10 400,40 450,25 C 500,10 550,40 600,25 C 650,10 700,40 750,25 C 800,10 850,40 900,25"
-          stroke="#7B9EFF" stroke-width="3" fill="none" filter="url(#gw)" stroke-dasharray="130 940">
-      <animate attributeName="stroke-dashoffset" from="1070" to="-1070" dur="3s" repeatCount="indefinite"/>
+    <!-- Second static wave offset -->
+    <path d="M0,32 C75,14 150,52 225,32 C300,14 375,52 450,32 C525,14 600,52 675,32 C750,14 825,52 900,32"
+          stroke="#a259ff" stroke-width="0.8" fill="none" opacity="0.08"/>
+
+    <!-- Primary blue pulse (fast) -->
+    <path d="M0,30 C75,10 150,50 225,30 C300,10 375,50 450,30 C525,10 600,50 675,30 C750,10 825,50 900,30"
+          stroke="#7B9EFF" stroke-width="3.5" fill="none" filter="url(#gw2)" stroke-dasharray="140 1020">
+      <animate attributeName="stroke-dashoffset" from="1160" to="-1160" dur="2.8s" repeatCount="indefinite"/>
     </path>
 
-    <!-- purple pulse (offset timing) -->
-    <path d="M 0,25 C 50,10 100,40 150,25 C 200,10 250,40 300,25 C 350,10 400,40 450,25 C 500,10 550,40 600,25 C 650,10 700,40 750,25 C 800,10 850,40 900,25"
-          stroke="#a259ff" stroke-width="2.2" fill="none" filter="url(#gw)" stroke-dasharray="90 980">
-      <animate attributeName="stroke-dashoffset" from="1070" to="-1070" dur="3.8s" repeatCount="indefinite" begin="1.8s"/>
+    <!-- Purple pulse (medium, offset timing) -->
+    <path d="M0,30 C75,10 150,50 225,30 C300,10 375,50 450,30 C525,10 600,50 675,30 C750,10 825,50 900,30"
+          stroke="#a259ff" stroke-width="2.5" fill="none" filter="url(#gw1)" stroke-dasharray="100 1060">
+      <animate attributeName="stroke-dashoffset" from="1160" to="-1160" dur="3.8s" repeatCount="indefinite" begin="1.4s"/>
+    </path>
+
+    <!-- Cyan pulse (slow, different direction) -->
+    <path d="M0,30 C75,10 150,50 225,30 C300,10 375,50 450,30 C525,10 600,50 675,30 C750,10 825,50 900,30"
+          stroke="#36BCF7" stroke-width="2" fill="none" filter="url(#gw1)" stroke-dasharray="70 1090">
+      <animate attributeName="stroke-dashoffset" from="-1160" to="1160" dur="5s" repeatCount="indefinite" begin="0.8s"/>
+    </path>
+
+    <!-- Bright center spark — short bright pulse -->
+    <path d="M0,30 C75,10 150,50 225,30 C300,10 375,50 450,30 C525,10 600,50 675,30 C750,10 825,50 900,30"
+          stroke="#ffffff" stroke-width="1.5" fill="none" filter="url(#gw2)" stroke-dasharray="30 1130" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="1160" to="-1160" dur="2.2s" repeatCount="indefinite" begin="0.6s"/>
     </path>
   </g>
 </svg>

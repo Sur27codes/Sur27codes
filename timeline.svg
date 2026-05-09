@@ -1,110 +1,128 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410">
   <defs>
     <filter id="dotGlow" x="-200%" y="-200%" width="500%" height="500%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="pulseGlow" x="-300%" y="-300%" width="700%" height="700%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="titleGlow" x="-10%" y="-80%" width="120%" height="260%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="textGlow" x="-5%" y="-40%" width="110%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
     <linearGradient id="lineG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#7B9EFF" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#a259ff" stop-opacity="0.4"/>
+      <stop offset="0%"   stop-color="#7B9EFF" stop-opacity="0.9"/>
+      <stop offset="50%"  stop-color="#a259ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#36BCF7" stop-opacity="0.3"/>
     </linearGradient>
+    <linearGradient id="cardL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a2035" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1a2035" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="scanG" x="0" y="-200%" width="100%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+    </filter>
   </defs>
 
-  <!-- card background -->
-  <rect width="900" height="400" rx="12" fill="#0d1117"/>
-  <rect x="1" y="1" width="898" height="398" rx="11" fill="none" stroke="#1e2533" stroke-width="1"/>
+  <!-- Card background -->
+  <rect width="900" height="410" rx="12" fill="#0d1117"/>
+  <rect x="1" y="1" width="898" height="408" rx="11" fill="none" stroke="#1e2533" stroke-width="1.5"/>
 
-  <!-- section title -->
+  <!-- Section title -->
   <text x="450" y="36" text-anchor="middle" font-family="'Courier New',monospace" font-size="14"
-        font-weight="bold" fill="#36BCF7" letter-spacing="5" filter="url(#titleGlow)">⚔️  TIMELINE</text>
+        font-weight="bold" fill="#36BCF7" letter-spacing="6" filter="url(#titleGlow)">⚔️  TIMELINE</text>
   <line x1="60" y1="50" x2="840" y2="50" stroke="#1e2533" stroke-width="1"/>
 
   <!-- ── VERTICAL SPINE ── -->
   <!-- Static dim line -->
-  <line x1="140" y1="75" x2="140" y2="370" stroke="#1e2533" stroke-width="2"/>
+  <line x1="145" y1="75" x2="145" y2="380" stroke="#1e2533" stroke-width="2.5"/>
 
   <!-- Animated draw-in line (draws top→bottom, holds, resets) -->
-  <line x1="140" y1="75" x2="140" y2="370" stroke="url(#lineG)" stroke-width="2"
-        stroke-dasharray="295 295">
+  <line x1="145" y1="75" x2="145" y2="380" stroke="url(#lineG)" stroke-width="2.5"
+        stroke-dasharray="305 305">
     <animate attributeName="stroke-dashoffset"
-      values="295;0;0;295"
+      values="305;0;0;305"
       keyTimes="0;0.38;0.85;1"
       dur="7s" repeatCount="indefinite"/>
   </line>
 
   <!-- Traveling pulse down the spine -->
-  <circle cx="140" r="5" fill="#7B9EFF" filter="url(#pulseGlow)" opacity="0">
-    <animate attributeName="cy"       values="75;370;370"   keyTimes="0;0.38;1" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity"  values="0.9;0.9;0"    keyTimes="0;0.34;0.38" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="r"        values="5;3;3"         keyTimes="0;0.38;1" dur="7s" repeatCount="indefinite"/>
+  <circle cx="145" r="6" fill="#7B9EFF" filter="url(#pulseGlow)" opacity="0">
+    <animate attributeName="cy"       values="75;380;380"   keyTimes="0;0.38;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"  values="0.95;0.95;0"    keyTimes="0;0.34;0.38" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="r"        values="6;3.5;3.5"       keyTimes="0;0.38;1" dur="7s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- ── ENTRY 1: BTech CSE @ Indus University ── y=95 (education → gold) -->
+  <!-- ── ENTRY 1: BTech CSE @ Indus University ── y=100 (education → gold) -->
+  <!-- Background card glow -->
+  <rect x="148" y="78" width="580" height="44" rx="8" fill="url(#cardL)" opacity="0.5"/>
   <!-- dot -->
-  <circle cx="140" cy="95" r="7" fill="#FFD700" filter="url(#dotGlow)">
-    <animate attributeName="r"       values="6;8.5;6"     dur="3.2s" repeatCount="indefinite"/>
+  <circle cx="145" cy="100" r="9" fill="#FFD700" filter="url(#dotGlow)">
+    <animate attributeName="r"       values="7;10;7"     dur="3.2s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.85;1;0.85" dur="3.2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="140" cy="95" r="3.5" fill="#FFD700"/>
-  <!-- connector -->
-  <line x1="148" y1="95" x2="180" y2="95" stroke="#1e2533" stroke-width="1.5"/>
+  <circle cx="145" cy="100" r="4.5" fill="#FFD700"/>
+  <!-- connector line -->
+  <line x1="155" y1="100" x2="190" y2="100" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
   <!-- content -->
-  <text x="188" y="90" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#FFD700">BTech Computer Science Engineering</text>
-  <text x="188" y="108" font-family="'Courier New',monospace" font-size="11" fill="#7B9EFF" opacity="0.85">Indus University, India  ·  2021 – May 2025  ·  GPA: 3.4 / 4.0</text>
+  <text x="196" y="95" font-family="'Courier New',monospace" font-size="13.5" font-weight="bold" fill="#FFD700" filter="url(#textGlow)">BTech Computer Science Engineering</text>
+  <text x="196" y="112" font-family="'Courier New',monospace" font-size="10.5" fill="#7B9EFF" opacity="0.9">Indus University, India  ·  2021 – May 2025  ·  GPA: 3.4 / 4.0</text>
 
-  <!-- ── ENTRY 2: Web Dev Intern @ Shaligram Infotech ── y=158 -->
-  <circle cx="140" cy="158" r="6.5" fill="#36BCF7" filter="url(#dotGlow)">
-    <animate attributeName="r"       values="5.5;8;5.5"   dur="3.8s" repeatCount="indefinite"/>
+  <!-- ── ENTRY 2: Web Dev Intern @ Shaligram Infotech ── y=168 -->
+  <rect x="148" y="146" width="580" height="44" rx="8" fill="url(#cardL)" opacity="0.4"/>
+  <circle cx="145" cy="168" r="8" fill="#36BCF7" filter="url(#dotGlow)">
+    <animate attributeName="r"       values="6.5;9.5;6.5"   dur="3.8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.8;1;0.8"   dur="3.8s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="140" cy="158" r="3" fill="#36BCF7"/>
-  <line x1="148" y1="158" x2="180" y2="158" stroke="#1e2533" stroke-width="1.5"/>
-  <text x="188" y="153" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#36BCF7">Web Dev Intern  ·  Shaligram Infotech</text>
-  <text x="188" y="171" font-family="'Courier New',monospace" font-size="11" fill="#7B9EFF" opacity="0.85">Jun 2023 – Jul 2023  ·  Load efficiency ↑48%  ·  Client satisfaction ↑45%</text>
+  <circle cx="145" cy="168" r="3.5" fill="#36BCF7"/>
+  <line x1="155" y1="168" x2="190" y2="168" stroke="#36BCF7" stroke-width="1.5" opacity="0.4"/>
+  <text x="196" y="163" font-family="'Courier New',monospace" font-size="13.5" font-weight="bold" fill="#36BCF7" filter="url(#textGlow)">Web Dev Intern  ·  Shaligram Infotech</text>
+  <text x="196" y="180" font-family="'Courier New',monospace" font-size="10.5" fill="#7B9EFF" opacity="0.9">Jun 2023 – Jul 2023  ·  Load efficiency ↑48%  ·  Client satisfaction ↑45%</text>
 
-  <!-- ── ENTRY 3: Python ML Intern @ Tech Micra ── y=221 -->
-  <circle cx="140" cy="221" r="6.5" fill="#36BCF7" filter="url(#dotGlow)">
-    <animate attributeName="r"       values="5.5;8;5.5"   dur="4.1s" repeatCount="indefinite"/>
+  <!-- ── ENTRY 3: Python ML Intern @ Tech Micra ── y=236 -->
+  <rect x="148" y="214" width="580" height="44" rx="8" fill="url(#cardL)" opacity="0.4"/>
+  <circle cx="145" cy="236" r="8" fill="#36BCF7" filter="url(#dotGlow)">
+    <animate attributeName="r"       values="6.5;9.5;6.5"   dur="4.1s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.8;1;0.8"   dur="4.1s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="140" cy="221" r="3" fill="#36BCF7"/>
-  <line x1="148" y1="221" x2="180" y2="221" stroke="#1e2533" stroke-width="1.5"/>
-  <text x="188" y="216" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#36BCF7">Python ML Intern  ·  Tech Micra</text>
-  <text x="188" y="234" font-family="'Courier New',monospace" font-size="11" fill="#7B9EFF" opacity="0.85">Jun 2024 – Jul 2024  ·  Interpretability ↑42%  ·  Overfitting ↓35%</text>
+  <circle cx="145" cy="236" r="3.5" fill="#36BCF7"/>
+  <line x1="155" y1="236" x2="190" y2="236" stroke="#36BCF7" stroke-width="1.5" opacity="0.4"/>
+  <text x="196" y="231" font-family="'Courier New',monospace" font-size="13.5" font-weight="bold" fill="#36BCF7" filter="url(#textGlow)">Python ML Intern  ·  Tech Micra</text>
+  <text x="196" y="248" font-family="'Courier New',monospace" font-size="10.5" fill="#7B9EFF" opacity="0.9">Jun 2024 – Jul 2024  ·  Interpretability ↑42%  ·  Overfitting ↓35%</text>
 
-  <!-- ── ENTRY 4: Data Science & AI Intern @ Adani ── y=284 -->
-  <circle cx="140" cy="284" r="6.5" fill="#a259ff" filter="url(#dotGlow)">
-    <animate attributeName="r"       values="5.5;8.5;5.5" dur="2.9s" repeatCount="indefinite"/>
+  <!-- ── ENTRY 4: Data Science & AI Intern @ Adani ── y=304 -->
+  <rect x="148" y="282" width="620" height="44" rx="8" fill="url(#cardL)" opacity="0.4"/>
+  <circle cx="145" cy="304" r="8.5" fill="#a259ff" filter="url(#dotGlow)">
+    <animate attributeName="r"       values="6.5;10;6.5" dur="2.9s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.8;1;0.8"   dur="2.9s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="140" cy="284" r="3" fill="#a259ff"/>
-  <line x1="148" y1="284" x2="180" y2="284" stroke="#1e2533" stroke-width="1.5"/>
-  <text x="188" y="279" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#a259ff">Data Science &amp; AI Intern  ·  Adani Enterprise Ltd.</text>
-  <text x="188" y="297" font-family="'Courier New',monospace" font-size="11" fill="#7B9EFF" opacity="0.85">Jan 2025 – Jul 2025  ·  78% accuracy  ·  Analysis time ↓34%  ·  Deploy ↓44%</text>
+  <circle cx="145" cy="304" r="4" fill="#a259ff"/>
+  <line x1="155" y1="304" x2="190" y2="304" stroke="#a259ff" stroke-width="1.5" opacity="0.4"/>
+  <text x="196" y="299" font-family="'Courier New',monospace" font-size="13.5" font-weight="bold" fill="#a259ff" filter="url(#textGlow)">Data Science &amp; AI Intern  ·  Adani Enterprise Ltd.</text>
+  <text x="196" y="316" font-family="'Courier New',monospace" font-size="10.5" fill="#7B9EFF" opacity="0.9">Jan 2025 – Jul 2025  ·  78% accuracy  ·  Analysis time ↓34%  ·  Deploy ↓44%</text>
 
-  <!-- ── ENTRY 5: MS Data Science @ Stony Brook ── y=347 (education → gold) -->
-  <circle cx="140" cy="347" r="7" fill="#FFD700" filter="url(#dotGlow)">
-    <animate attributeName="r"       values="6;8.5;6"     dur="3.5s" repeatCount="indefinite"/>
+  <!-- ── ENTRY 5: MS Data Science @ Stony Brook ── y=372 (education → gold) -->
+  <rect x="148" y="350" width="560" height="44" rx="8" fill="url(#cardL)" opacity="0.4"/>
+  <circle cx="145" cy="372" r="9" fill="#FFD700" filter="url(#dotGlow)">
+    <animate attributeName="r"       values="7;10.5;7"     dur="3.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.85;1;0.85" dur="3.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="140" cy="347" r="3.5" fill="#FFD700"/>
-  <line x1="148" y1="347" x2="180" y2="347" stroke="#1e2533" stroke-width="1.5"/>
-  <text x="188" y="342" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#FFD700">MS Data Science  ·  Stony Brook University</text>
-  <text x="188" y="360" font-family="'Courier New',monospace" font-size="11" fill="#7B9EFF" opacity="0.85">2025 – May 2027  ·  ML · Statistical Computing · Data Management</text>
+  <circle cx="145" cy="372" r="4.5" fill="#FFD700"/>
+  <line x1="155" y1="372" x2="190" y2="372" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
+  <text x="196" y="367" font-family="'Courier New',monospace" font-size="13.5" font-weight="bold" fill="#FFD700" filter="url(#textGlow)">MS Data Science  ·  Stony Brook University</text>
+  <text x="196" y="384" font-family="'Courier New',monospace" font-size="10.5" fill="#7B9EFF" opacity="0.9">2025 – May 2027  ·  ML · Statistical Computing · Data Management</text>
 
-  <!-- legend -->
-  <circle cx="660" cy="378" r="5" fill="#FFD700" opacity="0.8"/>
-  <text x="670" y="383" font-family="'Courier New',monospace" font-size="10" fill="#a0aec0">Education</text>
-  <circle cx="740" cy="378" r="5" fill="#36BCF7" opacity="0.8"/>
-  <text x="750" y="383" font-family="'Courier New',monospace" font-size="10" fill="#a0aec0">Internship</text>
-  <circle cx="820" cy="378" r="5" fill="#a259ff" opacity="0.8"/>
-  <text x="830" y="383" font-family="'Courier New',monospace" font-size="10" fill="#a0aec0">AI/ML</text>
+  <!-- Legend -->
+  <circle cx="660" cy="398" r="5.5" fill="#FFD700" opacity="0.9"/>
+  <text x="671" y="403" font-family="'Courier New',monospace" font-size="10" fill="#a0aec0">Education</text>
+  <circle cx="745" cy="398" r="5.5" fill="#36BCF7" opacity="0.9"/>
+  <text x="756" y="403" font-family="'Courier New',monospace" font-size="10" fill="#a0aec0">Internship</text>
+  <circle cx="832" cy="398" r="5.5" fill="#a259ff" opacity="0.9"/>
+  <text x="843" y="403" font-family="'Courier New',monospace" font-size="10" fill="#a0aec0">AI/ML</text>
 </svg>

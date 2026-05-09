@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+  <defs>
+    <filter id="titleGlow" x="-10%" y="-80%" width="120%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ag" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ng" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Card background gradients -->
+    <radialGradient id="bg1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#36BCF7" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7B9EFF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg3" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#a259ff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg4" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg5" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00FF88" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- BACKGROUND CARD -->
+  <rect width="900" height="200" rx="14" fill="#0d1117"/>
+  <rect x="1" y="1" width="898" height="198" rx="13" fill="none" stroke="#1e2533" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="'Courier New',monospace" font-size="13"
+        font-weight="bold" fill="#FF6B9D" letter-spacing="5" filter="url(#titleGlow)">💥  IMPACT NUMBERS</text>
+  <line x1="60" y1="40" x2="840" y2="40" stroke="#1e2533" stroke-width="1"/>
+
+  <!-- Connecting line behind nodes -->
+  <line x1="90" y1="115" x2="810" y2="115" stroke="#7B9EFF" stroke-width="0.8" opacity="0.1"/>
+
+  <!-- ══════════════════ NODE 1: 5 AI Systems Deployed — cyan ══════════════════ -->
+  <rect x="10" y="48" width="160" height="140" rx="12" fill="url(#bg1)"/>
+  <!-- Outer ring -->
+  <circle cx="90" cy="115" r="58" fill="none" stroke="#1a2535" stroke-width="5"/>
+  <!-- Animated fill ring -->
+  <circle cx="90" cy="115" r="58" fill="none" stroke="#36BCF7" stroke-width="5"
+          stroke-dasharray="290 75" stroke-linecap="round" filter="url(#ag)"
+          transform="rotate(-90 90 115)">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="-90 90 115" to="270 90 115" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="0 365;290 75;290 75;0 365" keyTimes="0;0.4;0.85;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Inner pulse ring -->
+  <circle cx="90" cy="115" r="44" fill="none" stroke="#36BCF7" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="44;50;44" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Center fill -->
+  <circle cx="90" cy="115" r="40" fill="#0d1117"/>
+  <!-- Number -->
+  <text x="90" y="107" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="36" font-weight="bold" fill="white">5</text>
+  <!-- Unit -->
+  <text x="90" y="124" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#36BCF7" letter-spacing="1">Deployed</text>
+  <!-- Label below -->
+  <text x="90" y="170" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#a0aec0">AI Systems</text>
+  <!-- Node dot on connecting line -->
+  <circle cx="90" cy="115" r="3" fill="#36BCF7" filter="url(#ng)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══════════════════ NODE 2: 33% Accuracy Gain — blue ══════════════════ -->
+  <rect x="178" y="48" width="160" height="140" rx="12" fill="url(#bg2)"/>
+  <circle cx="258" cy="115" r="58" fill="none" stroke="#1a2535" stroke-width="5"/>
+  <circle cx="258" cy="115" r="58" fill="none" stroke="#7B9EFF" stroke-width="5"
+          stroke-dasharray="240 125" stroke-linecap="round" filter="url(#ag)"
+          transform="rotate(-90 258 115)">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="-90 258 115" to="270 258 115" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="0 365;240 125;240 125;0 365" keyTimes="0;0.4;0.85;1" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="258" cy="115" r="44" fill="none" stroke="#7B9EFF" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="44;50;44" dur="3.4s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="3.4s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="258" cy="115" r="40" fill="#0d1117"/>
+  <text x="258" y="110" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="26" font-weight="bold" fill="white">33%</text>
+  <text x="258" y="127" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#7B9EFF" letter-spacing="1">Accuracy</text>
+  <text x="258" y="170" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#a0aec0">Gain (InsightX)</text>
+  <circle cx="258" cy="115" r="3" fill="#7B9EFF" filter="url(#ng)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" begin="0.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══════════════════ NODE 3: 7.5× Latency — purple ══════════════════ -->
+  <rect x="346" y="48" width="160" height="140" rx="12" fill="url(#bg3)"/>
+  <circle cx="426" cy="115" r="58" fill="none" stroke="#1a2535" stroke-width="5"/>
+  <circle cx="426" cy="115" r="58" fill="none" stroke="#a259ff" stroke-width="5"
+          stroke-dasharray="220 145" stroke-linecap="round" filter="url(#ag)"
+          transform="rotate(-90 426 115)">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="-90 426 115" to="270 426 115" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="0 365;220 145;220 145;0 365" keyTimes="0;0.4;0.85;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="426" cy="115" r="44" fill="none" stroke="#a259ff" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="44;50;44" dur="3.8s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="3.8s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="426" cy="115" r="40" fill="#0d1117"/>
+  <text x="426" y="110" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="26" font-weight="bold" fill="white">7.5×</text>
+  <text x="426" y="127" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#a259ff" letter-spacing="1">STT Speed</text>
+  <text x="426" y="170" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#a0aec0">Groq LPU</text>
+  <circle cx="426" cy="115" r="3" fill="#a259ff" filter="url(#ng)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══════════════════ NODE 4: 16 Agentic Tools — pink ══════════════════ -->
+  <rect x="514" y="48" width="160" height="140" rx="12" fill="url(#bg4)"/>
+  <circle cx="594" cy="115" r="58" fill="none" stroke="#1a2535" stroke-width="5"/>
+  <circle cx="594" cy="115" r="58" fill="none" stroke="#FF6B9D" stroke-width="5"
+          stroke-dasharray="200 165" stroke-linecap="round" filter="url(#ag)"
+          transform="rotate(-90 594 115)">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="-90 594 115" to="270 594 115" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="0 365;200 165;200 165;0 365" keyTimes="0;0.4;0.85;1" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="594" cy="115" r="44" fill="none" stroke="#FF6B9D" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="44;50;44" dur="4.2s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="4.2s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="594" cy="115" r="40" fill="#0d1117"/>
+  <text x="594" y="107" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="36" font-weight="bold" fill="white">16</text>
+  <text x="594" y="124" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#FF6B9D" letter-spacing="1">Agentic</text>
+  <text x="594" y="170" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#a0aec0">Live Tools</text>
+  <circle cx="594" cy="115" r="3" fill="#FF6B9D" filter="url(#ng)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.9s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══════════════════ NODE 5: 300% Engagement — green ══════════════════ -->
+  <rect x="682" y="48" width="208" height="140" rx="12" fill="url(#bg5)"/>
+  <circle cx="762" cy="115" r="58" fill="none" stroke="#1a2535" stroke-width="5"/>
+  <circle cx="762" cy="115" r="58" fill="none" stroke="#00FF88" stroke-width="5"
+          stroke-dasharray="270 95" stroke-linecap="round" filter="url(#ag)"
+          transform="rotate(-90 762 115)">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="-90 762 115" to="270 762 115" dur="6.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="0 365;270 95;270 95;0 365" keyTimes="0;0.4;0.85;1" dur="6.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="762" cy="115" r="44" fill="none" stroke="#00FF88" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="44;50;44" dur="3s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="3s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="762" cy="115" r="40" fill="#0d1117"/>
+  <text x="762" y="107" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="28" font-weight="bold" fill="white">300%</text>
+  <text x="762" y="124" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#00FF88" letter-spacing="1">Engagement</text>
+  <text x="762" y="170" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="9.5" fill="#a0aec0">EchoMindAI</text>
+  <circle cx="762" cy="115" r="3" fill="#00FF88" filter="url(#ng)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.3s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Data-flow pulse along connecting line: left → right -->
+  <circle cy="115" r="4" fill="#7B9EFF" filter="url(#ng)">
+    <animate attributeName="cx" values="90;810;810" keyTimes="0;0.7;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.05;0.65;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Reverse pulse: right → left -->
+  <circle cy="115" r="3" fill="#a259ff" filter="url(#ng)">
+    <animate attributeName="cx" values="810;90;90" keyTimes="0;0.7;1" dur="5s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.65;0.7" dur="5s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

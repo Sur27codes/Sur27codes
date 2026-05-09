@@ -1,138 +1,166 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330">
   <defs>
     <filter id="barGlow" x="-3%" y="-200%" width="106%" height="500%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="titleGlow" x="-10%" y="-80%" width="120%" height="260%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="pctGlow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Scan line -->
+    <linearGradient id="scanG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7B9EFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7B9EFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7B9EFF" stop-opacity="0"/>
+    </linearGradient>
   </defs>
 
-  <!-- card background -->
-  <rect width="900" height="320" rx="12" fill="#0d1117"/>
-  <rect x="1" y="1" width="898" height="318" rx="11" fill="none" stroke="#1e2533" stroke-width="1"/>
+  <!-- Card background -->
+  <rect width="900" height="330" rx="12" fill="#0d1117"/>
+  <rect x="1" y="1" width="898" height="328" rx="11" fill="none" stroke="#1e2533" stroke-width="1.5"/>
 
-  <!-- section title -->
+  <!-- Subtle background grid -->
+  <g fill="#7B9EFF" opacity="0.025">
+    <rect x="175" y="58" width="250" height="262" rx="4" fill="#7B9EFF" fill-opacity="0.015"/>
+    <rect x="610" y="58" width="250" height="262" rx="4" fill="#7B9EFF" fill-opacity="0.015"/>
+  </g>
+
+  <!-- Section title -->
   <text x="450" y="36" text-anchor="middle" font-family="'Courier New',monospace" font-size="14"
-        font-weight="bold" fill="#7B9EFF" letter-spacing="5" filter="url(#titleGlow)">⚡  SKILL MATRIX</text>
+        font-weight="bold" fill="#7B9EFF" letter-spacing="6" filter="url(#titleGlow)">⚡  SKILL MATRIX</text>
   <line x1="60" y1="50" x2="840" y2="50" stroke="#1e2533" stroke-width="1"/>
 
-  <!-- vertical divider -->
-  <line x1="450" y1="55" x2="450" y2="305" stroke="#1e2533" stroke-width="1"/>
+  <!-- Vertical divider -->
+  <line x1="450" y1="58" x2="450" y2="318" stroke="#1e2533" stroke-width="1"/>
+
+  <!-- Column headers -->
+  <text x="300" y="72" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7B9EFF" opacity="0.4" letter-spacing="3">BACKEND · AI · DATA</text>
+  <text x="730" y="72" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#7B9EFF" opacity="0.4" letter-spacing="3">FRONTEND · CLOUD · WEB3</text>
 
   <!-- ════ LEFT COLUMN ════ -->
-  <!-- Label x=30  |  Track x1=175 x2=425  |  Pct x=432 -->
-  <!-- row y=85 ─── Python 95% → x2=412 -->
-  <text x="30" y="90" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">Python</text>
-  <line x1="175" y1="85" x2="425" y2="85" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="175" y1="85" x2="175" y2="85" stroke="#7B9EFF" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="175;412;412;175" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0s"/>
-  </line>
-  <text x="432" y="90" font-family="'Courier New',monospace" font-size="10" fill="#7B9EFF" opacity="0.85">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0s"/>
+  <!-- Label x=22 | Track x1=175 x2=430 | Pct x=437 -->
+
+  <!-- row y=100 ─── Python 95% → x2=412 -->
+  <text x="22" y="103" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">Python</text>
+  <rect x="175" y="91" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="175" y="91" width="0" height="10" rx="5" fill="#7B9EFF" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;237;237;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0s"/>
+  </rect>
+  <text x="437" y="103" font-family="'Courier New',monospace" font-size="10" fill="#7B9EFF" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0s"/>
     95%
   </text>
 
-  <!-- row y=133 ─── FastAPI 90% → x2=400 -->
-  <text x="30" y="138" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">FastAPI</text>
-  <line x1="175" y1="133" x2="425" y2="133" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="175" y1="133" x2="175" y2="133" stroke="#36BCF7" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="175;400;400;175" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.18s"/>
-  </line>
-  <text x="432" y="138" font-family="'Courier New',monospace" font-size="10" fill="#36BCF7" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.18s"/>
+  <!-- row y=148 ─── FastAPI 90% → x2=400 -->
+  <text x="22" y="151" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">FastAPI</text>
+  <rect x="175" y="139" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="175" y="139" width="0" height="10" rx="5" fill="#36BCF7" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;225;225;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.18s"/>
+  </rect>
+  <text x="437" y="151" font-family="'Courier New',monospace" font-size="10" fill="#36BCF7" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.18s"/>
     90%
   </text>
 
-  <!-- row y=181 ─── LLMs & RAG 88% → x2=395 -->
-  <text x="30" y="186" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">LLMs &amp; RAG</text>
-  <line x1="175" y1="181" x2="425" y2="181" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="175" y1="181" x2="175" y2="181" stroke="#a259ff" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="175;395;395;175" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.36s"/>
-  </line>
-  <text x="432" y="186" font-family="'Courier New',monospace" font-size="10" fill="#a259ff" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.36s"/>
+  <!-- row y=196 ─── LLMs & RAG 88% → x2=395 -->
+  <text x="22" y="199" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">LLMs &amp; RAG</text>
+  <rect x="175" y="187" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="175" y="187" width="0" height="10" rx="5" fill="#a259ff" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;219;219;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.36s"/>
+  </rect>
+  <text x="437" y="199" font-family="'Courier New',monospace" font-size="10" fill="#a259ff" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.36s"/>
     88%
   </text>
 
-  <!-- row y=229 ─── Machine Learning 86% → x2=390 -->
-  <text x="30" y="234" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">ML Systems</text>
-  <line x1="175" y1="229" x2="425" y2="229" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="175" y1="229" x2="175" y2="229" stroke="#a259ff" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="175;390;390;175" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.54s"/>
-  </line>
-  <text x="432" y="234" font-family="'Courier New',monospace" font-size="10" fill="#a259ff" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.54s"/>
+  <!-- row y=244 ─── ML Systems 86% → x2=390 -->
+  <text x="22" y="247" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">ML Systems</text>
+  <rect x="175" y="235" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="175" y="235" width="0" height="10" rx="5" fill="#a259ff" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;213;213;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.54s"/>
+  </rect>
+  <text x="437" y="247" font-family="'Courier New',monospace" font-size="10" fill="#a259ff" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.54s"/>
     86%
   </text>
 
-  <!-- row y=277 ─── SQL & Databases 85% → x2=388 -->
-  <text x="30" y="282" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">SQL &amp; DBs</text>
-  <line x1="175" y1="277" x2="425" y2="277" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="175" y1="277" x2="175" y2="277" stroke="#36BCF7" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="175;388;388;175" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.72s"/>
-  </line>
-  <text x="432" y="282" font-family="'Courier New',monospace" font-size="10" fill="#36BCF7" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.72s"/>
+  <!-- row y=292 ─── SQL & DBs 85% → x2=388 -->
+  <text x="22" y="295" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">SQL &amp; DBs</text>
+  <rect x="175" y="283" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="175" y="283" width="0" height="10" rx="5" fill="#36BCF7" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;210;210;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.72s"/>
+  </rect>
+  <text x="437" y="295" font-family="'Courier New',monospace" font-size="10" fill="#36BCF7" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.72s"/>
     85%
   </text>
 
   <!-- ════ RIGHT COLUMN ════ -->
-  <!-- Label x=468  |  Track x1=610 x2=860  |  Pct x=867 -->
-  <!-- row y=85 ─── TypeScript 82% → x2=815 -->
-  <text x="468" y="90" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">TypeScript</text>
-  <line x1="610" y1="85" x2="860" y2="85" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="610" y1="85" x2="610" y2="85" stroke="#7B9EFF" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="610;815;815;610" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.09s"/>
-  </line>
-  <text x="867" y="90" font-family="'Courier New',monospace" font-size="10" fill="#7B9EFF" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.09s"/>
+  <!-- Label x=462 | Track x1=620 x2=875 | Pct x=882 -->
+
+  <!-- row y=100 ─── TypeScript 82% → x2=815 -->
+  <text x="462" y="103" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">TypeScript</text>
+  <rect x="620" y="91" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="620" y="91" width="0" height="10" rx="5" fill="#7B9EFF" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;204;204;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.09s"/>
+  </rect>
+  <text x="882" y="103" font-family="'Courier New',monospace" font-size="10" fill="#7B9EFF" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.09s"/>
     82%
   </text>
 
-  <!-- row y=133 ─── Docker & AWS 82% → x2=815 -->
-  <text x="468" y="138" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">Docker &amp; AWS</text>
-  <line x1="610" y1="133" x2="860" y2="133" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="610" y1="133" x2="610" y2="133" stroke="#36BCF7" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="610;815;815;610" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.27s"/>
-  </line>
-  <text x="867" y="138" font-family="'Courier New',monospace" font-size="10" fill="#36BCF7" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.27s"/>
+  <!-- row y=148 ─── Docker & AWS 82% → x2=815 -->
+  <text x="462" y="151" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">Docker &amp; AWS</text>
+  <rect x="620" y="139" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="620" y="139" width="0" height="10" rx="5" fill="#36BCF7" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;204;204;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.27s"/>
+  </rect>
+  <text x="882" y="151" font-family="'Courier New',monospace" font-size="10" fill="#36BCF7" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.27s"/>
     82%
   </text>
 
-  <!-- row y=181 ─── Next.js / React 80% → x2=810 -->
-  <text x="468" y="186" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">Next.js / React</text>
-  <line x1="610" y1="181" x2="860" y2="181" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="610" y1="181" x2="610" y2="181" stroke="#FF6B9D" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="610;810;810;610" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.45s"/>
-  </line>
-  <text x="867" y="186" font-family="'Courier New',monospace" font-size="10" fill="#FF6B9D" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.45s"/>
+  <!-- row y=196 ─── Next.js / React 80% -->
+  <text x="462" y="199" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">Next.js / React</text>
+  <rect x="620" y="187" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="620" y="187" width="0" height="10" rx="5" fill="#FF6B9D" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;198;198;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.45s"/>
+  </rect>
+  <text x="882" y="199" font-family="'Courier New',monospace" font-size="10" fill="#FF6B9D" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.45s"/>
     80%
   </text>
 
-  <!-- row y=229 ─── LangChain 85% → x2=823 -->
-  <text x="468" y="234" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">LangChain</text>
-  <line x1="610" y1="229" x2="860" y2="229" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="610" y1="229" x2="610" y2="229" stroke="#a259ff" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="610;823;823;610" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.63s"/>
-  </line>
-  <text x="867" y="234" font-family="'Courier New',monospace" font-size="10" fill="#a259ff" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.63s"/>
+  <!-- row y=244 ─── LangChain 85% -->
+  <text x="462" y="247" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">LangChain</text>
+  <rect x="620" y="235" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="620" y="235" width="0" height="10" rx="5" fill="#a259ff" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;210;210;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.63s"/>
+  </rect>
+  <text x="882" y="247" font-family="'Courier New',monospace" font-size="10" fill="#a259ff" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.63s"/>
     85%
   </text>
 
-  <!-- row y=277 ─── Solidity / Web3 70% → x2=785 -->
-  <text x="468" y="282" font-family="'Courier New',monospace" font-size="12" fill="#a0aec0">Solidity / Web3</text>
-  <line x1="610" y1="277" x2="860" y2="277" stroke="#1a2035" stroke-width="10" stroke-linecap="round"/>
-  <line x1="610" y1="277" x2="610" y2="277" stroke="#00FF88" stroke-width="10" stroke-linecap="round" filter="url(#barGlow)">
-    <animate attributeName="x2" values="610;785;785;610" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.81s"/>
-  </line>
-  <text x="867" y="282" font-family="'Courier New',monospace" font-size="10" fill="#00FF88" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.81s"/>
+  <!-- row y=292 ─── Solidity / Web3 70% -->
+  <text x="462" y="295" font-family="'Courier New',monospace" font-size="11.5" fill="#a0aec0">Solidity / Web3</text>
+  <rect x="620" y="283" width="255" height="10" rx="5" fill="#1a2035"/>
+  <rect x="620" y="283" width="0" height="10" rx="5" fill="#00FF88" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;174;174;0" keyTimes="0;0.3;0.82;1" dur="5.5s" repeatCount="indefinite" begin="0.81s"/>
+  </rect>
+  <text x="882" y="295" font-family="'Courier New',monospace" font-size="10" fill="#00FF88" opacity="0" filter="url(#pctGlow)">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.28;0.32;0.82;0.86" dur="5.5s" repeatCount="indefinite" begin="0.81s"/>
     70%
   </text>
+
+  <!-- Global scan line sweeping top to bottom -->
+  <rect x="0" y="0" width="900" height="20" fill="url(#scanG)" opacity="0">
+    <animate attributeName="y" values="50;330;50" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.6;0.6;0.6;0;0" keyTimes="0;0.02;0.05;0.5;0.95;0.98;1" dur="4s" repeatCount="indefinite"/>
+  </rect>
 </svg>
