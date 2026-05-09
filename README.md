@@ -23,15 +23,11 @@
 <br/>
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
+## About
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/about.svg" width="100%" alt="Sur Vaghasiya profile terminal"/>
 </div>
-
-<br/>
-
-## About
-
-Data Science grad student at Stony Brook University building practical AI systems where machine learning, LLMs, cloud infrastructure, and user experience converge into something real and usable. Interned at Adani Enterprises, Tech Micra, and Shaligram Infotech — forecasting pipelines, ML deployment, full-stack apps. Recent projects span production RAG systems, voice AI, real-time forecasting, geospatial ML, and Web3.
 
 <br/>
 
@@ -44,29 +40,7 @@ Data Science grad student at Stony Brook University building practical AI system
 ## Skills
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills.svg" width="100%" alt="Skill Radar & Tech Stack"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-[![Languages](https://skillicons.dev/icons?i=python,r,js,ts,java,cpp&theme=dark)](https://skillicons.dev)
-
-[![AI ML](https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn&theme=dark)](https://skillicons.dev)
-&nbsp;
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-
-[![Backend](https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark)](https://skillicons.dev)
-
-[![Frontend](https://skillicons.dev/icons?i=react,nextjs,tailwind,solidity&theme=dark)](https://skillicons.dev)
-&nbsp;
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills.svg" width="100%" alt="Tech Stack"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
@@ -116,7 +90,4 @@ Data Science grad student at Stony Brook University building practical AI system
 </div>
 
 <br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080d14,50:0f1520,100:080d14&height=80&section=footer&fontColor=60A5FA" width="100%"/>
-</div>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
