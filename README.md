@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=1800&pause=500&color=7B9EFF&center=true&vCenter=true&width=800&lines=MS+Data+Science+%40+Stony+Brook+University+🎓;AI+%2F+ML+Engineer+·+Applied+Scientist+·+SWE+✨;LLMs+·+RAG+·+Voice+AI+·+Agentic+Workflows+🤖;FastAPI+·+Next.js+·+Docker+·+AWS+·+FastMCP+⚡;Open+to+AI%2FML+%26+Full-Stack+Engineering+roles+🚀)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=2000&pause=600&color=60A5FA&center=true&vCenter=true&width=820&lines=MS+Data+Science+%E2%80%94+Stony+Brook+University;AI+Engineer+%C2%B7+ML+Systems+%C2%B7+Full-Stack+Developer;Building+production+LLMs+%2C+RAG+%2C+and+Voice+AI+systems;FastAPI+%C2%B7+Next.js+%C2%B7+Docker+%C2%B7+AWS+%C2%B7+LangChain;Open+to+AI%2FML+Engineer+%C2%B7+Applied+Scientist+%C2%B7+SWE)](https://git.io/typing-svg)
 
 </div>
 
