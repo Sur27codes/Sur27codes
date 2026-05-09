@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="298" viewBox="0 0 900 298">
+<defs>
+  <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#818CF8" stop-opacity="0"/>
+    <stop offset="40%" stop-color="#60A5FA" stop-opacity="1"/>
+    <stop offset="60%" stop-color="#A78BFA" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="cg3" x="-40%" y="-200%" width="180%" height="500%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="900" height="298" rx="10" fill="#080d14"/>
+<rect x="0.75" y="0.75" width="898.5" height="296.5" rx="9.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
+<text x="450" y="18" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#2d3a52" letter-spacing="6">TECH  STACK</text>
+<line x1="30" y1="26" x2="870" y2="26" stroke="#1a2438" stroke-width="0.8"/>
+<rect x="-55" y="44" width="55" height="190" fill="url(#wg)" opacity="0">
+  <animate attributeName="x" values="-55;955;-55" dur="4.2s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0;0.2;0.2;0;0" keyTimes="0;0.03;0.07;0.91;0.96;1" dur="4.2s" repeatCount="indefinite"/>
+</rect>
+<rect x="12" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="12" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="69" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">Python</text>
+<rect x="136" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="136" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="193" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">R</text>
+<rect x="260" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="260" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="317" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">TypeScript</text>
+<rect x="384" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="384" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="441" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">SQL</text>
+<rect x="508" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="508" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="565" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">JavaScript</text>
+<rect x="632" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="632" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="689" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">Solidity</text>
+<rect x="756" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="756" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="813" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">C++</text>
+<rect x="12" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="12" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="69" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">PyTorch</text>
+<rect x="136" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="136" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="193" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">TensorFlow</text>
+<rect x="260" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="260" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="317" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">Scikit-learn</text>
+<rect x="384" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="384" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="441" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">XGBoost</text>
+<rect x="508" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="508" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="565" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">FAISS</text>
+<rect x="632" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="632" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="689" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">Keras</text>
+<rect x="756" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="756" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="813" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">YOLOv5</text>
+<rect x="12" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="12" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="69" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">LangChain</text>
+<rect x="136" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="136" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="193" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">HuggingFace</text>
+<rect x="260" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="260" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="317" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">GPT-4o</text>
+<rect x="384" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="384" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="441" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">Claude</text>
+<rect x="508" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="508" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="565" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">Groq</text>
+<rect x="632" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="632" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="689" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">DALL-E 3</text>
+<rect x="756" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="756" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="813" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">FastMCP</text>
+<rect x="12" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="12" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="69" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">FastAPI</text>
+<rect x="136" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="136" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="193" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">Flask</text>
+<rect x="260" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="260" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="317" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">Docker</text>
+<rect x="384" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="384" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="441" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">AWS</text>
+<rect x="508" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="508" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="565" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">Redis</text>
+<rect x="632" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="632" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="689" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">PostgreSQL</text>
+<rect x="756" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="756" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="813" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">WebSocket</text>
+<rect x="12" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="12" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="69" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">React</text>
+<rect x="136" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="136" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="193" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">Next.js</text>
+<rect x="260" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="260" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="317" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">Tailwind</text>
+<rect x="384" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="384" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="441" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">Streamlit</text>
+<rect x="508" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="508" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="565" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">MLflow</text>
+<rect x="632" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="632" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="689" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">PySpark</text>
+<rect x="756" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.28"/>
+<rect x="756" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg3)">
+  <animate attributeName="fill-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0;0;0.55;0.22;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/></rect>
+<text x="813" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">Prophet</text>
+<circle cx="110" cy="276" r="4" fill="#60A5FA" opacity="0.65"/>
+<text x="118" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#60A5FA" opacity="0.65">Languages</text>
+<circle cx="260" cy="276" r="4" fill="#A78BFA" opacity="0.65"/>
+<text x="268" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#A78BFA" opacity="0.65">AI / ML Core</text>
+<circle cx="410" cy="276" r="4" fill="#818CF8" opacity="0.65"/>
+<text x="418" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#818CF8" opacity="0.65">LLMs · Gen AI</text>
+<circle cx="560" cy="276" r="4" fill="#F472B6" opacity="0.65"/>
+<text x="568" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#F472B6" opacity="0.65">Backend · Cloud</text>
+<circle cx="710" cy="276" r="4" fill="#34D399" opacity="0.65"/>
+<text x="718" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#34D399" opacity="0.65">Frontend · Data</text>
+</svg>

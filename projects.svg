@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="352" viewBox="0 0 900 352">
+<defs>
+  <filter id="cg" x="-60%" y="-100%" width="220%" height="300%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="lg" x="-200%" y="-400%" width="500%" height="900%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2.5"/>
+  </filter>
+</defs>
+<rect width="900" height="352" rx="8" fill="#080d14"/>
+<rect x="0.75" y="0.75" width="898.5" height="350.5" rx="7.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
+<rect x="0" y="-9" width="900" height="9" fill="#818CF8" opacity="0">
+  <animate attributeName="y" from="-9" to="361" dur="8s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0;0.05;0.05;0.05;0;0" keyTimes="0;0.02;0.05;0.5;0.96;0.98;1" dur="8s" repeatCount="indefinite"/>
+</rect>
+<rect x="11" y="13" width="431" height="98" rx="3" fill="#060c18"/>
+<path d="M 30,12 L 10,12 L 10,30" fill="none" stroke="#A78BFA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.5s" begin="0s" repeatCount="indefinite"/></path>
+<path d="M 423,12 L 443,12 L 443,30" fill="none" stroke="#A78BFA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.5s" begin="0s" repeatCount="indefinite"/></path>
+<path d="M 30,112 L 10,112 L 10,94" fill="none" stroke="#A78BFA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.5s" begin="0s" repeatCount="indefinite"/></path>
+<path d="M 423,112 L 443,112 L 443,94" fill="none" stroke="#A78BFA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.5s" begin="0s" repeatCount="indefinite"/></path>
+<circle cx="10" cy="12" r="3" fill="#A78BFA" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.5s" begin="0s" repeatCount="indefinite"/></circle>
+<circle cx="443" cy="112" r="3" fill="#A78BFA" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.5s" begin="1.8s" repeatCount="indefinite"/></circle>
+<line x1="10" y1="34" x2="443" y2="34" stroke="#A78BFA" stroke-width="0.5" stroke-opacity="0.15"/>
+<text x="18" y="28" font-family="'Courier New',monospace" font-size="7.5" fill="#A78BFA" opacity="0.45">01</text>
+<text x="226" y="28" text-anchor="middle" font-family="'Courier New',monospace" font-size="10.5" font-weight="bold" fill="#A78BFA" letter-spacing="2">SAARTHI</text>
+<text x="435" y="28" text-anchor="end" font-family="'Courier New',monospace" font-size="7.5" fill="#A78BFA" opacity="0.55">VOICE AI ▸</text>
+<text x="18" y="49" font-family="'Courier New',monospace" font-size="10" fill="#c8d4e8">Voice-first rare-disease clinical monitor</text>
+<text x="18" y="64" font-family="'Courier New',monospace" font-size="8.5" fill="#2e5570">Retell AI · Claude Haiku · FastAPI · PostgreSQL · Next.js · FastMCP</text>
+<text x="18" y="79" font-family="'Courier New',monospace" font-size="8.5" fill="#A78BFA" opacity="0.85">▸ Tri-Level ML  ·  ENS Cohort  ·  Zero Form-Filling</text>
+<text x="18" y="96" font-family="'Courier New',monospace" font-size="7.5" fill="#3a4a5a">HackRare 2026 Winner  ·  structured clinical score extraction</text>
+<rect y="35" width="3" height="77" fill="#A78BFA" rx="1" opacity="0" filter="url(#lg)">
+  <animate attributeName="x" from="11" to="442" dur="5.5s" begin="0s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.18;0.18;0" keyTimes="0;0.02;0.98;1" dur="5.5s" begin="0s" repeatCount="indefinite"/></rect>
+<rect x="456" y="13" width="431" height="98" rx="3" fill="#060c18"/>
+<path d="M 475,12 L 455,12 L 455,30" fill="none" stroke="#60A5FA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="4.2s" begin="0.9s" repeatCount="indefinite"/></path>
+<path d="M 868,12 L 888,12 L 888,30" fill="none" stroke="#60A5FA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="4.2s" begin="0.9s" repeatCount="indefinite"/></path>
+<path d="M 475,112 L 455,112 L 455,94" fill="none" stroke="#60A5FA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="4.2s" begin="0.9s" repeatCount="indefinite"/></path>
+<path d="M 868,112 L 888,112 L 888,94" fill="none" stroke="#60A5FA" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="4.2s" begin="0.9s" repeatCount="indefinite"/></path>
+<circle cx="455" cy="12" r="3" fill="#60A5FA" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="4.2s" begin="0.9s" repeatCount="indefinite"/></circle>
+<circle cx="888" cy="112" r="3" fill="#60A5FA" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="4.2s" begin="3.0s" repeatCount="indefinite"/></circle>
+<line x1="455" y1="34" x2="888" y2="34" stroke="#60A5FA" stroke-width="0.5" stroke-opacity="0.15"/>
+<text x="463" y="28" font-family="'Courier New',monospace" font-size="7.5" fill="#60A5FA" opacity="0.45">02</text>
+<text x="671" y="28" text-anchor="middle" font-family="'Courier New',monospace" font-size="10.5" font-weight="bold" fill="#60A5FA" letter-spacing="2">INSIGHTX</text>
+<text x="880" y="28" text-anchor="end" font-family="'Courier New',monospace" font-size="7.5" fill="#60A5FA" opacity="0.55">FORECAST ▸</text>
+<text x="463" y="49" font-family="'Courier New',monospace" font-size="10" fill="#c8d4e8">Real-time enterprise forecasting & intelligence</text>
+<text x="463" y="64" font-family="'Courier New',monospace" font-size="8.5" fill="#2e5570">Prophet · XGBoost · ARIMA · Redis · WebSocket · Docker · MLflow</text>
+<text x="463" y="79" font-family="'Courier New',monospace" font-size="8.5" fill="#60A5FA" opacity="0.85">▸ +33% Accuracy  ·  7-Service Stack  ·  War Games Sim</text>
+<text x="463" y="96" font-family="'Courier New',monospace" font-size="7.5" fill="#3a4a5a">P10/P90 intervals  ·  K-S drift detection  ·  MCP AI copilot</text>
+<rect y="35" width="3" height="77" fill="#60A5FA" rx="1" opacity="0" filter="url(#lg)">
+  <animate attributeName="x" from="456" to="887" dur="6.2s" begin="0.9s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.18;0.18;0" keyTimes="0;0.02;0.98;1" dur="6.2s" begin="0.9s" repeatCount="indefinite"/></rect>
+<rect x="11" y="125" width="431" height="98" rx="3" fill="#060c18"/>
+<path d="M 30,124 L 10,124 L 10,142" fill="none" stroke="#818CF8" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.0s" begin="0.4s" repeatCount="indefinite"/></path>
+<path d="M 423,124 L 443,124 L 443,142" fill="none" stroke="#818CF8" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.0s" begin="0.4s" repeatCount="indefinite"/></path>
+<path d="M 30,224 L 10,224 L 10,206" fill="none" stroke="#818CF8" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.0s" begin="0.4s" repeatCount="indefinite"/></path>
+<path d="M 423,224 L 443,224 L 443,206" fill="none" stroke="#818CF8" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.0s" begin="0.4s" repeatCount="indefinite"/></path>
+<circle cx="10" cy="124" r="3" fill="#818CF8" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.0s" begin="0.4s" repeatCount="indefinite"/></circle>
+<circle cx="443" cy="224" r="3" fill="#818CF8" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.0s" begin="1.9s" repeatCount="indefinite"/></circle>
+<line x1="10" y1="146" x2="443" y2="146" stroke="#818CF8" stroke-width="0.5" stroke-opacity="0.15"/>
+<text x="18" y="140" font-family="'Courier New',monospace" font-size="7.5" fill="#818CF8" opacity="0.45">03</text>
+<text x="226" y="140" text-anchor="middle" font-family="'Courier New',monospace" font-size="10.5" font-weight="bold" fill="#818CF8" letter-spacing="2">ECHOMINDAI</text>
+<text x="435" y="140" text-anchor="end" font-family="'Courier New',monospace" font-size="7.5" fill="#818CF8" opacity="0.55">LLM · RAG ▸</text>
+<text x="18" y="161" font-family="'Courier New',monospace" font-size="10" fill="#c8d4e8">Multimodal RAG assistant with 16 live agentic tools</text>
+<text x="18" y="176" font-family="'Courier New',monospace" font-size="8.5" fill="#2e5570">LangChain · FAISS · GPT-4o · DALL-E 3 · Groq · HuggingFace</text>
+<text x="18" y="191" font-family="'Courier New',monospace" font-size="8.5" fill="#818CF8" opacity="0.85">▸ 7.5× STT Speed  ·  +300% Engagement  ·  90% Failure Cut</text>
+<text x="18" y="208" font-family="'Courier New',monospace" font-size="7.5" fill="#3a4a5a">4-layer recovery  ·  100+ languages  ·  PDF/DOCX/CSV ingestion</text>
+<rect y="147" width="3" height="77" fill="#818CF8" rx="1" opacity="0" filter="url(#lg)">
+  <animate attributeName="x" from="11" to="442" dur="5.0s" begin="0.4s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.18;0.18;0" keyTimes="0;0.02;0.98;1" dur="5.0s" begin="0.4s" repeatCount="indefinite"/></rect>
+<rect x="456" y="125" width="431" height="98" rx="3" fill="#060c18"/>
+<path d="M 475,124 L 455,124 L 455,142" fill="none" stroke="#34D399" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.9s" begin="1.2s" repeatCount="indefinite"/></path>
+<path d="M 868,124 L 888,124 L 888,142" fill="none" stroke="#34D399" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.9s" begin="1.2s" repeatCount="indefinite"/></path>
+<path d="M 475,224 L 455,224 L 455,206" fill="none" stroke="#34D399" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.9s" begin="1.2s" repeatCount="indefinite"/></path>
+<path d="M 868,224 L 888,224 L 888,206" fill="none" stroke="#34D399" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.9s" begin="1.2s" repeatCount="indefinite"/></path>
+<circle cx="455" cy="124" r="3" fill="#34D399" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.9s" begin="1.2s" repeatCount="indefinite"/></circle>
+<circle cx="888" cy="224" r="3" fill="#34D399" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.9s" begin="3.1s" repeatCount="indefinite"/></circle>
+<line x1="455" y1="146" x2="888" y2="146" stroke="#34D399" stroke-width="0.5" stroke-opacity="0.15"/>
+<text x="463" y="140" font-family="'Courier New',monospace" font-size="7.5" fill="#34D399" opacity="0.45">04</text>
+<text x="671" y="140" text-anchor="middle" font-family="'Courier New',monospace" font-size="10.5" font-weight="bold" fill="#34D399" letter-spacing="2">LI TRAFFIC</text>
+<text x="880" y="140" text-anchor="end" font-family="'Courier New',monospace" font-size="7.5" fill="#34D399" opacity="0.55">GEO · ML ▸</text>
+<text x="463" y="161" font-family="'Courier New',monospace" font-size="10" fill="#c8d4e8">Geospatial crash clustering & severity research</text>
+<text x="463" y="176" font-family="'Courier New',monospace" font-size="8.5" fill="#2e5570">XGBoost · SHAP · DBSCAN · GeoPandas · osmnx · NetworkX · R</text>
+<text x="463" y="191" font-family="'Courier New',monospace" font-size="8.5" fill="#34D399" opacity="0.85">▸ AUC-ROC 0.7185  ·  12 Hotspot Clusters  ·  33K Records</text>
+<text x="463" y="208" font-family="'Courier New',monospace" font-size="7.5" fill="#3a4a5a">FAMD k-Means (silh=0.4268)  ·  LASSO baseline  ·  KDE heatmaps</text>
+<rect y="147" width="3" height="77" fill="#34D399" rx="1" opacity="0" filter="url(#lg)">
+  <animate attributeName="x" from="456" to="887" dur="5.9s" begin="1.2s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.18;0.18;0" keyTimes="0;0.02;0.98;1" dur="5.9s" begin="1.2s" repeatCount="indefinite"/></rect>
+<rect x="233" y="237" width="431" height="98" rx="3" fill="#060c18"/>
+<path d="M 252,236 L 232,236 L 232,254" fill="none" stroke="#FBBF24" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.3s" begin="0.2s" repeatCount="indefinite"/></path>
+<path d="M 645,236 L 665,236 L 665,254" fill="none" stroke="#FBBF24" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.3s" begin="0.2s" repeatCount="indefinite"/></path>
+<path d="M 252,336 L 232,336 L 232,318" fill="none" stroke="#FBBF24" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.3s" begin="0.2s" repeatCount="indefinite"/></path>
+<path d="M 645,336 L 665,336 L 665,318" fill="none" stroke="#FBBF24" stroke-width="2" stroke-opacity="0.8">
+  <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="3.3s" begin="0.2s" repeatCount="indefinite"/></path>
+<circle cx="232" cy="236" r="3" fill="#FBBF24" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.3s" begin="0.2s" repeatCount="indefinite"/></circle>
+<circle cx="665" cy="336" r="3" fill="#FBBF24" opacity="0" filter="url(#cg)">
+  <animate attributeName="opacity" values="0;0.7;0" dur="3.3s" begin="1.8s" repeatCount="indefinite"/></circle>
+<line x1="232" y1="258" x2="665" y2="258" stroke="#FBBF24" stroke-width="0.5" stroke-opacity="0.15"/>
+<text x="240" y="252" font-family="'Courier New',monospace" font-size="7.5" fill="#FBBF24" opacity="0.45">05</text>
+<text x="448" y="252" text-anchor="middle" font-family="'Courier New',monospace" font-size="10.5" font-weight="bold" fill="#FBBF24" letter-spacing="2">DECENTRALIZED ESCROW</text>
+<text x="657" y="252" text-anchor="end" font-family="'Courier New',monospace" font-size="7.5" fill="#FBBF24" opacity="0.55">WEB3 ▸</text>
+<text x="240" y="273" font-family="'Courier New',monospace" font-size="10" fill="#c8d4e8">Trustless P2P escrow platform on Ethereum Sepolia</text>
+<text x="240" y="288" font-family="'Courier New',monospace" font-size="8.5" fill="#2e5570">Solidity · React · TypeScript · ethers.js · Cloudflare Workers</text>
+<text x="240" y="303" font-family="'Courier New',monospace" font-size="8.5" fill="#FBBF24" opacity="0.85">▸ Dual-Party Approval  ·  msg.value Lock  ·  Hardhat Suite</text>
+<text x="240" y="320" font-family="'Courier New',monospace" font-size="7.5" fill="#3a4a5a">MetaMask integration  ·  Upstash Redis metadata  ·  Hono.js</text>
+<rect y="259" width="3" height="77" fill="#FBBF24" rx="1" opacity="0" filter="url(#lg)">
+  <animate attributeName="x" from="233" to="664" dur="5.3s" begin="0.2s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.18;0.18;0" keyTimes="0;0.02;0.98;1" dur="5.3s" begin="0.2s" repeatCount="indefinite"/></rect>
+</svg>

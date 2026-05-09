@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="24" viewBox="0 0 900 24">
+<rect width="900" height="24" fill="#080d14"/>
+<line x1="0" y1="12" x2="900" y2="12" stroke="#111e2e" stroke-width="1"/>
+<line x1="-120" y1="12" x2="-60" y2="12" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round" opacity="0.75">
+  <animate attributeName="x1" values="-120;960" dur="2.1s" begin="0s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="x2" values="-60;1020" dur="2.1s" begin="0s" repeatCount="indefinite" calcMode="linear"/></line>
+<circle cy="12" r="2.5" fill="#60A5FA" opacity="0.9">
+  <animate attributeName="cx" values="-60;980" dur="2.1s" begin="0s" repeatCount="indefinite" calcMode="linear"/></circle>
+<line x1="-180" y1="12" x2="-100" y2="12" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0.75">
+  <animate attributeName="x1" values="-180;960" dur="3.3s" begin="0.8s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="x2" values="-100;1020" dur="3.3s" begin="0.8s" repeatCount="indefinite" calcMode="linear"/></line>
+<circle cy="12" r="2" fill="#A78BFA" opacity="0.9">
+  <animate attributeName="cx" values="-100;980" dur="3.3s" begin="0.8s" repeatCount="indefinite" calcMode="linear"/></circle>
+<line x1="-70" y1="12" x2="-35" y2="12" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" opacity="0.75">
+  <animate attributeName="x1" values="-70;960" dur="1.7s" begin="1.4s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="x2" values="-35;1020" dur="1.7s" begin="1.4s" repeatCount="indefinite" calcMode="linear"/></line>
+<circle cy="12" r="2" fill="#34D399" opacity="0.9">
+  <animate attributeName="cx" values="-35;980" dur="1.7s" begin="1.4s" repeatCount="indefinite" calcMode="linear"/></circle>
+</svg>
