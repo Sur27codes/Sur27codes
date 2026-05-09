@@ -1,93 +1,245 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="50" viewBox="0 0 900 50">
-<rect width="900" height="50" rx="8" fill="#060c18"/>
-<!-- divider lines -->
-<line x1="120" y1="8" x2="120" y2="42" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
-<text x="16" y="26" font-family="monospace" font-size="10" font-weight="bold"
-      fill="white" fill-opacity="0.55" letter-spacing="3" dominant-baseline="central">TECH STACK</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56">
+  <defs>
+    <!-- Shimmer sweep gradient -->
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="2.8s" repeatCount="indefinite"/>
+    </linearGradient>
 
-  <rect x="137" y="13" width="87" height="24" rx="12"
-        fill="#60A5FA" fill-opacity="0.07" stroke="#60A5FA" stroke-opacity="0.25" stroke-width="1"/>
-  <text x="180" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        fill="#60A5FA" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central"
-        letter-spacing="1">LANGUAGES</text>
-  <!-- glow overlay -->
-  <rect x="137" y="13" width="87" height="24" rx="12"
-        fill="#60A5FA" stroke="#60A5FA" stroke-width="1.5" stroke-opacity="0" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="1;1;1;0;0" keyTimes="0;0.001;0.199;0.200;1" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values="1;1;1;0;0" keyTimes="0;0.001;0.199;0.200;1" dur="5s" repeatCount="indefinite"/>
+    <!-- Scanline gradient -->
+    <linearGradient id="scanline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#60A5FA" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Blue glow filter -->
+    <filter id="glow-blue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-purple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-pink" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-indigo" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="big-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="text-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- clip to card -->
+    <clipPath id="card-clip">
+      <rect width="900" height="56" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base card -->
+  <rect width="900" height="56" rx="10" fill="#060c18"/>
+
+  <!-- Animated grid lines inside card -->
+  <g clip-path="url(#card-clip)" opacity="0.07">
+    <line x1="0" y1="14" x2="900" y2="14" stroke="#60A5FA" stroke-width="0.5"/>
+    <line x1="0" y1="28" x2="900" y2="28" stroke="#60A5FA" stroke-width="0.5"/>
+    <line x1="0" y1="42" x2="900" y2="42" stroke="#60A5FA" stroke-width="0.5"/>
+    <line x1="150" y1="0" x2="150" y2="56" stroke="#60A5FA" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="56" stroke="#60A5FA" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="56" stroke="#60A5FA" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="56" stroke="#60A5FA" stroke-width="0.5"/>
+    <line x1="750" y1="0" x2="750" y2="56" stroke="#60A5FA" stroke-width="0.5"/>
+  </g>
+
+  <!-- Moving shimmer sweep across full bar -->
+  <rect clip-path="url(#card-clip)" width="900" height="56" rx="10" fill="url(#sweep)"/>
+
+  <!-- Animated scanline beam that sweeps across -->
+  <rect clip-path="url(#card-clip)" x="-200" y="0" width="200" height="56" fill="url(#scanline)" opacity="0.6">
+    <animate attributeName="x" from="-200" to="900" dur="3.5s" repeatCount="indefinite" calcMode="ease-in-out"/>
   </rect>
-  <text x="180" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        text-anchor="middle" dominant-baseline="central" letter-spacing="1"
-        fill="#60A5FA" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="1;1;1;0;0" keyTimes="0;0.001;0.199;0.200;1" dur="5s" repeatCount="indefinite"/>
+
+  <!-- Border glow ring that pulses -->
+  <rect x="0.5" y="0.5" width="899" height="55" rx="9.5" fill="none" stroke="#60A5FA" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.1;0.35;0.1" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- LABEL: TECH STACK -->
+  <line x1="125" y1="10" x2="125" y2="46" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="18" y="29" font-family="monospace" font-size="9" font-weight="bold"
+        fill="white" fill-opacity="0.5" letter-spacing="3" dominant-baseline="central">TECH STACK</text>
+
+  <!-- Corner accent dots -->
+  <circle cx="5" cy="5" r="1.5" fill="#60A5FA">
+    <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="895" cy="5" r="1.5" fill="#34D399">
+    <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="2.1s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="5" cy="51" r="1.5" fill="#A78BFA">
+    <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="895" cy="51" r="1.5" fill="#F472B6">
+    <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+
+  <!-- ─── TAB 1: LANGUAGES (blue) ─── -->
+  <!-- idle base pill -->
+  <rect x="140" y="15" width="90" height="26" rx="13"
+        fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-opacity="0.22" stroke-width="1"/>
+  <!-- active glow burst (pulse) -->
+  <rect x="134" y="9" width="102" height="38" rx="16"
+        fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-opacity="0" stroke-width="2" filter="url(#big-glow)">
+    <animate attributeName="fill-opacity"   values="0;0;0.25;0.1;0;0;0;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.8;0.4;0;0;0;0;0;0"  dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <!-- active filled pill -->
+  <rect x="140" y="15" width="90" height="26" rx="13"
+        fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-opacity="0" stroke-width="1.5" filter="url(#glow-blue)">
+    <animate attributeName="fill-opacity"   values="0;0;0.18;0.08;0;0;0;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;1;0.6;0;0;0;0;0;0"     dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <!-- dim label -->
+  <text x="185" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#60A5FA" fill-opacity="0.4" text-anchor="middle" dominant-baseline="central" letter-spacing="1">LANGUAGES</text>
+  <!-- bright label on activation -->
+  <text x="185" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#60A5FA" fill-opacity="0" text-anchor="middle" dominant-baseline="central" letter-spacing="1" filter="url(#text-glow)">
+    <animate attributeName="fill-opacity" values="0;0;1;0.7;0;0;0;0;0;0" dur="10s" repeatCount="indefinite"/>
     LANGUAGES
   </text>
-  <rect x="284" y="13" width="72" height="24" rx="12"
-        fill="#A78BFA" fill-opacity="0.07" stroke="#A78BFA" stroke-opacity="0.25" stroke-width="1"/>
-  <text x="320" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        fill="#A78BFA" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central"
-        letter-spacing="1">AI / ML</text>
-  <!-- glow overlay -->
-  <rect x="284" y="13" width="72" height="24" rx="12"
-        fill="#A78BFA" stroke="#A78BFA" stroke-width="1.5" stroke-opacity="0" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.200;0.201;0.399;0.400;1" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values="0;0;1;1;0;0" keyTimes="0;0.200;0.201;0.399;0.400;1" dur="5s" repeatCount="indefinite"/>
+
+  <!-- ─── TAB 2: AI / ML (purple) ─── -->
+  <rect x="246" y="15" width="76" height="26" rx="13"
+        fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-opacity="0.22" stroke-width="1"/>
+  <rect x="240" y="9" width="88" height="38" rx="16"
+        fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-opacity="0" stroke-width="2" filter="url(#big-glow)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0.25;0.1;0;0;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;0.8;0.4;0;0;0;0;0"  dur="10s" repeatCount="indefinite"/>
   </rect>
-  <text x="320" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        text-anchor="middle" dominant-baseline="central" letter-spacing="1"
-        fill="#A78BFA" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.200;0.201;0.399;0.400;1" dur="5s" repeatCount="indefinite"/>
+  <rect x="246" y="15" width="76" height="26" rx="13"
+        fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-opacity="0" stroke-width="1.5" filter="url(#glow-purple)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0.18;0.08;0;0;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;1;0.6;0;0;0;0;0"     dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <text x="284" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#A78BFA" fill-opacity="0.4" text-anchor="middle" dominant-baseline="central" letter-spacing="1">AI / ML</text>
+  <text x="284" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#A78BFA" fill-opacity="0" text-anchor="middle" dominant-baseline="central" letter-spacing="1" filter="url(#text-glow)">
+    <animate attributeName="fill-opacity" values="0;0;0;1;0.7;0;0;0;0;0" dur="10s" repeatCount="indefinite"/>
     AI / ML
   </text>
-  <rect x="412" y="13" width="116" height="24" rx="12"
-        fill="#818CF8" fill-opacity="0.07" stroke="#818CF8" stroke-opacity="0.25" stroke-width="1"/>
-  <text x="470" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        fill="#818CF8" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central"
-        letter-spacing="1">LLMs · GEN AI</text>
-  <!-- glow overlay -->
-  <rect x="412" y="13" width="116" height="24" rx="12"
-        fill="#818CF8" stroke="#818CF8" stroke-width="1.5" stroke-opacity="0" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.400;0.401;0.599;0.600;1" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values="0;0;1;1;0;0" keyTimes="0;0.400;0.401;0.599;0.600;1" dur="5s" repeatCount="indefinite"/>
+
+  <!-- ─── TAB 3: LLMs · GEN AI (indigo) ─── -->
+  <rect x="338" y="15" width="120" height="26" rx="13"
+        fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-opacity="0.22" stroke-width="1"/>
+  <rect x="332" y="9" width="132" height="38" rx="16"
+        fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-opacity="0" stroke-width="2" filter="url(#big-glow)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0;0.25;0.1;0;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;0;0.8;0.4;0;0;0;0"  dur="10s" repeatCount="indefinite"/>
   </rect>
-  <text x="470" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        text-anchor="middle" dominant-baseline="central" letter-spacing="1"
-        fill="#818CF8" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.400;0.401;0.599;0.600;1" dur="5s" repeatCount="indefinite"/>
+  <rect x="338" y="15" width="120" height="26" rx="13"
+        fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-opacity="0" stroke-width="1.5" filter="url(#glow-indigo)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0;0.18;0.08;0;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;0;1;0.6;0;0;0;0"     dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <text x="398" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#818CF8" fill-opacity="0.4" text-anchor="middle" dominant-baseline="central" letter-spacing="1">LLMs · GEN AI</text>
+  <text x="398" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#818CF8" fill-opacity="0" text-anchor="middle" dominant-baseline="central" letter-spacing="1" filter="url(#text-glow)">
+    <animate attributeName="fill-opacity" values="0;0;0;0;1;0.7;0;0;0;0" dur="10s" repeatCount="indefinite"/>
     LLMs · GEN AI
   </text>
-  <rect x="575" y="13" width="130" height="24" rx="12"
-        fill="#F472B6" fill-opacity="0.07" stroke="#F472B6" stroke-opacity="0.25" stroke-width="1"/>
-  <text x="640" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        fill="#F472B6" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central"
-        letter-spacing="1">BACKEND · CLOUD</text>
-  <!-- glow overlay -->
-  <rect x="575" y="13" width="130" height="24" rx="12"
-        fill="#F472B6" stroke="#F472B6" stroke-width="1.5" stroke-opacity="0" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.600;0.601;0.799;0.800;1" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values="0;0;1;1;0;0" keyTimes="0;0.600;0.601;0.799;0.800;1" dur="5s" repeatCount="indefinite"/>
+
+  <!-- ─── TAB 4: BACKEND · CLOUD (pink) ─── -->
+  <rect x="474" y="15" width="138" height="26" rx="13"
+        fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-opacity="0.22" stroke-width="1"/>
+  <rect x="468" y="9" width="150" height="38" rx="16"
+        fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-opacity="0" stroke-width="2" filter="url(#big-glow)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0;0;0.25;0.1;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;0;0;0.8;0.4;0;0;0"  dur="10s" repeatCount="indefinite"/>
   </rect>
-  <text x="640" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        text-anchor="middle" dominant-baseline="central" letter-spacing="1"
-        fill="#F472B6" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.600;0.601;0.799;0.800;1" dur="5s" repeatCount="indefinite"/>
+  <rect x="474" y="15" width="138" height="26" rx="13"
+        fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-opacity="0" stroke-width="1.5" filter="url(#glow-pink)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0;0;0.18;0.08;0;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;0;0;1;0.6;0;0;0"     dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <text x="543" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#F472B6" fill-opacity="0.4" text-anchor="middle" dominant-baseline="central" letter-spacing="1">BACKEND · CLOUD</text>
+  <text x="543" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#F472B6" fill-opacity="0" text-anchor="middle" dominant-baseline="central" letter-spacing="1" filter="url(#text-glow)">
+    <animate attributeName="fill-opacity" values="0;0;0;0;0;1;0.7;0;0;0" dur="10s" repeatCount="indefinite"/>
     BACKEND · CLOUD
   </text>
-  <rect x="745" y="13" width="130" height="24" rx="12"
-        fill="#34D399" fill-opacity="0.07" stroke="#34D399" stroke-opacity="0.25" stroke-width="1"/>
-  <text x="810" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        fill="#34D399" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central"
-        letter-spacing="1">FRONTEND · DATA</text>
-  <!-- glow overlay -->
-  <rect x="745" y="13" width="130" height="24" rx="12"
-        fill="#34D399" stroke="#34D399" stroke-width="1.5" stroke-opacity="0" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.800;0.801;0.999;1.000;1" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values="0;0;1;1;0;0" keyTimes="0;0.800;0.801;0.999;1.000;1" dur="5s" repeatCount="indefinite"/>
+
+  <!-- ─── TAB 5: FRONTEND · DATA (green) ─── -->
+  <rect x="628" y="15" width="136" height="26" rx="13"
+        fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-opacity="0.22" stroke-width="1"/>
+  <rect x="622" y="9" width="148" height="38" rx="16"
+        fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-opacity="0" stroke-width="2" filter="url(#big-glow)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0;0;0;0.25;0.1;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;0;0;0;0.8;0.4;0;0"  dur="10s" repeatCount="indefinite"/>
   </rect>
-  <text x="810" y="26" font-family="monospace" font-size="8.5" font-weight="bold"
-        text-anchor="middle" dominant-baseline="central" letter-spacing="1"
-        fill="#34D399" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1;1;0;0" keyTimes="0;0.800;0.801;0.999;1.000;1" dur="5s" repeatCount="indefinite"/>
+  <rect x="628" y="15" width="136" height="26" rx="13"
+        fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-opacity="0" stroke-width="1.5" filter="url(#glow-green)">
+    <animate attributeName="fill-opacity"   values="0;0;0;0;0;0;0.18;0.08;0;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0;0;0;0;1;0.6;0;0"     dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <text x="696" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#34D399" fill-opacity="0.4" text-anchor="middle" dominant-baseline="central" letter-spacing="1">FRONTEND · DATA</text>
+  <text x="696" y="29" font-family="monospace" font-size="8.5" font-weight="bold"
+        fill="#34D399" fill-opacity="0" text-anchor="middle" dominant-baseline="central" letter-spacing="1" filter="url(#text-glow)">
+    <animate attributeName="fill-opacity" values="0;0;0;0;0;0;1;0.7;0;0" dur="10s" repeatCount="indefinite"/>
     FRONTEND · DATA
   </text>
+
+  <!-- ─── Floating particle dots (ambient) ─── -->
+  <g clip-path="url(#card-clip)">
+    <!-- row of tiny particles that drift rightward -->
+    <circle cx="0" cy="8" r="1.2" fill="#60A5FA" opacity="0.6">
+      <animate attributeName="cx" from="0" to="900" dur="7s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="7s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <circle cx="0" cy="48" r="1.2" fill="#34D399" opacity="0.6">
+      <animate attributeName="cx" from="0" to="900" dur="9s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="9s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <circle cx="0" cy="28" r="1.2" fill="#A78BFA" opacity="0.6">
+      <animate attributeName="cx" from="0" to="900" dur="6s" repeatCount="indefinite" begin="3s"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="6s" repeatCount="indefinite" begin="3s"/>
+    </circle>
+    <circle cx="900" cy="15" r="1.2" fill="#F472B6" opacity="0.6">
+      <animate attributeName="cx" from="900" to="0" dur="8s" repeatCount="indefinite" begin="0.8s"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="8s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+    <circle cx="900" cy="40" r="1.2" fill="#818CF8" opacity="0.6">
+      <animate attributeName="cx" from="900" to="0" dur="10s" repeatCount="indefinite" begin="4s"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="10s" repeatCount="indefinite" begin="4s"/>
+    </circle>
+  </g>
+
+  <!-- Electric pulse connector line that runs between tabs -->
+  <line x1="140" y1="28" x2="760" y2="28" stroke="#ffffff" stroke-opacity="0" stroke-width="0.5" stroke-dasharray="4 6">
+    <animate attributeName="stroke-opacity" values="0;0.04;0.12;0.04;0" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1s" repeatCount="indefinite"/>
+  </line>
 </svg>

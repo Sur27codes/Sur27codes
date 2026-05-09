@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="36" viewBox="0 0 420 36">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#34D399" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#34D399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="75" y="4" width="270" height="28" rx="14"
+        fill="#34D399" fill-opacity="0.04" stroke="#34D399" stroke-opacity="0.15" stroke-width="1"/>
+  <rect x="69" y="-1" width="282" height="38" rx="17"
+        fill="none" stroke="#34D399" stroke-width="1.5" filter="url(#glow)">
+    <animate attributeName="stroke-opacity" values="0;0.6;0;0.4;0" dur="3.2s" repeatCount="indefinite" begin="0.9s"/>
+  </rect>
+
+  <text x="78" y="23" font-family="monospace" font-size="13" fill="#34D399" fill-opacity="0.5">⟨</text>
+  <text x="328" y="23" font-family="monospace" font-size="13" fill="#34D399" fill-opacity="0.5">⟩</text>
+
+  <text x="210" y="23" font-family="monospace" font-size="11" font-weight="bold"
+        fill="#34D399" fill-opacity="0.3" text-anchor="middle" dominant-baseline="central" letter-spacing="2">FRONTEND · DATA</text>
+  <text x="210" y="23" font-family="monospace" font-size="11" font-weight="bold"
+        fill="#34D399" text-anchor="middle" dominant-baseline="central" letter-spacing="2" filter="url(#glow)">
+    <animate attributeName="fill-opacity" values="0.9;0.4;0.9;1;0.5;0.9" dur="4.5s" repeatCount="indefinite" begin="0.9s"/>
+    FRONTEND · DATA
+  </text>
+
+  <line x1="0" y1="18" x2="70" y2="18" stroke="url(#line-grad)" stroke-width="1" opacity="0.4"/>
+  <line x1="350" y1="18" x2="420" y2="18" stroke="url(#line-grad)" stroke-width="1" opacity="0.4"/>
+  <circle cx="0" cy="18" r="2" fill="#34D399">
+    <animate attributeName="cx" from="0" to="68" dur="2.4s" repeatCount="indefinite" begin="0.9s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite" begin="0.9s"/>
+  </circle>
+  <circle cx="420" cy="18" r="2" fill="#34D399">
+    <animate attributeName="cx" from="420" to="352" dur="2.4s" repeatCount="indefinite" begin="0.9s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite" begin="0.9s"/>
+  </circle>
+</svg>
