@@ -1,69 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="226" viewBox="0 0 900 226">
   <defs>
-    <filter id="dg" x="-20%" y="-100%" width="140%" height="300%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
+    <filter id="dg" x="-30%" y="-120%" width="160%" height="340%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="900" height="200" rx="10" fill="#060b12"/>
-  <rect x="0.75" y="0.75" width="898.5" height="198.5" rx="9.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
-  <rect x="0.75" y="0.75" width="898.5" height="30" rx="9.5" fill="#0d1520"/>
-  <rect x="0.75" y="20" width="898.5" height="11" fill="#0d1520"/>
+  <rect width="900" height="226" rx="10" fill="#060b12"/>
+  <rect x="0.75" y="0.75" width="898.5" height="224.5" rx="9.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="898.5" height="31" rx="9.5" fill="#0c1422"/>
+  <rect x="0.75" y="21" width="898.5" height="11" fill="#0c1422"/>
   <circle cx="22" cy="16" r="5.5" fill="#FF5F57"/>
   <circle cx="38" cy="16" r="5.5" fill="#FFBD2E"/>
   <circle cx="54" cy="16" r="5.5" fill="#27C93F"/>
-  <text x="450" y="21" text-anchor="middle" font-family="'Courier New',monospace" font-size="10.5" fill="#3d5070">sur@stonybrook — profile</text>
-  <line x1="0" y1="31" x2="900" y2="31" stroke="#1a2438" stroke-width="1"/>
-  <text x="24" y="50" font-family="'Courier New',monospace" font-size="10.5" fill="#34D399" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="0.2s" fill="freeze"/>
+  <text x="450" y="22" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#2d3a52">sur@stonybrook:~ — profile.json</text>
+  <line x1="0" y1="32" x2="900" y2="32" stroke="#1a2438" stroke-width="0.8"/>
+  <rect x="0" y="32" width="900" height="2" fill="#1e3a5e" opacity="0">
+    <animate attributeName="y" from="32" to="228" dur="9.0s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;0;0.06;0.06;0" keyTimes="0;0.02;0.04;0.94;0.98" dur="9.0s" repeatCount="indefinite"/>
+  </rect>
+  <text x="24.0" y="51" font-family="'Courier New',monospace" font-size="10.5" fill="#34D399" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.0222;0.0389;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
     sur@stonybrook ~ % </text>
-  <text x="145.60000000000002" y="50" font-family="'Courier New',monospace" font-size="10.5" fill="#F8FAFC" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="0.2s" fill="freeze"/>
+  <text x="144.8" y="51" font-family="'Courier New',monospace" font-size="10.5" fill="#D0E0F0" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.0222;0.0389;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
     cat profile.json</text>
-  <text x="24" y="67" font-family="'Courier New',monospace" font-size="10.5" fill="#94A3B8" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="0.7s" fill="freeze"/>
+  <text x="24.0" y="68" font-family="'Courier New',monospace" font-size="10.5" fill="#4B5563" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.0611;0.0778;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
     {</text>
-  <text x="24" y="84" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.0s" fill="freeze"/>
-      "role"   :  </text>
-  <text x="113.60000000000001" y="84" font-family="'Courier New',monospace" font-size="10.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.0s" fill="freeze"/>
+  <text x="24.0" y="85" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.0944;0.1111;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+      "name"  :  </text>
+  <text x="106.7" y="85" font-family="'Courier New',monospace" font-size="10.5" fill="#60A5FA" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.0944;0.1111;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+    "Sur Vaghasiya"</text>
+  <text x="24.0" y="102" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.1278;0.1444;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+      "role"  :  </text>
+  <text x="106.7" y="102" font-family="'Courier New',monospace" font-size="10.5" fill="#A78BFA" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.1278;0.1444;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
     "MS Data Science · Stony Brook University"</text>
-  <text x="24" y="101" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.3s" fill="freeze"/>
-      "focus"  :  </text>
-  <text x="113.60000000000001" y="101" font-family="'Courier New',monospace" font-size="10.5" fill="#A78BFA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.3s" fill="freeze"/>
-    "AI/ML  ·  LLMs  ·  RAG  ·  Agentic Workflows"</text>
-  <text x="24" y="118" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.6s" fill="freeze"/>
-      "intern" :  </text>
-  <text x="113.60000000000001" y="118" font-family="'Courier New',monospace" font-size="10.5" fill="#818CF8" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.6s" fill="freeze"/>
-    "Adani Enterprises  ·  Tech Micra"</text>
-  <text x="24" y="135" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.9s" fill="freeze"/>
-      "award"  :  </text>
-  <text x="113.60000000000001" y="135" font-family="'Courier New',monospace" font-size="10.5" fill="#F472B6" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="1.9s" fill="freeze"/>
-    "HackRare 2026 Winner — SAARTHI"</text>
-  <text x="24" y="152" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="2.2s" fill="freeze"/>
-      "open"   :  </text>
-  <text x="113.60000000000001" y="152" font-family="'Courier New',monospace" font-size="10.5" fill="#34D399" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+  <text x="24.0" y="119" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.1667;0.1833;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+      "focus" :  </text>
+  <text x="106.7" y="119" font-family="'Courier New',monospace" font-size="10.5" fill="#818CF8" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.1667;0.1833;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+    "AI/ML · LLMs · RAG · Agentic Workflows · MLOps"</text>
+  <text x="24.0" y="136" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2056;0.2222;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+      "work"  :  </text>
+  <text x="106.7" y="136" font-family="'Courier New',monospace" font-size="10.5" fill="#34D399" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2056;0.2222;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+    "Adani (AI Intern) · Tech Micra (ML) · Shaligram (Web)"</text>
+  <text x="24.0" y="153" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2444;0.2611;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+      "award" :  </text>
+  <text x="106.7" y="153" font-family="'Courier New',monospace" font-size="10.5" fill="#F472B6" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2444;0.2611;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+    "HackRare 2026 Winner  |  AWS Academy ML Certified"</text>
+  <text x="24.0" y="170" font-family="'Courier New',monospace" font-size="10.5" fill="#64748B" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2833;0.3000;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+      "open"  :  </text>
+  <text x="106.7" y="170" font-family="'Courier New',monospace" font-size="10.5" fill="#34D399" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2833;0.3000;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
     true</text>
-  <text x="139.20000000000002" y="152" font-family="'Courier New',monospace" font-size="10.5" fill="#2d3a52" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="2.2s" fill="freeze"/>
-       // available for AI/ML roles</text>
-  <text x="24" y="169" font-family="'Courier New',monospace" font-size="10.5" fill="#94A3B8" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="2.5s" fill="freeze"/>
+  <text x="132.1" y="170" font-family="'Courier New',monospace" font-size="10.5" fill="#334455" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2833;0.3000;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
+       // AI/ML Engineer · Applied Scientist · SWE</text>
+  <text x="24.0" y="187" font-family="'Courier New',monospace" font-size="10.5" fill="#4B5563" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.3222;0.3389;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
     }</text>
-  <text x="24" y="186" font-family="'Courier New',monospace" font-size="10.5" fill="#34D399" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="2.8s" fill="freeze"/>
+  <text x="24.0" y="204" font-family="'Courier New',monospace" font-size="10.5" fill="#34D399" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.3556;0.3722;0.76;0.88;1" dur="9.0s" repeatCount="indefinite"/>
     sur@stonybrook ~ % </text>
-  <rect x="146" y="175" width="6" height="13" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.01;1" dur="0.3s" begin="2.9s" fill="freeze"/>
-    <animate attributeName="opacity" values="0.9;0;0.9;0" dur="1s" begin="3.2s" repeatCount="indefinite"/>
+  <rect x="145" y="193" width="6.5" height="13" fill="#60A5FA" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0;0.9;0;0.9;0;0.9;0;0.9;0;0.9;0;0.9;0;0.9;0;0;0" keyTimes="0.0000;0.3444;0.3667;0.3911;0.4167;0.4411;0.4667;0.4911;0.5167;0.5411;0.5667;0.5911;0.6167;0.6411;0.6667;0.6911;0.7167;0.7411;0.7800;1.0000" dur="9.0s" repeatCount="indefinite"/>
   </rect>
 </svg>

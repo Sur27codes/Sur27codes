@@ -1,359 +1,248 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="298" viewBox="0 0 900 298">
   <defs>
-    <filter id="rg" x="-30%" y="-100%" width="160%" height="300%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+    <filter id="wg" x="-60%" y="-200%" width="220%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="sg" x="-60%" y="-200%" width="220%" height="500%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="lg" x="-5%" y="-200%" width="110%" height="500%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="b"/>
+    <filter id="cg" x="-40%" y="-200%" width="180%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <!-- Background -->
-  <rect width="900" height="400" rx="10" fill="#080d14"/>
-  <rect x="0.75" y="0.75" width="898.5" height="398.5" rx="9.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
-  <!-- Center divider -->
-  <line x1="430" y1="16" x2="430" y2="384" stroke="#1a2438" stroke-width="1"/>
-
-  <!-- ── RADAR CHART ── -->
-  <text x="218" y="16" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#2d3a52" letter-spacing="4">SKILL RADAR</text>
-  <polygon points="218.0,168.4 238.9,177.1 247.6,198.0 238.9,218.9 218.0,227.6 197.1,218.9 188.4,198.0 197.1,177.1" fill="none" stroke="#1e3050" stroke-width="0.8" opacity="0.12"/>
-  <polygon points="218.0,138.8 259.9,156.1 277.2,198.0 259.9,239.9 218.0,257.2 176.1,239.9 158.8,198.0 176.1,156.1" fill="none" stroke="#1e3050" stroke-width="0.8" opacity="0.14"/>
-  <polygon points="218.0,109.2 280.8,135.2 306.8,198.0 280.8,260.8 218.0,286.8 155.2,260.8 129.2,198.0 155.2,135.2" fill="none" stroke="#1e3050" stroke-width="0.8" opacity="0.16"/>
-  <polygon points="218.0,79.6 301.7,114.3 336.4,198.0 301.7,281.7 218.0,316.4 134.3,281.7 99.6,198.0 134.3,114.3" fill="none" stroke="#1e3050" stroke-width="0.8" opacity="0.18"/>
-  <polygon points="218.0,50.0 322.7,93.3 366.0,198.0 322.7,302.7 218.0,346.0 113.3,302.7 70.0,198.0 113.3,93.3" fill="none" stroke="#1e3050" stroke-width="0.8" opacity="0.25"/>
-  <line x1="218" y1="198" x2="218.0" y2="50.0" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <line x1="218" y1="198" x2="322.7" y2="93.3" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <line x1="218" y1="198" x2="366.0" y2="198.0" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <line x1="218" y1="198" x2="322.7" y2="302.7" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <line x1="218" y1="198" x2="218.0" y2="346.0" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <line x1="218" y1="198" x2="113.3" y2="302.7" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <line x1="218" y1="198" x2="70.0" y2="198.0" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <line x1="218" y1="198" x2="113.3" y2="93.3" stroke="#1e3050" stroke-width="0.7" opacity="0.5"/>
-  <!-- Data polygon fill -->
-  <polygon fill="#60A5FA" fill-opacity="0.07" stroke="none">
-    <animate attributeName="points" from="218,198 218,198 218,198 218,198 218,198 218,198 218,198 218,198" to="218.0,57.4 322.7,93.3 348.2,198.0 307.0,287.0 218.0,309.0 132.2,283.8 89.2,198.0 121.7,101.7" dur="1.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-  </polygon>
-  <polygon fill="none" stroke="#60A5FA" stroke-width="1.5" filter="url(#rg)" opacity="0.6">
-    <animate attributeName="points" from="218,198 218,198 218,198 218,198 218,198 218,198 218,198 218,198" to="218.0,57.4 322.7,93.3 348.2,198.0 307.0,287.0 218.0,309.0 132.2,283.8 89.2,198.0 121.7,101.7" dur="1.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="stroke-opacity" values="0.6;0.9;0.6" dur="3s" begin="2.1s" repeatCount="indefinite"/>
-  </polygon>
-  <polygon fill="none" stroke="#A78BFA" stroke-width="0.8" opacity="0">
-    <animate attributeName="points" from="218,198 218,198 218,198 218,198 218,198 218,198 218,198 218,198" to="218.0,74.3 310.1,105.9 332.6,198.0 296.3,276.3 218.0,295.7 142.5,273.5 104.7,198.0 133.3,113.3" dur="1.8s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="opacity" values="0;0;0.35;0.35" keyTimes="0;0.27;0.33;1" dur="2.1s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.35;0.6;0.35" dur="4s" begin="2.3s" repeatCount="indefinite"/>
-  </polygon>
-  <circle cx="218.0" cy="57.4" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.1s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="218.0" cy="57.4" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.1s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.0s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="322.7" cy="93.3" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.2s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="322.7" cy="93.3" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.2s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.1s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="348.2" cy="198.0" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.3s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="348.2" cy="198.0" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.3s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="307.0" cy="287.0" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.4s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="307.0" cy="287.0" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.4s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="218.0" cy="309.0" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.5s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="218.0" cy="309.0" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.5s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="132.2" cy="283.8" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.6s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="132.2" cy="283.8" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.6s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="89.2" cy="198.0" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.7s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="89.2" cy="198.0" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.7s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="121.7" cy="101.7" r="7" fill="#60A5FA" opacity="0" filter="url(#sg)">
-    <animate attributeName="opacity" values="0;0;0.15;0.15" keyTimes="0;0.27;0.33;1" dur="2.8s" begin="0.5s" fill="freeze"/>
-  </circle>
-  <circle cx="121.7" cy="101.7" r="3.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9" keyTimes="0;0.27;0.33;1" dur="2.8s" begin="0.5s" fill="freeze"/>
-    <animate attributeName="r" values="3.5;5;3.5" dur="3s" begin="2.6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="218" cy="198" r="5" fill="#080d14" stroke="#60A5FA" stroke-width="1.2" opacity="0.6"/>
-  <circle cx="218" cy="198" r="2.5" fill="#60A5FA" opacity="0.8"/>
-  <text x="218" y="28" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#60A5FA" opacity="0.85">AI / ML</text>
-  <text x="339" y="77" text-anchor="start" font-family="'Courier New',monospace" font-size="8.5" fill="#A78BFA" opacity="0.85">Python</text>
-  <text x="388" y="206" text-anchor="start" font-family="'Courier New',monospace" font-size="8.5" fill="#F472B6" opacity="0.85">Backend</text>
-  <text x="339" y="325" text-anchor="start" font-family="'Courier New',monospace" font-size="8.5" fill="#34D399" opacity="0.85">MLOps</text>
-  <text x="218" y="374" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#34D399" opacity="0.85">Frontend</text>
-  <text x="97" y="325" text-anchor="end" font-family="'Courier New',monospace" font-size="8.5" fill="#FBBF24" opacity="0.85">Research</text>
-  <text x="48" y="206" text-anchor="end" font-family="'Courier New',monospace" font-size="8.5" fill="#818CF8" opacity="0.85">NLP / CV</text>
-  <text x="97" y="77" text-anchor="end" font-family="'Courier New',monospace" font-size="8.5" fill="#A78BFA" opacity="0.85">LLMs · RAG</text>
-
-  <!-- ── SKILL CHIPS ── -->
-  <text x="660" y="16" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#2d3a52" letter-spacing="4">TECH STACK</text>
-  <rect x="440" y="22" width="118" height="30" rx="5" fill="#60A5FA" fill-opacity="0.08" stroke="#60A5FA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.05s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.55s" repeatCount="indefinite"/>
+  <defs>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#818CF8" stop-opacity="0"/>
+      <stop offset="40%"  stop-color="#60A5FA" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#A78BFA" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="298" rx="10" fill="#080d14"/>
+  <rect x="0.75" y="0.75" width="898.5" height="296.5" rx="9.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
+  <text x="450" y="18" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#2d3a52" letter-spacing="6">TECH  STACK</text>
+  <line x1="30" y1="26" x2="870" y2="26" stroke="#1a2438" stroke-width="0.8"/>
+  <rect x="-50" y="44" width="50" height="188" fill="url(#waveGrad)" opacity="0">
+    <animate attributeName="x" values="-50;950;-50" dur="4.2s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;0;0.18;0.18;0;0" keyTimes="0;0.03;0.07;0.92;0.96;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="42" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.10s" fill="freeze"/>
-    Python</text>
-  <line x1="443" y1="26" x2="443" y2="48" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.05s" fill="freeze"/>
-  </line>
-  <rect x="570" y="22" width="118" height="30" rx="5" fill="#A78BFA" fill-opacity="0.08" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.11s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.61s" repeatCount="indefinite"/>
+  <rect x="12" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="12" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="42" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.16s" fill="freeze"/>
-    PyTorch</text>
-  <line x1="573" y1="26" x2="573" y2="48" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.11s" fill="freeze"/>
-  </line>
-  <rect x="700" y="22" width="118" height="30" rx="5" fill="#818CF8" fill-opacity="0.08" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.17s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.67s" repeatCount="indefinite"/>
+  <text x="69" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">Python</text>
+  <rect x="136" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="136" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="42" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.22s" fill="freeze"/>
-    TensorFlow</text>
-  <line x1="703" y1="26" x2="703" y2="48" stroke="#818CF8" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.17s" fill="freeze"/>
-  </line>
-  <rect x="440" y="63" width="118" height="30" rx="5" fill="#F472B6" fill-opacity="0.08" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.23s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.73s" repeatCount="indefinite"/>
+  <text x="193" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">R</text>
+  <rect x="260" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="260" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="83" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.28s" fill="freeze"/>
-    FastAPI</text>
-  <line x1="443" y1="67" x2="443" y2="89" stroke="#F472B6" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.23s" fill="freeze"/>
-  </line>
-  <rect x="570" y="63" width="118" height="30" rx="5" fill="#60A5FA" fill-opacity="0.08" stroke="#60A5FA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.29s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.79s" repeatCount="indefinite"/>
+  <text x="317" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">TypeScript</text>
+  <rect x="384" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="384" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="83" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.34s" fill="freeze"/>
-    LangChain</text>
-  <line x1="573" y1="67" x2="573" y2="89" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.29s" fill="freeze"/>
-  </line>
-  <rect x="700" y="63" width="118" height="30" rx="5" fill="#A78BFA" fill-opacity="0.08" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.35s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.85s" repeatCount="indefinite"/>
+  <text x="441" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">SQL</text>
+  <rect x="508" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="508" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="83" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.40s" fill="freeze"/>
-    FAISS</text>
-  <line x1="703" y1="67" x2="703" y2="89" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.35s" fill="freeze"/>
-  </line>
-  <rect x="440" y="104" width="118" height="30" rx="5" fill="#34D399" fill-opacity="0.08" stroke="#34D399" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.41s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.91s" repeatCount="indefinite"/>
+  <text x="565" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">JavaScript</text>
+  <rect x="632" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="632" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="124" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.46s" fill="freeze"/>
-    React</text>
-  <line x1="443" y1="108" x2="443" y2="130" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.41s" fill="freeze"/>
-  </line>
-  <rect x="570" y="104" width="118" height="30" rx="5" fill="#818CF8" fill-opacity="0.08" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.47s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.97s" repeatCount="indefinite"/>
+  <text x="689" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">Solidity</text>
+  <rect x="756" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0.06" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="756" y="48" width="115" height="28" rx="5" fill="#60A5FA" fill-opacity="0" stroke="#60A5FA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="124" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.52s" fill="freeze"/>
-    Scikit-learn</text>
-  <line x1="573" y1="108" x2="573" y2="130" stroke="#818CF8" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.47s" fill="freeze"/>
-  </line>
-  <rect x="700" y="104" width="118" height="30" rx="5" fill="#60A5FA" fill-opacity="0.08" stroke="#60A5FA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.53s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.03s" repeatCount="indefinite"/>
+  <text x="813" y="67" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0.85">C++</text>
+  <rect x="12" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="12" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="124" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.58s" fill="freeze"/>
-    OpenAI API</text>
-  <line x1="703" y1="108" x2="703" y2="130" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.53s" fill="freeze"/>
-  </line>
-  <rect x="440" y="145" width="118" height="30" rx="5" fill="#34D399" fill-opacity="0.08" stroke="#34D399" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.59s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.09s" repeatCount="indefinite"/>
+  <text x="69" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">PyTorch</text>
+  <rect x="136" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="136" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="165" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.64s" fill="freeze"/>
-    Next.js</text>
-  <line x1="443" y1="149" x2="443" y2="171" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.59s" fill="freeze"/>
-  </line>
-  <rect x="570" y="145" width="118" height="30" rx="5" fill="#A78BFA" fill-opacity="0.08" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.65s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.15s" repeatCount="indefinite"/>
+  <text x="193" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">TensorFlow</text>
+  <rect x="260" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="260" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="165" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.70s" fill="freeze"/>
-    XGBoost</text>
-  <line x1="573" y1="149" x2="573" y2="171" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.65s" fill="freeze"/>
-  </line>
-  <rect x="700" y="145" width="118" height="30" rx="5" fill="#F472B6" fill-opacity="0.08" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.71s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.21s" repeatCount="indefinite"/>
+  <text x="317" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">Scikit-learn</text>
+  <rect x="384" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="384" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="165" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.76s" fill="freeze"/>
-    Docker</text>
-  <line x1="703" y1="149" x2="703" y2="171" stroke="#F472B6" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.71s" fill="freeze"/>
-  </line>
-  <rect x="440" y="186" width="118" height="30" rx="5" fill="#60A5FA" fill-opacity="0.08" stroke="#60A5FA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.77s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.27s" repeatCount="indefinite"/>
+  <text x="441" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">XGBoost</text>
+  <rect x="508" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="508" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="206" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.82s" fill="freeze"/>
-    TypeScript</text>
-  <line x1="443" y1="190" x2="443" y2="212" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.77s" fill="freeze"/>
-  </line>
-  <rect x="570" y="186" width="118" height="30" rx="5" fill="#818CF8" fill-opacity="0.08" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.83s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.33s" repeatCount="indefinite"/>
+  <text x="565" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">FAISS</text>
+  <rect x="632" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="632" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="206" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.88s" fill="freeze"/>
-    HuggingFace</text>
-  <line x1="573" y1="190" x2="573" y2="212" stroke="#818CF8" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.83s" fill="freeze"/>
-  </line>
-  <rect x="700" y="186" width="118" height="30" rx="5" fill="#F472B6" fill-opacity="0.08" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.89s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.39s" repeatCount="indefinite"/>
+  <text x="689" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">Keras</text>
+  <rect x="756" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0.06" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="756" y="84" width="115" height="28" rx="5" fill="#A78BFA" fill-opacity="0" stroke="#A78BFA" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="206" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="0.94s" fill="freeze"/>
-    AWS</text>
-  <line x1="703" y1="190" x2="703" y2="212" stroke="#F472B6" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.89s" fill="freeze"/>
-  </line>
-  <rect x="440" y="227" width="118" height="30" rx="5" fill="#34D399" fill-opacity="0.08" stroke="#34D399" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="0.95s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.45s" repeatCount="indefinite"/>
+  <text x="813" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0.85">YOLOv5</text>
+  <rect x="12" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="12" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="247" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.00s" fill="freeze"/>
-    SQL</text>
-  <line x1="443" y1="231" x2="443" y2="253" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="0.95s" fill="freeze"/>
-  </line>
-  <rect x="570" y="227" width="118" height="30" rx="5" fill="#FBBF24" fill-opacity="0.08" stroke="#FBBF24" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.01s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.51s" repeatCount="indefinite"/>
+  <text x="69" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">LangChain</text>
+  <rect x="136" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="136" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="247" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#FBBF24" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.06s" fill="freeze"/>
-    MLflow</text>
-  <line x1="573" y1="231" x2="573" y2="253" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.01s" fill="freeze"/>
-  </line>
-  <rect x="700" y="227" width="118" height="30" rx="5" fill="#F472B6" fill-opacity="0.08" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.07s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.57s" repeatCount="indefinite"/>
+  <text x="193" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">HuggingFace</text>
+  <rect x="260" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="260" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="247" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.12s" fill="freeze"/>
-    Redis</text>
-  <line x1="703" y1="231" x2="703" y2="253" stroke="#F472B6" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.07s" fill="freeze"/>
-  </line>
-  <rect x="440" y="268" width="118" height="30" rx="5" fill="#60A5FA" fill-opacity="0.08" stroke="#60A5FA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.13s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.63s" repeatCount="indefinite"/>
+  <text x="317" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">GPT-4o</text>
+  <rect x="384" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="384" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="288" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#60A5FA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.18s" fill="freeze"/>
-    R lang</text>
-  <line x1="443" y1="272" x2="443" y2="294" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.13s" fill="freeze"/>
-  </line>
-  <rect x="570" y="268" width="118" height="30" rx="5" fill="#A78BFA" fill-opacity="0.08" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.19s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.69s" repeatCount="indefinite"/>
+  <text x="441" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">Claude</text>
+  <rect x="508" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="508" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="288" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.24s" fill="freeze"/>
-    Groq</text>
-  <line x1="573" y1="272" x2="573" y2="294" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.19s" fill="freeze"/>
-  </line>
-  <rect x="700" y="268" width="118" height="30" rx="5" fill="#34D399" fill-opacity="0.08" stroke="#34D399" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.25s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.75s" repeatCount="indefinite"/>
+  <text x="565" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">Groq</text>
+  <rect x="632" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="632" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="288" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.30s" fill="freeze"/>
-    PostgreSQL</text>
-  <line x1="703" y1="272" x2="703" y2="294" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.25s" fill="freeze"/>
-  </line>
-  <rect x="440" y="309" width="118" height="30" rx="5" fill="#818CF8" fill-opacity="0.08" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.31s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.81s" repeatCount="indefinite"/>
+  <text x="689" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">DALL-E 3</text>
+  <rect x="756" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0.06" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="756" y="120" width="115" height="28" rx="5" fill="#818CF8" fill-opacity="0" stroke="#818CF8" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="499" y="329" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.36s" fill="freeze"/>
-    Streamlit</text>
-  <line x1="443" y1="313" x2="443" y2="335" stroke="#818CF8" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.31s" fill="freeze"/>
-  </line>
-  <rect x="570" y="309" width="118" height="30" rx="5" fill="#F472B6" fill-opacity="0.08" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.37s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.87s" repeatCount="indefinite"/>
+  <text x="813" y="139" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#818CF8" opacity="0.85">FastMCP</text>
+  <rect x="12" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="12" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="629" y="329" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.42s" fill="freeze"/>
-    Pydantic v2</text>
-  <line x1="573" y1="313" x2="573" y2="335" stroke="#F472B6" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.37s" fill="freeze"/>
-  </line>
-  <rect x="700" y="309" width="118" height="30" rx="5" fill="#A78BFA" fill-opacity="0.08" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="0.4s" begin="1.43s" fill="freeze"/>
-    <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3.5s" begin="1.93s" repeatCount="indefinite"/>
+  <text x="69" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">FastAPI</text>
+  <rect x="136" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="136" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="759" y="329" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#A78BFA" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.05;1" dur="0.4s" begin="1.48s" fill="freeze"/>
-    Claude</text>
-  <line x1="703" y1="313" x2="703" y2="335" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0.6" keyTimes="0;0.05;1" dur="0.4s" begin="1.43s" fill="freeze"/>
-  </line>
+  <text x="193" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">Flask</text>
+  <rect x="260" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="260" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="317" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">Docker</text>
+  <rect x="384" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="384" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="441" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">AWS</text>
+  <rect x="508" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="508" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="565" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">Redis</text>
+  <rect x="632" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="632" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="689" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">PostgreSQL</text>
+  <rect x="756" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="756" y="156" width="115" height="28" rx="5" fill="#F472B6" fill-opacity="0" stroke="#F472B6" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="813" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#F472B6" opacity="0.85">WebSocket</text>
+  <rect x="12" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="12" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.0266;0.0552;0.1075;0.1861;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="69" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">React</text>
+  <rect x="136" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="136" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.1250;0.1536;0.2060;0.2845;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="193" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">Next.js</text>
+  <rect x="260" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="260" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.2234;0.2520;0.3044;0.3829;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="317" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">Tailwind</text>
+  <rect x="384" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="384" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.3218;0.3504;0.4028;0.4813;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="441" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">Streamlit</text>
+  <rect x="508" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="508" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.4202;0.4488;0.5012;0.5798;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="565" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">MLflow</text>
+  <rect x="632" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="632" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.5187;0.5472;0.5996;0.6782;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="689" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">PySpark</text>
+  <rect x="756" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0.06" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="756" y="192" width="115" height="28" rx="5" fill="#34D399" fill-opacity="0" stroke="#34D399" stroke-width="2.5" stroke-opacity="0" filter="url(#cg)">
+    <animate attributeName="fill-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.55;0.25;0;0" keyTimes="0;0.6171;0.6456;0.6980;0.7766;1" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="813" y="211" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#34D399" opacity="0.85">ARIMA</text>
+  <circle cx="110" cy="276" r="4" fill="#60A5FA" opacity="0.65"/>
+  <text x="118" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#60A5FA" opacity="0.65">Languages</text>
+  <circle cx="260" cy="276" r="4" fill="#A78BFA" opacity="0.65"/>
+  <text x="268" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#A78BFA" opacity="0.65">AI / ML Core</text>
+  <circle cx="410" cy="276" r="4" fill="#818CF8" opacity="0.65"/>
+  <text x="418" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#818CF8" opacity="0.65">LLMs · Gen AI</text>
+  <circle cx="560" cy="276" r="4" fill="#F472B6" opacity="0.65"/>
+  <text x="568" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#F472B6" opacity="0.65">Backend · Cloud</text>
+  <circle cx="710" cy="276" r="4" fill="#34D399" opacity="0.65"/>
+  <text x="718" y="280" font-family="'Courier New',monospace" font-size="8.5" fill="#34D399" opacity="0.65">Frontend · Data</text>
 </svg>
