@@ -1,131 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="168" viewBox="0 0 900 168">
   <defs>
-    <filter id="numGlow" x="-20%" y="-60%" width="140%" height="220%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+    <filter id="ng" x="-25%" y="-80%" width="150%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="lineGlow" x="-5%" y="-400%" width="110%" height="900%">
+    <filter id="tg" x="-8%" y="-200%" width="116%" height="500%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="900" height="160" rx="10" fill="#080d14"/>
-  <rect x="0.75" y="0.75" width="898.5" height="158.5" rx="9.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
-
-  <!-- Column dividers -->
-  <line x1="180" y1="24" x2="180" y2="136" stroke="#1a2438" stroke-width="1"/>
-  <line x1="360" y1="24" x2="360" y2="136" stroke="#1a2438" stroke-width="1"/>
-  <line x1="540" y1="24" x2="540" y2="136" stroke="#1a2438" stroke-width="1"/>
-  <line x1="720" y1="24" x2="720" y2="136" stroke="#1a2438" stroke-width="1"/>
-
-  <!-- ── METRIC 1: 5 Projects Deployed — blue #60A5FA ── cx=90 -->
-  <!-- Animated top accent line -->
-  <line x1="20" y1="4" x2="20" y2="4" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" filter="url(#lineGlow)">
-    <animate attributeName="x2" values="20;160;160;20" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="0s"
-             calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
+  <rect width="900" height="168" rx="10" fill="#080d14"/>
+  <rect x="0.75" y="0.75" width="898.5" height="166.5" rx="9.5" fill="none" stroke="#1a2438" stroke-width="1.5"/>
+  <text x="450" y="17" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#2d3a52" letter-spacing="5">KEY  METRICS</text>
+  <line x1="30" y1="24" x2="870" y2="24" stroke="#1a2438" stroke-width="0.7"/>
+  <line x1="18" y1="5" x2="18" y2="5" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" filter="url(#tg)">
+    <animate attributeName="x2" values="18;162;162;18" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="0.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
   </line>
-  <!-- Number -->
-  <text x="90" y="76" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="44" font-weight="bold" fill="#F8FAFC" filter="url(#numGlow)" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="0s"/>
-    5
-  </text>
-  <!-- Label -->
-  <text x="90" y="96" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="10" fill="#60A5FA" letter-spacing="1.5" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="0s"/>
-    DEPLOYED
-  </text>
-  <!-- Sub-label -->
-  <text x="90" y="116" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="9.5" fill="#4A5568" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="0s"/>
-    AI Systems
-  </text>
-
-  <!-- ── METRIC 2: 33% Accuracy Gain — purple #A78BFA ── cx=270 -->
-  <line x1="200" y1="4" x2="200" y2="4" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round" filter="url(#lineGlow)">
-    <animate attributeName="x2" values="200;340;340;200" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="1s"
-             calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
+  <text x="90" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-size="42" font-weight="bold" fill="#F0F6FF" filter="url(#ng)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="0.0s"/>
+    5</text>
+  <text x="90" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#60A5FA" letter-spacing="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="0.0s"/>
+    PROJECTS</text>
+  <text x="90" y="122" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#3a4a60" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="0.0s"/>
+    AI Systems Built</text>
+  <path d="M 28.0,32 L 10.0,32 L 10.0,46" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.25"/>
+  <path d="M 152.0,156 L 170.0,156 L 170.0,142" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.25"/>
+  <line x1="180" y1="28" x2="180" y2="156" stroke="#1a2438" stroke-width="0.8"/>
+  <line x1="198" y1="5" x2="198" y2="5" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round" filter="url(#tg)">
+    <animate attributeName="x2" values="198;342;342;198" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="1.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
   </line>
-  <text x="270" y="76" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="36" font-weight="bold" fill="#F8FAFC" filter="url(#numGlow)" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="1s"/>
-    33%
-  </text>
-  <text x="270" y="96" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="10" fill="#A78BFA" letter-spacing="1.5" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="1s"/>
-    ACCURACY
-  </text>
-  <text x="270" y="116" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="9.5" fill="#4A5568" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="1s"/>
-    Gain · InsightX
-  </text>
-
-  <!-- ── METRIC 3: 7.5× Latency — emerald #34D399 ── cx=450 -->
-  <line x1="380" y1="4" x2="380" y2="4" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" filter="url(#lineGlow)">
-    <animate attributeName="x2" values="380;520;520;380" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="2s"
-             calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
+  <text x="270" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-size="42" font-weight="bold" fill="#F0F6FF" filter="url(#ng)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="1.0s"/>
+    33%</text>
+  <text x="270" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#A78BFA" letter-spacing="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="1.0s"/>
+    ACCURACY</text>
+  <text x="270" y="122" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#3a4a60" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="1.0s"/>
+    Gain · InsightX</text>
+  <path d="M 208.0,32 L 190.0,32 L 190.0,46" fill="none" stroke="#A78BFA" stroke-width="0.8" opacity="0.25"/>
+  <path d="M 332.0,156 L 350.0,156 L 350.0,142" fill="none" stroke="#A78BFA" stroke-width="0.8" opacity="0.25"/>
+  <line x1="360" y1="28" x2="360" y2="156" stroke="#1a2438" stroke-width="0.8"/>
+  <line x1="378" y1="5" x2="378" y2="5" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" filter="url(#tg)">
+    <animate attributeName="x2" values="378;522;522;378" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="2.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
   </line>
-  <text x="450" y="76" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="36" font-weight="bold" fill="#F8FAFC" filter="url(#numGlow)" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="2s"/>
-    7.5×
-  </text>
-  <text x="450" y="96" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="10" fill="#34D399" letter-spacing="1.5" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="2s"/>
-    STT SPEED
-  </text>
-  <text x="450" y="116" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="9.5" fill="#4A5568" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="2s"/>
-    Groq LPU
-  </text>
-
-  <!-- ── METRIC 4: 16 Agentic Tools — pink #F472B6 ── cx=630 -->
-  <line x1="560" y1="4" x2="560" y2="4" stroke="#F472B6" stroke-width="2.5" stroke-linecap="round" filter="url(#lineGlow)">
-    <animate attributeName="x2" values="560;700;700;560" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="3s"
-             calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
+  <text x="450" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-size="32" font-weight="bold" fill="#F0F6FF" filter="url(#ng)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="2.0s"/>
+    7.5×</text>
+  <text x="450" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#34D399" letter-spacing="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="2.0s"/>
+    STT SPEED</text>
+  <text x="450" y="122" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#3a4a60" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="2.0s"/>
+    Groq LPU · EchoMind</text>
+  <path d="M 388.0,32 L 370.0,32 L 370.0,46" fill="none" stroke="#34D399" stroke-width="0.8" opacity="0.25"/>
+  <path d="M 512.0,156 L 530.0,156 L 530.0,142" fill="none" stroke="#34D399" stroke-width="0.8" opacity="0.25"/>
+  <line x1="540" y1="28" x2="540" y2="156" stroke="#1a2438" stroke-width="0.8"/>
+  <line x1="558" y1="5" x2="558" y2="5" stroke="#F472B6" stroke-width="2.5" stroke-linecap="round" filter="url(#tg)">
+    <animate attributeName="x2" values="558;702;702;558" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="3.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
   </line>
-  <text x="630" y="76" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="44" font-weight="bold" fill="#F8FAFC" filter="url(#numGlow)" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="3s"/>
-    16
-  </text>
-  <text x="630" y="96" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="10" fill="#F472B6" letter-spacing="1.5" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="3s"/>
-    LIVE TOOLS
-  </text>
-  <text x="630" y="116" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="9.5" fill="#4A5568" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="3s"/>
-    EchoMindAI
-  </text>
-
-  <!-- ── METRIC 5: 300% Engagement — amber #FBBF24 ── cx=810 -->
-  <line x1="740" y1="4" x2="740" y2="4" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" filter="url(#lineGlow)">
-    <animate attributeName="x2" values="740;880;880;740" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="4s"
-             calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
+  <text x="630" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-size="42" font-weight="bold" fill="#F0F6FF" filter="url(#ng)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="3.0s"/>
+    16</text>
+  <text x="630" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#F472B6" letter-spacing="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="3.0s"/>
+    LIVE TOOLS</text>
+  <text x="630" y="122" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#3a4a60" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="3.0s"/>
+    EchoMindAI Agents</text>
+  <path d="M 568.0,32 L 550.0,32 L 550.0,46" fill="none" stroke="#F472B6" stroke-width="0.8" opacity="0.25"/>
+  <path d="M 692.0,156 L 710.0,156 L 710.0,142" fill="none" stroke="#F472B6" stroke-width="0.8" opacity="0.25"/>
+  <line x1="720" y1="28" x2="720" y2="156" stroke="#1a2438" stroke-width="0.8"/>
+  <line x1="738" y1="5" x2="738" y2="5" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" filter="url(#tg)">
+    <animate attributeName="x2" values="738;882;882;738" keyTimes="0;0.25;0.85;1" dur="6s" repeatCount="indefinite" begin="4.0s" calcMode="spline" keySplines="0.4 0 0.2 1;0;0;0.4 0 0.2 1"/>
   </line>
-  <text x="810" y="72" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="32" font-weight="bold" fill="#F8FAFC" filter="url(#numGlow)" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="4s"/>
-    300%
-  </text>
-  <text x="810" y="96" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="10" fill="#FBBF24" letter-spacing="1.5" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="4s"/>
-    ENGAGEMENT
-  </text>
-  <text x="810" y="116" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="9.5" fill="#4A5568" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="4s"/>
-    Lift
-  </text>
+  <text x="810" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-size="32" font-weight="bold" fill="#F0F6FF" filter="url(#ng)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.22;0.28;0.85;0.9" dur="6s" repeatCount="indefinite" begin="4.0s"/>
+    300%</text>
+  <text x="810" y="103" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#FBBF24" letter-spacing="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.24;0.3;0.85;0.9" dur="6s" repeatCount="indefinite" begin="4.0s"/>
+    ENGAGEMENT</text>
+  <text x="810" y="122" text-anchor="middle" font-family="'Courier New',monospace" font-size="9.5" fill="#3a4a60" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.85;0.85;0" keyTimes="0;0.26;0.32;0.85;0.9" dur="6s" repeatCount="indefinite" begin="4.0s"/>
+    Lift via RAG Cache</text>
+  <path d="M 748.0,32 L 730.0,32 L 730.0,46" fill="none" stroke="#FBBF24" stroke-width="0.8" opacity="0.25"/>
+  <path d="M 872.0,156 L 890.0,156 L 890.0,142" fill="none" stroke="#FBBF24" stroke-width="0.8" opacity="0.25"/>
 </svg>

@@ -8,8 +8,6 @@
 
 </div>
 
-<br/>
-
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sur-vaghasiya-031ab9283)
@@ -25,55 +23,48 @@
 <br/>
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/about.svg" width="100%" alt="Sur Vaghasiya profile terminal"/>
+</div>
+
+<br/>
+
 ## About
 
-I'm a Data Science graduate student at Stony Brook University focused on building practical AI systems — platforms where machine learning, LLMs, APIs, cloud infrastructure, and user experience converge into something reliable and usable.
+Data Science grad student at Stony Brook University building practical AI systems where machine learning, LLMs, cloud infrastructure, and user experience converge into something real and usable. Interned at Adani Enterprises, Tech Micra, and Shaligram Infotech — forecasting pipelines, ML deployment, full-stack apps. Recent projects span production RAG systems, voice AI, real-time forecasting, geospatial ML, and Web3.
 
-Across internships at Adani Enterprises, Tech Micra, and Shaligram Infotech, I've worked on forecasting pipelines, ML model development, cloud deployment, and full-stack web applications. My recent projects span production RAG systems, voice AI, real-time forecasting, geospatial ML, and Web3.
+<br/>
 
-I'm drawn to teams who care about curiosity, clarity, and meaningful engineering. If you're building at the intersection of software, data, and machine intelligence — let's connect.
+<div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/stats.svg" width="100%" alt="Key Metrics"/>
+</div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
 ## Skills
 
 <div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills.svg" width="100%" alt="Skill Radar & Tech Stack"/>
+</div>
 
-**Languages**
+<br/>
+
+<div align="center">
 
 [![Languages](https://skillicons.dev/icons?i=python,r,js,ts,java,cpp&theme=dark)](https://skillicons.dev)
 
-<br/>
-
-**AI · ML · Data**
-
 [![AI ML](https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn&theme=dark)](https://skillicons.dev)
-
 &nbsp;
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-
-<br/>
-
-**Backend · Cloud · Infrastructure**
 
 [![Backend](https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark)](https://skillicons.dev)
 
-<br/>
-
-**Frontend · Web3**
-
 [![Frontend](https://skillicons.dev/icons?i=react,nextjs,tailwind,solidity&theme=dark)](https://skillicons.dev)
-
 &nbsp;
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
-![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square&logo=hardhat&logoColor=black)
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 
 </div>
@@ -100,10 +91,10 @@ I'm drawn to teams who care about curiosity, clarity, and meaningful engineering
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## GitHub Activity
+## Neural Architecture
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Contribution Activity"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Neural Network Activity"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
@@ -120,7 +111,7 @@ I'm drawn to teams who care about curiosity, clarity, and meaningful engineering
 
 <br/>
 
-*If you're building something ambitious at the intersection of software, data, and machine intelligence — I'd be glad to connect.*
+*Building at the intersection of software, data, and machine intelligence — let's connect.*
 
 </div>
 
