@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2400&pause=700&color=7B9EFF&center=true&vCenter=true&width=720&lines=Building+LLMs+%26+RAG+Systems+from+scratch+%F0%9F%A4%96;Turning+coffee+into+deployed+AI+%E2%98%95+%E2%86%92+%F0%9F%9A%80;Voice+AI+%7C+Agentic+Workflows+%7C+FastMCP+%F0%9F%94%A5;Real-Time+ML+%7C+33%25+accuracy+gains+%7C+MLOps+%F0%9F%93%88;FastAPI+%7C+Next.js+%7C+Docker+%7C+AWS+%E2%9A%A1;MS+Data+Science+%40+Stony+Brook+%F0%9F%8E%93;Open+to+AI%2FML+Engineer+%26+Applied+Scientist+roles+%E2%9C%A8)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2200&pause=650&color=7B9EFF&center=true&vCenter=true&width=760&lines=Building+LLMs+%26+RAG+Systems+from+scratch+%F0%9F%A4%96;Voice+AI+·+Agentic+Workflows+·+FastMCP+%F0%9F%94%A5;Real-Time+ML+%7C+33%25+accuracy+gains+%7C+MLOps+%F0%9F%93%88;FastAPI+%7C+Next.js+%7C+Docker+%7C+AWS+%E2%9A%A1;MS+Data+Science+%40+Stony+Brook+%F0%9F%8E%93;Turning+coffee+into+deployed+AI+%E2%98%95+%E2%86%92+%F0%9F%9A%80;Open+to+AI%2FML+Engineer+%26+Applied+Scientist+roles+%E2%9C%A8)](https://git.io/typing-svg)
 
 </div>
 
@@ -19,7 +19,7 @@
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 <div align="center">
 
@@ -37,7 +37,7 @@
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 <div align="center">
 
@@ -57,7 +57,7 @@ $ whoami
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## ⚡ What I Build
 
@@ -96,7 +96,7 @@ Solidity smart contracts · Ethereum Sepolia · ethers.js · Cloudflare Workers 
 </tr>
 </table>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## 🛸 Active Missions
 
@@ -189,19 +189,24 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 </tr>
 </table>
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
+
+## 🕹️ GAME ROOM — Challenge the Bot
+
+> **GitHub-powered mini-games.** Click a button → issue opens → bot plays instantly → scores update live!<br/>
+> No login needed beyond your GitHub account. Issues auto-close after each round.
+
 ---
 
-## 🎮 Challenge My Bot — Rock Paper Scissors!
-
-> 🤖 **How it works:** Click your move below → GitHub opens an issue → my bot picks a move → Action runs → scoreboard updates automatically. **No signup needed — just click!**
+### 🤜 Rock Paper Scissors — Can You Beat the Bot?
 
 <div align="center">
 
-[![🪨 ROCK](https://img.shields.io/badge/🪨__THROW__ROCK-555555?style=for-the-badge&logoColor=white)](https://github.com/Sur27codes/Sur27codes/issues/new?title=rps%7Crock&labels=rps&body=I+choose+Rock+🪨%21+Let%27s+play%21)
+[![🪨 THROW ROCK](https://img.shields.io/badge/🪨%20%20THROW%20ROCK-1a1a3e?style=for-the-badge&logoColor=white&labelColor=1a1a3e)](https://github.com/Sur27codes/Sur27codes/issues/new?title=rps%7Crock&labels=rps&body=I+choose+Rock+🪨!+Let%27s+play!)
 &nbsp;&nbsp;
-[![📄 PAPER](https://img.shields.io/badge/📄__THROW__PAPER-1a5276?style=for-the-badge&logoColor=white)](https://github.com/Sur27codes/Sur27codes/issues/new?title=rps%7Cpaper&labels=rps&body=I+choose+Paper+📄%21+Let%27s+play%21)
+[![📄 THROW PAPER](https://img.shields.io/badge/📄%20%20THROW%20PAPER-0d2137?style=for-the-badge&logoColor=white&labelColor=0d2137)](https://github.com/Sur27codes/Sur27codes/issues/new?title=rps%7Cpaper&labels=rps&body=I+choose+Paper+📄!+Let%27s+play!)
 &nbsp;&nbsp;
-[![✂️ SCISSORS](https://img.shields.io/badge/✂️__THROW__SCISSORS-6c3483?style=for-the-badge&logoColor=white)](https://github.com/Sur27codes/Sur27codes/issues/new?title=rps%7Cscissors&labels=rps&body=I+choose+Scissors+✂️%21+Let%27s+play%21)
+[![✂️ THROW SCISSORS](https://img.shields.io/badge/✂️%20%20THROW%20SCISSORS-1f0d37?style=for-the-badge&logoColor=white&labelColor=1f0d37)](https://github.com/Sur27codes/Sur27codes/issues/new?title=rps%7Cscissors&labels=rps&body=I+choose+Scissors+✂️!+Let%27s+play!)
 
 </div>
 
@@ -215,6 +220,24 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 
 ---
 
+### 🎲 Lucky Dice Roll Challenge
+
+<div align="center">
+
+[![🎲 ROLL THE DICE](https://img.shields.io/badge/🎲%20%20ROLL%20THE%20DICE-1a2e1a?style=for-the-badge&logoColor=white&labelColor=1a2e1a)](https://github.com/Sur27codes/Sur27codes/issues/new?title=dice%7Croll&labels=dice&body=Rolling+the+dice+🎲+Let%27s+see+what+fate+has+in+store!)
+
+</div>
+
+<!-- DICE_BOARD_START -->
+| ⚀ 1 | ⚁ 2 | ⚂ 3 | ⚃ 4 | ⚄ 5 | ⚅ 6 | 🎲 Total |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **0** | **0** | **0** | **0** | **0** | **0** | **0** |
+
+> 🎲 *No rolls yet — be the first to test your luck!*
+<!-- DICE_BOARD_END -->
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
+
 ## 🏆 Trophies
 
 <div align="center">
@@ -223,7 +246,7 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## 📊 Mission Analytics
 
@@ -256,7 +279,7 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## 🌐 3D Contribution Calendar
 
@@ -264,7 +287,7 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph"/>
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## 🐍 Contribution Snake
 
@@ -272,7 +295,7 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake"/>
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## 🛠️ Skill Matrix
 
@@ -290,18 +313,17 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 
 **AI / ML**
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI_GPT--4o-412991?style=flat-square&logo=openai&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
 
 **Backend & Infrastructure**
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000?style=flat-square&logo=flask&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
@@ -317,17 +339,17 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 ![Framer](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## ⚔️ Combat Record
 
-| Role | Company | Period | Kills (Impact) |
-|------|---------|--------|----------------|
+| Role | Company | Period | Impact |
+|------|---------|--------|--------|
 | **Data Science & AI Intern** | Adani Enterprise Ltd. | Jan 2025 – Jul 2025 | Forecasting engine **78% accuracy** · analysis time **↓34%** · deployment **↓44%** · overhead **↓37%** |
 | **Python ML Intern** | Tech Micra | Jun 2024 – Jul 2024 | Interpretability **↑42%** · overfitting **↓35%** · generalization **↑27%** across 43+ commits |
 | **Web Dev Intern** | Shaligram Infotech | Jun 2023 – Jul 2023 | Load efficiency **↑48%** · client satisfaction **↑45%** |
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## 🎓 Clearance Level
 
@@ -356,7 +378,7 @@ DBSCAN + Haversine → **12 crash hotspot clusters** &nbsp;·&nbsp; FAMD + k-Mea
 </tr>
 </table>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,3&height=3&section=header" width="100%"/>
 
 ## 📡 Establish Contact
 

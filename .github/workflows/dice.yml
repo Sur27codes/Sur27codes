@@ -1,0 +1,71 @@
+name: 🎲 Dice Roll Bot
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  roll:
+    if: startsWith(github.event.issue.title, 'dice|')
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Roll the Dice
+        id: roll
+        run: |
+          output=$(python3 .github/scripts/dice.py "${{ github.event.issue.title }}" "${{ github.event.issue.user.login }}")
+          echo "output=$output" >> $GITHUB_OUTPUT
+
+      - name: Commit roll result
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "Dice Bot 🎲"
+          git add README.md dice_stats.json
+          git diff --staged --quiet || git commit -m "🎲 Dice roll update"
+          git pull --rebase origin main
+          git push
+
+      - name: Comment and close issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const raw = `${{ steps.roll.outputs.output }}`;
+            const map = {};
+            raw.split('|').forEach(p => {
+              const idx = p.indexOf(':');
+              if (idx !== -1) map[p.slice(0,idx)] = p.slice(idx+1);
+            });
+
+            const bars = ['▒░░░░░','▒▒░░░░','▒▒▒░░░','▒▒▒▒░░','▒▒▒▒▒░','▒▒▒▒▒▒'];
+            const bar  = bars[(parseInt(map.RESULT) || 1) - 1];
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                `## 🎲 You Rolled ${map.EMOJI} — **${map.RESULT}** out of 6!`,
+                ``,
+                `\`\`\``,
+                `  Power: [${bar}] ${map.RESULT}/6`,
+                `\`\`\``,
+                ``,
+                `${map.MSG}`,
+                ``,
+                `[🎯 See the full roll history →](https://github.com/Sur27codes/Sur27codes#-lucky-dice-roll-challenge)`
+              ].join('\n')
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });
