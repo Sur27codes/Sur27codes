@@ -36,12 +36,6 @@ My stack includes Python, R, SQL, Java, C++, C, JavaScript, TypeScript, TensorFl
 
 I'm drawn to people and teams who care about curiosity, clarity, ownership, and meaningful engineering. If you're building something ambitious at the intersection of software, data, and machine intelligence, I'd be glad to connect.
 
-<br/>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/stats.svg" width="100%" alt="Key Metrics"/>
-</div>
-
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
 ## Skills
