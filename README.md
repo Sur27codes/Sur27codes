@@ -16,7 +16,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sur-vaghasiya-031ab9283)
 [![Gmail](https://img.shields.io/badge/survaghasiya%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:survaghasiya@gmail.com)
-[![Phone](https://img.shields.io/badge/%2B1%20(631)%20513--5446-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+16315135446)
 [![Location](https://img.shields.io/badge/Stony%20Brook%2C%20NY-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
 [![Profile Views](https://komarev.com/ghpvc/?username=Sur27codes&style=for-the-badge&color=7B9EFF&label=VIEWS)](https://github.com/Sur27codes)
 
@@ -327,7 +326,6 @@ DBSCAN + Haversine → **12 crash hotspot clusters** · FAMD + k-Means → **4 r
 | | |
 |---|---|
 | 📧 **Email** | [survaghasiya@gmail.com](mailto:survaghasiya@gmail.com) |
-| 📱 **Phone** | [+1 (631) 513-5446](tel:+16315135446) |
 | 💼 **LinkedIn** | [linkedin.com/in/sur-vaghasiya-031ab9283](https://www.linkedin.com/in/sur-vaghasiya-031ab9283) |
 | 🐙 **GitHub** | [github.com/Sur27codes](https://github.com/Sur27codes) |
 | 📍 **Location** | Stony Brook, NY, United States |
