@@ -36,12 +36,40 @@ My stack includes Python, R, SQL, Java, C++, C, JavaScript, TypeScript, TensorFl
 
 I'm drawn to people and teams who care about curiosity, clarity, ownership, and meaningful engineering. If you're building something ambitious at the intersection of software, data, and machine intelligence, I'd be glad to connect.
 
+<br/>
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,ts,react,fastapi,docker,aws,postgres,redis,nextjs,langchain&theme=dark" />
+</div>
+
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
 ## Skills
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills.svg" width="100%" alt="Tech Stack"/>
+</div>
+
+<br/>
+
+<div align="center">
+
+**Languages**
+
+<img src="https://skillicons.dev/icons?i=python,r,ts,js,cpp,java,solidity&theme=dark" />
+
+**ML · AI · LLMs**
+
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" />
+
+**Backend · Cloud · DevOps**
+
+<img src="https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark" />
+
+**Frontend · Data**
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,github&theme=dark" />
+
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
