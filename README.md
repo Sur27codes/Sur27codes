@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Sur%20Vaghasiya&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20Engineer%20%E2%80%A2%20ML%20Systems%20%E2%80%A2%20Full-Stack%20Developer&descAlignY=55&descSize=18&descColor=a0a8d0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0a1a,30:0d1130,60:1a0a3a,100:0a0a1a&height=220&section=header&text=SUR%20VAGHASIYA&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=AI%20Engineer%20%E2%80%A2%20ML%20Systems%20%E2%80%A2%20Full-Stack%20Developer%20%E2%80%A2%20Data%20Scientist&descAlignY=60&descSize=16&descColor=8899cc&stroke=7B9EFF&strokeWidth=1" width="100%"/>
 
 </div>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3000&pause=800&color=7B9EFF&center=true&vCenter=true&multiline=false&width=600&lines=Building+LLMs+%26+RAG+Systems+%F0%9F%A4%96;Voice+AI+%7C+Agentic+Workflows+%F0%9F%94%A5;Real-Time+ML+%7C+Ensemble+Forecasting+%F0%9F%93%88;Full-Stack+%7C+FastAPI+%7C+Next.js+%7C+Docker+%F0%9F%9A%80;MS+Data+Science+%40+Stony+Brook+University+%F0%9F%8E%93)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=7B9EFF&center=true&vCenter=true&width=700&lines=Building+LLMs+%26+RAG+Systems+from+scratch+%F0%9F%A4%96;Voice+AI+%7C+Agentic+Workflows+%7C+FastMCP+%F0%9F%94%A5;Real-Time+ML+%7C+Ensemble+Forecasting+%7C+MLOps+%F0%9F%93%88;FastAPI+%7C+Next.js+%7C+Docker+%7C+AWS+%F0%9F%9A%80;MS+Data+Science+%40+Stony+Brook+University+%F0%9F%8E%93)](https://git.io/typing-svg)
 
 </div>
 
@@ -15,132 +15,298 @@
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sur-vaghasiya-031ab9283)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:survaghasiya@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/Sur27codes)
-[![Profile Views](https://komarev.com/ghpvc/?username=Sur27codes&style=for-the-badge&color=7B9EFF&label=PROFILE+VIEWS)](https://github.com/Sur27codes)
+[![Gmail](https://img.shields.io/badge/survaghasiya%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:survaghasiya@gmail.com)
+[![Phone](https://img.shields.io/badge/%2B1%20(631)%20513--5446-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+16315135446)
+[![Location](https://img.shields.io/badge/Stony%20Brook%2C%20NY-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
+[![Profile Views](https://komarev.com/ghpvc/?username=Sur27codes&style=for-the-badge&color=7B9EFF&label=VIEWS)](https://github.com/Sur27codes)
+
+</div>
+
+<br/>
+
+---
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  $ whoami                                                                   │
+│                                                                             │
+│  name     →  Sur Vaghasiya                                                  │
+│  role     →  AI / ML Engineer  ·  Full-Stack Developer  ·  Data Scientist   │
+│  location →  Stony Brook, NY, United States                                 │
+│  school   →  MS Data Science @ Stony Brook University  (May 2027)          │
+│  prev     →  BTech CSE @ Indus University, India  (GPA: 3.4 / 4.0)         │
+│  work     →  Data Science & AI Intern @ Adani Enterprise Ltd.               │
+│  focus    →  LLMs · RAG · Agentic Workflows · Voice AI · MLOps              │
+│  status   →  Open to AI/ML Engineer · Applied Scientist · SWE roles         │
+│                                                                             │
+│  $ _                                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
 
 </div>
 
 ---
 
-## About Me
+## What I Build
 
-```python
-sur = {
-    "name"       : "Sur Vaghasiya",
-    "location"   : "Stony Brook, NY",
-    "education"  : "MS Data Science @ Stony Brook University (May 2027)",
-    "focus"      : ["LLMs", "RAG Systems", "Agentic Workflows", "Voice AI", "MLOps"],
-    "currently"  : "Building production-grade AI systems end-to-end",
-    "available"  : True   # Open to AI/ML Engineer & Applied Scientist roles
-}
-```
+<table>
+<tr>
+<td width="50%" valign="top">
 
-- Architected a **voice AI clinical monitoring platform** (SAARTHI) that automates daily patient calls via Retell AI, extracts clinical scores with ENS-specific bias correction using Claude Haiku, and runs tri-level ML prediction with Welford O(1) streaming baselines — deployed on Vercel + Railway
-- Built a **real-time enterprise forecasting platform** (InsightX) with a Prophet + XGBoost + ARIMA ensemble (33% accuracy gain), Redis Pub/Sub + WebSocket streaming eliminating every HTTP timeout, and a War Games crisis simulator
-- Deployed a **multimodal RAG assistant** (EchoMindAI) with 16 live agentic tools, Groq LPU cutting STT latency 7.5× (1,500ms → 200ms), and a 29 KB CSS Injection Engine rendering 60fps glassmorphism UI from raw LLM streams
-- **Data Science & AI Intern @ Adani Enterprise Ltd.** — AI-powered revenue forecasting engine (78% accuracy), AWS cloud infra (EC2, S3, Lambda), CI/CD pipelines cutting deployment time 44%
+### 🤖 AI / LLM Systems
+Multimodal RAG pipelines · LangChain ReAct agents · FAISS vector search · Agentic tool orchestration · FastMCP servers · CopilotKit AI copilots · Multi-LLM routing (GPT-4o · Claude · Groq)
+
+</td>
+<td width="50%" valign="top">
+
+### 🎙️ Voice AI & Real-Time ML
+Retell AI telephony pipelines · Groq LPU STT (200ms) · ENS clinical bias correction · Redis Pub/Sub + WebSocket streaming · Zero-timeout ML inference on 5–30s jobs
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📈 ML & Forecasting Systems
+Ensemble forecasting (Prophet + XGBoost + ARIMA) · Welford O(1) streaming baselines · Tri-level ML prediction · SHAP explainability · MLflow artifact tracking · K-S drift detection
+
+</td>
+<td width="50%" valign="top">
+
+### ⛓️ Web3 & Full-Stack
+Solidity smart contracts · Ethereum (Sepolia) · ethers.js · MetaMask · Cloudflare Workers · FastAPI · Next.js · Docker stacks · AWS (EC2 · S3 · Lambda)
+
+</td>
+</tr>
+</table>
+
+---
+
+## Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔬 [SAARTHI](https://github.com/Sur27codes/SAARTHI)
+**Voice AI Clinical Monitoring · HackRare 2026**
+
+Retell AI automates daily patient calls for ENS rare disease patients. Claude Haiku extracts 7 clinical scores with ENS-specific bias correction — detects hedging language, prosody signals, temporal context. Tri-level ML: Global RF → Personal RF (StratifiedKFold) → Welford Z-score override. Next.js doctor dashboard with CopilotKit AI copilot + jsPDF reports. **Zero patient form-filling. Zero transcript data loss.**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 [InsightX](https://github.com/Sur27codes/Insight-X)
+**Real-Time Enterprise Forecasting Platform**
+
+**33% accuracy gain** via Prophet+XGBoost+ARIMA ensemble (40/40/20%). Eliminated HTTP timeouts on 5–30s ML inference via Redis Pub/Sub + WebSocket streaming. War Games crisis simulator across 4 economic scenarios. A2UI/MCP copilot renders live React charts inside chat. P10/P90 confidence intervals · K-S drift detection · MLflow lineage. **7-service Docker stack.**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 [EchoMindAI](https://github.com/Sur27codes/EchoMindAI)
+**Multimodal RAG Assistant · 16 Live Agentic Tools**
+
+FAISS IndexFlatL2 (k=4) + HuggingFace Sentence Transformers RAG pipeline. 16 live tools: GPT-4o vision · DALL-E 3 · stocks · news · 100+ language translation · PDF/DOCX/CSV ingestion · Python REPL · DuckDuckGo fallback. Groq LPU cut STT latency **7.5× (1,500ms → 200ms)**. CSS Injection Engine (29 KB) renders 60fps glassmorphism UI. 4-layer recovery cut failures **90%. 300% engagement lift.**
+
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/GPT--4o-412991?style=flat-square&logo=openai&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_LPU-F55036?style=flat-square&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+### ⛓️ [Decentralized Escrow](https://github.com/Sur27codes/Decentralized_Escrow_Website)
+**Trustless P2P Transactions on Ethereum**
+
+Solidity smart contract enforcing dual-party approval, deterministic fund locking, and refund-safe resolution. ETH locked at deployment (`msg.value`), released only on both parties approving — **zero counterparty risk, zero intermediaries.** React + ethers.js v6 + MetaMask frontend. Serverless backend: Hono.js + Cloudflare Workers + Upstash Redis. Hardhat test suite validates all state transitions.
+
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### 🚦 [LI Traffic Accident Cluster & Severity Analytics](https://github.com/shaneap/AMS-597-Project)
+**AMS 597 Statistical Machine Learning · Stony Brook University · 33,228 records**
+
+DBSCAN + Haversine → **12 crash hotspot clusters** · FAMD + k-Means → **4 risk archetypes** (silhouette=0.4268, Jaccard≥0.40, ARI≥0.65) · XGBoost severity classifier **AUC 0.7185** (27 engineered features: cyclical sin/cos temporal encoding, night×rain, rush×junction interaction terms) outperforming LR baseline by **10.2 AUC points** · SHAP per-cluster attribution · osmnx + NetworkX road-graph overlays for last-mile logistics routing optimization
+
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-FF6B6B?style=flat-square&logoColor=white)
+![GeoPandas](https://img.shields.io/badge/GeoPandas-139C5A?style=flat-square&logoColor=white)
+
+</td>
+</tr>
+</table>
+
+---
+
+## Experience
+
+<table>
+<tr>
+<td width="60%">
+
+**Data Science & AI Intern** · [Adani Enterprise Ltd.](https://www.adani.com/) &nbsp; `Jan 2025 – Jul 2025`
+
+- AI-powered sales & revenue forecasting engine — **78% accuracy**, reduced analysis time **34%** for 10+ product teams
+- Automated model retraining pipelines cutting operational overhead **37%**
+- AWS infra (EC2, S3, Lambda) + CI/CD — deployment time cut **44%**
+
+</td>
+<td width="40%">
+
+`Python` `Flask` `Scikit-learn` `AWS` `Pandas` `NumPy`
+
+</td>
+</tr>
+<tr>
+<td width="60%">
+
+**Python Machine Learning Intern** · Tech Micra &nbsp; `Jun 2024 – Jul 2024`
+
+- End-to-end ML pipelines with EDA (ANOVA, correlation matrices) boosting interpretability **42%**
+- GridSearchCV reduced overfitting **35%**, improved generalization **27%** across 43+ Agile commits
+- LASSO/Ridge regularization + systematic feature selection
+
+</td>
+<td width="40%">
+
+`Python` `Scikit-learn` `Pandas` `NumPy` `Git`
+
+</td>
+</tr>
+<tr>
+<td width="60%">
+
+**Web Development Intern** · Shaligram Infotech &nbsp; `Jun 2023 – Jul 2023`
+
+- 5 responsive cross-browser web pages improving load efficiency **48%**
+- 2 MySQL-backed WordPress client sites boosting delivery efficiency **45%**
+
+</td>
+<td width="40%">
+
+`JavaScript` `HTML5` `CSS3` `MySQL` `WordPress`
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## Tech Stack
 
-<div align="center">
+**Languages**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 
 **AI / ML**
 
-[![AI/ML Skills](https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn&theme=dark)](https://skillicons.dev)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
 
 **Backend & Infrastructure**
 
-[![Backend Skills](https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark)](https://skillicons.dev)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
 
-**Frontend & Web3**
+**Frontend**
 
-[![Frontend Skills](https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,solidity&theme=dark)](https://skillicons.dev)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+---
+
+## GitHub Activity
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sur27codes&theme=react-dark&hide_border=true&bg_color=0d1117&color=7B9EFF&line=7B9EFF&point=FF6B6B&area=true&area_color=7B9EFF" width="100%"/>
 
 </div>
 
 <div align="center">
 
-| Domain | Technologies |
-|--------|-------------|
-| **LLMs & AI** | OpenAI GPT-4o · Claude (Haiku, Opus 4.7) · Groq · LangChain · FAISS · HuggingFace Transformers |
-| **ML Frameworks** | PyTorch · TensorFlow · Scikit-learn · XGBoost · Prophet · ARIMA |
-| **Agentic / RAG** | RAG Systems · FastMCP · CopilotKit · A2UI · AG-UI · Retell AI · DALL-E 3 |
-| **MLOps** | MLflow · Docker · AWS (EC2, S3, Lambda) · CI/CD · Pydantic v2 · SQLAlchemy |
-| **Data Science** | R · Pandas · NumPy · SHAP · GeoPandas · osmnx · NetworkX · Plotly |
-| **Backend** | FastAPI · Flask · Redis (Pub/Sub) · PostgreSQL · WebSocket · RESTful APIs |
-| **Frontend** | Next.js · React · TypeScript · Tailwind CSS · Framer Motion · Recharts |
-| **Web3** | Solidity · Ethereum · Hardhat · ethers.js · MetaMask · Cloudflare Workers |
+<img src="https://streak-stats.demolab.com?user=Sur27codes&theme=tokyonight&hide_border=true&background=0d1117&stroke=7B9EFF&ring=7B9EFF&fire=FF6B6B&currStreakLabel=7B9EFF&sideLabels=a0a8d0&dates=a0a8d0&currStreakNum=ffffff&sideNums=ffffff" width="55%"/>
 
 </div>
 
 ---
 
-## Featured Projects
+## Education & Certifications
 
-<div align="center">
+<table>
+<tr>
+<td width="50%" valign="top">
 
-[![SAARTHI](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=SAARTHI&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/SAARTHI)
-[![InsightX](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=Insight-X&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/Insight-X)
+🎓 **MS Data Science** · Stony Brook University, NY &nbsp; `2025 – May 2027`
+> Machine Learning · Statistical Computing · Probability & Statistics · Data Management · CS Fundamentals
 
-[![EchoMindAI](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=EchoMindAI&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/EchoMindAI)
-[![Decentralized Escrow](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=Decentralized_Escrow_Website&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/Decentralized_Escrow_Website)
+🎓 **BTech Computer Science Engineering** · Indus University, India &nbsp; `2021 – May 2025`
+> GPA: 3.4 / 4.0 · ML · NLP · Deep Learning · DSA · Cloud Computing · Web Technology
 
-</div>
+</td>
+<td width="50%" valign="top">
 
-<br/>
+🏅 **AWS Academy Cloud Foundations** · [Credly](https://www.credly.com/badges/68846518-31b0-4a04-9710-8dc019fbc7a8/public_url)
 
-<details>
-<summary><b>SAARTHI</b> — Voice AI Clinical Monitoring · FastAPI · Claude Haiku · Retell AI · PostgreSQL · Next.js</summary>
-<br/>
+🏅 **AWS Academy Machine Learning Foundations** · [Credly](https://www.credly.com/badges/77f21ac7-9a4a-4eea-ab1c-fa7353a6f6cd/public_url)
 
-> Voice-first ENS rare-disease monitor built for HackRare 2026. Retell AI automates daily patient phone calls. Claude Haiku extracts 7 validated clinical scores with ENS-specific bias correction (prosody signals, temporal context, hedging language detection). Tri-level ML prediction: Global RF (n=2,000) → Personal RF (StratifiedKFold + F1) → Welford Z-score override (Z≥2/≥3). Next.js doctor dashboard with Recharts trend charts, CopilotKit AI copilot, and jsPDF clinical reports. Zero patient form-filling. Zero transcript data loss via dual-path delivery.
+🏅 **Python Bootcamp** · [Certificate](https://drive.google.com/file/d/12FuddwnT9sXJtyBzqNAGzXL0ueVIidPE/view?usp=share_link)
 
-</details>
+🏅 **HackRare 2026 Participation** · [Certificate](https://drive.google.com/file/d/1aVtv8W9_TnwBvfdz-48DuSXdUBMLMhDV/view?usp=share_link)
 
-<details>
-<summary><b>InsightX</b> — Enterprise Forecasting · Prophet · XGBoost · ARIMA · Redis Pub/Sub · Docker · MLflow</summary>
-<br/>
-
-> Real-time forecasting platform achieving 33% accuracy gain via Prophet+XGBoost+ARIMA ensemble (40/40/20%). Eliminated HTTP timeouts on 5–30s ML inference via Redis Pub/Sub + WebSocket streaming. War Games crisis simulator across 4 economic scenarios (Recession, Inflation, Supply Chain Shock, Tech Disruption). A2UI/MCP AI copilot renders live React charts inside chat. 7-service Docker stack. Full MLflow model lineage tracking.
-
-</details>
-
-<details>
-<summary><b>EchoMindAI</b> — Multimodal RAG · LangChain · FAISS · GPT-4o · Groq LPU · DALL-E 3 · FastMCP</summary>
-<br/>
-
-> Multimodal RAG assistant with 16 live agentic tools: vision (GPT-4o), DALL-E 3, stocks, news, travel, 100+ language translation, PDF/DOCX/CSV/PPTX ingestion. Groq LPU cut STT latency 7.5× (1,500ms → 200ms). CSS Injection Engine (29 KB) renders 60fps glassmorphism UI from LLM token streams. 4-layer heuristic recovery cut failures 90%. 300% engagement lift.
-
-</details>
-
-<details>
-<summary><b>Decentralized Escrow</b> — Solidity · Ethereum · ethers.js · MetaMask · Hono.js · Cloudflare Workers</summary>
-<br/>
-
-> Trustless peer-to-peer escrow on Ethereum Sepolia. Solidity smart contract enforces dual-party approval, deterministic fund locking, and refund-safe resolution via strict access controls. React + ethers.js v6 frontend with MetaMask. Serverless backend on Hono.js + Cloudflare Workers with Upstash Redis for contract indexing. Hardhat test suite validates all state transitions.
-
-</details>
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Sur27codes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF&include_all_commits=true&count_private=true" height="170"/>
-&nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sur27codes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&langs_count=8" height="170"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=Sur27codes&theme=tokyonight&hide_border=true&background=0d1117&stroke=7B9EFF&ring=7B9EFF&fire=FF6B6B&currStreakLabel=7B9EFF&sideLabels=a0a8d0&dates=a0a8d0" width="60%"/>
-
-</div>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -148,14 +314,30 @@ sur = {
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" width="100%"/>
 
 </div>
 
 ---
 
+## Contact
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
+| | |
+|---|---|
+| 📧 **Email** | [survaghasiya@gmail.com](mailto:survaghasiya@gmail.com) |
+| 📱 **Phone** | [+1 (631) 513-5446](tel:+16315135446) |
+| 💼 **LinkedIn** | [linkedin.com/in/sur-vaghasiya-031ab9283](https://www.linkedin.com/in/sur-vaghasiya-031ab9283) |
+| 🐙 **GitHub** | [github.com/Sur27codes](https://github.com/Sur27codes) |
+| 📍 **Location** | Stony Brook, NY, United States |
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0a1a,30:0d1130,60:1a0a3a,100:0a0a1a&height=150&section=footer&stroke=7B9EFF&strokeWidth=1" width="100%"/>
 
 </div>
