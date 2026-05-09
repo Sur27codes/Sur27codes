@@ -1,161 +1,97 @@
 <div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/header.svg" width="100%" alt="Sur Vaghasiya"/>
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Sur%20Vaghasiya&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20Engineer%20%E2%80%A2%20ML%20Systems%20%E2%80%A2%20Full-Stack%20Developer&descAlignY=55&descSize=18&descColor=a0a8d0" width="100%"/>
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=2200&pause=700&color=60A5FA&center=true&vCenter=true&width=860&lines=MS+Data+Science+%E2%80%94+Stony+Brook+University;Building+AI+Systems+%C2%B7+LLM+%C2%B7+RAG+%C2%B7+MLOps;AI%2FML+Engineer+%C2%B7+Data+Scientist+%C2%B7+Full-Stack;Open+to+AI+Engineer+%C2%B7+Applied+Scientist+%C2%B7+SWE)](https://git.io/typing-svg)
 
 </div>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3000&pause=800&color=7B9EFF&center=true&vCenter=true&multiline=false&width=600&lines=Building+LLMs+%26+RAG+Systems+%F0%9F%A4%96;Voice+AI+%7C+Agentic+Workflows+%F0%9F%94%A5;Real-Time+ML+%7C+Ensemble+Forecasting+%F0%9F%93%88;Full-Stack+%7C+FastAPI+%7C+Next.js+%7C+Docker+%F0%9F%9A%80;MS+Data+Science+%40+Stony+Brook+University+%F0%9F%8E%93)](https://git.io/typing-svg)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sur-vaghasiya-031ab9283)
+&nbsp;
+[![Email](https://img.shields.io/badge/survaghasiya%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:survaghasiya@gmail.com)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/Sur27codes-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Sur27codes)
+&nbsp;
+[![Profile Views](https://komarev.com/ghpvc/?username=Sur27codes&style=flat-square&color=60A5FA&label=Profile+Views)](https://github.com/Sur27codes)
 
 </div>
+
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
+
+## About
+
+I'm a Data Science graduate student at Stony Brook University focused on Machine Learning, Deep Learning, Generative AI, LLMs, RAG systems, forecasting, and scalable software engineering. I like building systems that go beyond model scores — projects where data, models, APIs, cloud infrastructure, and user experience come together into something practical, reliable, and usable.
+
+Across internships and projects, I've worked on platforms that combine predictive modeling, statistical analysis, automation pipelines, backend systems, cloud deployment, and full-stack engineering. At Adani Enterprises, I contributed to an AI-powered sales and revenue forecasting platform using Python, Flask, Scikit-learn, Pandas, NumPy, Matplotlib, and AWS, supporting forecasting workflows, automated retraining, cloud deployment, and dashboards for faster business analysis. I also built ML workflows at Tech Micra and responsive MySQL-backed web applications at Shaligram Infotech.
+
+My recent work includes InsightX, a real-time forecasting and business intelligence platform with ensemble modeling, Redis/WebSocket streaming, Dockerized services, MLflow tracking, and an AI copilot for interactive analytics; EchoMindAI, a multimodal RAG assistant combining FAISS vector search, LangChain agents, OpenAI/Groq APIs, document ingestion, voice, vision, live tools, and Streamlit; and SAARTHI, a voice-first clinical monitoring platform using Retell AI calls, Claude transcript analysis, FastAPI/Flask, PostgreSQL, personalized ML models, Groq, FastMCP, and Next.js.
+
+I've also worked in applied analytics, geospatial ML, Web3, and full-stack systems. In LI Traffic Accident Analytics, I analyzed 33,000+ Long Island accident records using DBSCAN, FAMD, k-Means, XGBoost, SHAP, GeoPandas, osmnx, NetworkX, and R/Python to study crash hotspots, risk patterns, and severity signals. I also built a decentralized escrow platform using Solidity, Ethereum Sepolia, React, TypeScript, ethers.js, Hono.js, Cloudflare Workers, and Upstash Redis.
+
+My stack includes Python, R, SQL, Java, C++, C, JavaScript, TypeScript, TensorFlow, PyTorch, Scikit-learn, OpenCV, LangChain, FAISS, OpenAI API, Claude, Groq, React, Next.js, Flask, FastAPI, AWS, Docker, PostgreSQL, Redis, MLflow, Git, REST APIs, and foundations in algorithms, MLOps, system design, cloud deployment, and software engineering.
+
+I'm drawn to people and teams who care about curiosity, clarity, ownership, and meaningful engineering. If you're building something ambitious at the intersection of software, data, and machine intelligence, I'd be glad to connect.
 
 <br/>
 
 <div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sur-vaghasiya-031ab9283)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:survaghasiya@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/Sur27codes)
-[![Profile Views](https://komarev.com/ghpvc/?username=Sur27codes&style=for-the-badge&color=7B9EFF&label=PROFILE+VIEWS)](https://github.com/Sur27codes)
-
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/stats.svg" width="100%" alt="Key Metrics"/>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## About Me
-
-```python
-sur = {
-    "name"       : "Sur Vaghasiya",
-    "location"   : "Stony Brook, NY",
-    "education"  : "MS Data Science @ Stony Brook University (May 2027)",
-    "focus"      : ["LLMs", "RAG Systems", "Agentic Workflows", "Voice AI", "MLOps"],
-    "currently"  : "Building production-grade AI systems end-to-end",
-    "available"  : True   # Open to AI/ML Engineer & Applied Scientist roles
-}
-```
-
-- Architected a **voice AI clinical monitoring platform** (SAARTHI) that automates daily patient calls via Retell AI, extracts clinical scores with ENS-specific bias correction using Claude Haiku, and runs tri-level ML prediction with Welford O(1) streaming baselines — deployed on Vercel + Railway
-- Built a **real-time enterprise forecasting platform** (InsightX) with a Prophet + XGBoost + ARIMA ensemble (33% accuracy gain), Redis Pub/Sub + WebSocket streaming eliminating every HTTP timeout, and a War Games crisis simulator
-- Deployed a **multimodal RAG assistant** (EchoMindAI) with 16 live agentic tools, Groq LPU cutting STT latency 7.5× (1,500ms → 200ms), and a 29 KB CSS Injection Engine rendering 60fps glassmorphism UI from raw LLM streams
-- **Data Science & AI Intern @ Adani Enterprise Ltd.** — AI-powered revenue forecasting engine (78% accuracy), AWS cloud infra (EC2, S3, Lambda), CI/CD pipelines cutting deployment time 44%
-
----
-
-## Tech Stack
+## Skills
 
 <div align="center">
-
-**AI / ML**
-
-[![AI/ML Skills](https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn&theme=dark)](https://skillicons.dev)
-
-**Backend & Infrastructure**
-
-[![Backend Skills](https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark)](https://skillicons.dev)
-
-**Frontend & Web3**
-
-[![Frontend Skills](https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,solidity&theme=dark)](https://skillicons.dev)
-
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills.svg" width="100%" alt="Tech Stack"/>
 </div>
 
-<div align="center">
-
-| Domain | Technologies |
-|--------|-------------|
-| **LLMs & AI** | OpenAI GPT-4o · Claude (Haiku, Opus 4.7) · Groq · LangChain · FAISS · HuggingFace Transformers |
-| **ML Frameworks** | PyTorch · TensorFlow · Scikit-learn · XGBoost · Prophet · ARIMA |
-| **Agentic / RAG** | RAG Systems · FastMCP · CopilotKit · A2UI · AG-UI · Retell AI · DALL-E 3 |
-| **MLOps** | MLflow · Docker · AWS (EC2, S3, Lambda) · CI/CD · Pydantic v2 · SQLAlchemy |
-| **Data Science** | R · Pandas · NumPy · SHAP · GeoPandas · osmnx · NetworkX · Plotly |
-| **Backend** | FastAPI · Flask · Redis (Pub/Sub) · PostgreSQL · WebSocket · RESTful APIs |
-| **Frontend** | Next.js · React · TypeScript · Tailwind CSS · Framer Motion · Recharts |
-| **Web3** | Solidity · Ethereum · Hardhat · ethers.js · MetaMask · Cloudflare Workers |
-
-</div>
-
----
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
 ## Featured Projects
 
 <div align="center">
-
-[![SAARTHI](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=SAARTHI&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/SAARTHI)
-[![InsightX](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=Insight-X&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/Insight-X)
-
-[![EchoMindAI](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=EchoMindAI&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/EchoMindAI)
-[![Decentralized Escrow](https://github-readme-stats.vercel.app/api/pin/?username=Sur27codes&repo=Decentralized_Escrow_Website&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF)](https://github.com/Sur27codes/Decentralized_Escrow_Website)
-
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/projects.svg" width="100%" alt="Featured Projects"/>
 </div>
 
 <br/>
 
-<details>
-<summary><b>SAARTHI</b> — Voice AI Clinical Monitoring · FastAPI · Claude Haiku · Retell AI · PostgreSQL · Next.js</summary>
-<br/>
-
-> Voice-first ENS rare-disease monitor built for HackRare 2026. Retell AI automates daily patient phone calls. Claude Haiku extracts 7 validated clinical scores with ENS-specific bias correction (prosody signals, temporal context, hedging language detection). Tri-level ML prediction: Global RF (n=2,000) → Personal RF (StratifiedKFold + F1) → Welford Z-score override (Z≥2/≥3). Next.js doctor dashboard with Recharts trend charts, CopilotKit AI copilot, and jsPDF clinical reports. Zero patient form-filling. Zero transcript data loss via dual-path delivery.
-
-</details>
-
-<details>
-<summary><b>InsightX</b> — Enterprise Forecasting · Prophet · XGBoost · ARIMA · Redis Pub/Sub · Docker · MLflow</summary>
-<br/>
-
-> Real-time forecasting platform achieving 33% accuracy gain via Prophet+XGBoost+ARIMA ensemble (40/40/20%). Eliminated HTTP timeouts on 5–30s ML inference via Redis Pub/Sub + WebSocket streaming. War Games crisis simulator across 4 economic scenarios (Recession, Inflation, Supply Chain Shock, Tech Disruption). A2UI/MCP AI copilot renders live React charts inside chat. 7-service Docker stack. Full MLflow model lineage tracking.
-
-</details>
-
-<details>
-<summary><b>EchoMindAI</b> — Multimodal RAG · LangChain · FAISS · GPT-4o · Groq LPU · DALL-E 3 · FastMCP</summary>
-<br/>
-
-> Multimodal RAG assistant with 16 live agentic tools: vision (GPT-4o), DALL-E 3, stocks, news, travel, 100+ language translation, PDF/DOCX/CSV/PPTX ingestion. Groq LPU cut STT latency 7.5× (1,500ms → 200ms). CSS Injection Engine (29 KB) renders 60fps glassmorphism UI from LLM token streams. 4-layer heuristic recovery cut failures 90%. 300% engagement lift.
-
-</details>
-
-<details>
-<summary><b>Decentralized Escrow</b> — Solidity · Ethereum · ethers.js · MetaMask · Hono.js · Cloudflare Workers</summary>
-<br/>
-
-> Trustless peer-to-peer escrow on Ethereum Sepolia. Solidity smart contract enforces dual-party approval, deterministic fund locking, and refund-safe resolution via strict access controls. React + ethers.js v6 frontend with MetaMask. Serverless backend on Hono.js + Cloudflare Workers with Upstash Redis for contract indexing. Hardhat test suite validates all state transitions.
-
-</details>
-
----
-
-## GitHub Stats
-
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Sur27codes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&icon_color=7B9EFF&include_all_commits=true&count_private=true" height="170"/>
-&nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sur27codes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B9EFF&text_color=a0a8d0&langs_count=8" height="170"/>
+[**SAARTHI**](https://github.com/Sur27codes/SAARTHI) &nbsp;·&nbsp;
+[**InsightX**](https://github.com/Sur27codes/Insight-X) &nbsp;·&nbsp;
+[**EchoMindAI**](https://github.com/Sur27codes/EchoMindAI) &nbsp;·&nbsp;
+[**LI Traffic Analytics**](https://github.com/shaneap/AMS-597-Project) &nbsp;·&nbsp;
+[**Decentralized Escrow**](https://github.com/Sur27codes/Decentralized_Escrow_Website)
 
 </div>
 
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
+
+## Neural Architecture
+
 <div align="center">
-
-<img src="https://streak-stats.demolab.com?user=Sur27codes&theme=tokyonight&hide_border=true&background=0d1117&stroke=7B9EFF&ring=7B9EFF&fire=FF6B6B&currStreakLabel=7B9EFF&sideLabels=a0a8d0&dates=a0a8d0" width="60%"/>
-
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Neural Network"/>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## Contribution Activity
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%"/>
-
-</div>
-
----
+## Let's Connect
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sur-vaghasiya-031ab9283)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:survaghasiya@gmail.com)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sur27codes)
+
+<br/>
+
+*Building at the intersection of software, data, and machine intelligence — let's connect.*
 
 </div>
