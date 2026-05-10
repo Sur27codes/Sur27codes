@@ -56,17 +56,17 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 </div>
 
 <table align="center"><tr>
-<td align="center"><a href="https://python.org" title="Python"><img src="https://skillicons.dev/icons?i=python&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://pytorch.org" title="PyTorch"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://tensorflow.org" title="TensorFlow"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://typescriptlang.org" title="TypeScript"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://react.dev" title="React"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://fastapi.tiangolo.com" title="FastAPI"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://docker.com" title="Docker"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://aws.amazon.com" title="AWS"><img src="https://skillicons.dev/icons?i=aws&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://postgresql.org" title="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://redis.io" title="Redis"><img src="https://skillicons.dev/icons?i=redis&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://nextjs.org" title="Next.js"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48"/></a></td>
+<td align="center" width="80"><a href="https://python.org" title="Python"><img src="https://skillicons.dev/icons?i=python&theme=dark" width="48" height="48"/></a><br/><sub><b>Python</b></sub></td>
+<td align="center" width="80"><a href="https://pytorch.org" title="PyTorch"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48"/></a><br/><sub><b>PyTorch</b></sub></td>
+<td align="center" width="80"><a href="https://tensorflow.org" title="TensorFlow"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="48" height="48"/></a><br/><sub><b>TensorFlow</b></sub></td>
+<td align="center" width="80"><a href="https://typescriptlang.org" title="TypeScript"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="48" height="48"/></a><br/><sub><b>TypeScript</b></sub></td>
+<td align="center" width="80"><a href="https://react.dev" title="React"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" height="48"/></a><br/><sub><b>React</b></sub></td>
+<td align="center" width="80"><a href="https://fastapi.tiangolo.com" title="FastAPI"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="48" height="48"/></a><br/><sub><b>FastAPI</b></sub></td>
+<td align="center" width="80"><a href="https://docker.com" title="Docker"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" height="48"/></a><br/><sub><b>Docker</b></sub></td>
+<td align="center" width="80"><a href="https://aws.amazon.com" title="AWS"><img src="https://skillicons.dev/icons?i=aws&theme=dark" width="48" height="48"/></a><br/><sub><b>AWS</b></sub></td>
+<td align="center" width="80"><a href="https://postgresql.org" title="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="48" height="48"/></a><br/><sub><b>PostgreSQL</b></sub></td>
+<td align="center" width="80"><a href="https://redis.io" title="Redis"><img src="https://skillicons.dev/icons?i=redis&theme=dark" width="48" height="48"/></a><br/><sub><b>Redis</b></sub></td>
+<td align="center" width="80"><a href="https://nextjs.org" title="Next.js"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48"/></a><br/><sub><b>Next.js</b></sub></td>
 </tr></table>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
@@ -84,13 +84,13 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 </div>
 
 <table align="center"><tr>
-<td align="center"><a href="https://python.org" title="Python"><img src="https://skillicons.dev/icons?i=python&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://r-project.org" title="R"><img src="https://skillicons.dev/icons?i=r&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://typescriptlang.org" title="TypeScript"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://cplusplus.com" title="C++"><img src="https://skillicons.dev/icons?i=cpp&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://java.com" title="Java"><img src="https://skillicons.dev/icons?i=java&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://soliditylang.org" title="Solidity"><img src="https://skillicons.dev/icons?i=solidity&theme=dark" width="48" height="48"/></a></td>
+<td align="center" width="90"><a href="https://python.org" title="Python"><img src="https://skillicons.dev/icons?i=python&theme=dark" width="48" height="48"/></a><br/><sub><b>Python</b></sub></td>
+<td align="center" width="90"><a href="https://r-project.org" title="R"><img src="https://skillicons.dev/icons?i=r&theme=dark" width="48" height="48"/></a><br/><sub><b>R</b></sub></td>
+<td align="center" width="90"><a href="https://typescriptlang.org" title="TypeScript"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="48" height="48"/></a><br/><sub><b>TypeScript</b></sub></td>
+<td align="center" width="90"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="48" height="48"/></a><br/><sub><b>JavaScript</b></sub></td>
+<td align="center" width="90"><a href="https://cplusplus.com" title="C++"><img src="https://skillicons.dev/icons?i=cpp&theme=dark" width="48" height="48"/></a><br/><sub><b>C++</b></sub></td>
+<td align="center" width="90"><a href="https://java.com" title="Java"><img src="https://skillicons.dev/icons?i=java&theme=dark" width="48" height="48"/></a><br/><sub><b>Java</b></sub></td>
+<td align="center" width="90"><a href="https://soliditylang.org" title="Solidity"><img src="https://skillicons.dev/icons?i=solidity&theme=dark" width="48" height="48"/></a><br/><sub><b>Solidity</b></sub></td>
 </tr></table>
 
 <br/>
@@ -100,9 +100,9 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 </div>
 
 <table align="center"><tr>
-<td align="center"><a href="https://pytorch.org" title="PyTorch"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://tensorflow.org" title="TensorFlow"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://opencv.org" title="OpenCV"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" width="48" height="48"/></a></td>
+<td align="center" width="90"><a href="https://pytorch.org" title="PyTorch"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48"/></a><br/><sub><b>PyTorch</b></sub></td>
+<td align="center" width="90"><a href="https://tensorflow.org" title="TensorFlow"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="48" height="48"/></a><br/><sub><b>TensorFlow</b></sub></td>
+<td align="center" width="90"><a href="https://opencv.org" title="OpenCV"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" width="48" height="48"/></a><br/><sub><b>OpenCV</b></sub></td>
 </tr></table>
 
 <br/>
@@ -112,13 +112,13 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 </div>
 
 <table align="center"><tr>
-<td align="center"><a href="https://fastapi.tiangolo.com" title="FastAPI"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://flask.palletsprojects.com" title="Flask"><img src="https://skillicons.dev/icons?i=flask&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://docker.com" title="Docker"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://aws.amazon.com" title="AWS"><img src="https://skillicons.dev/icons?i=aws&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://postgresql.org" title="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://redis.io" title="Redis"><img src="https://skillicons.dev/icons?i=redis&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://git-scm.com" title="Git"><img src="https://skillicons.dev/icons?i=git&theme=dark" width="48" height="48"/></a></td>
+<td align="center" width="90"><a href="https://fastapi.tiangolo.com" title="FastAPI"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="48" height="48"/></a><br/><sub><b>FastAPI</b></sub></td>
+<td align="center" width="90"><a href="https://flask.palletsprojects.com" title="Flask"><img src="https://skillicons.dev/icons?i=flask&theme=dark" width="48" height="48"/></a><br/><sub><b>Flask</b></sub></td>
+<td align="center" width="90"><a href="https://docker.com" title="Docker"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" height="48"/></a><br/><sub><b>Docker</b></sub></td>
+<td align="center" width="90"><a href="https://aws.amazon.com" title="AWS"><img src="https://skillicons.dev/icons?i=aws&theme=dark" width="48" height="48"/></a><br/><sub><b>AWS</b></sub></td>
+<td align="center" width="90"><a href="https://postgresql.org" title="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="48" height="48"/></a><br/><sub><b>PostgreSQL</b></sub></td>
+<td align="center" width="90"><a href="https://redis.io" title="Redis"><img src="https://skillicons.dev/icons?i=redis&theme=dark" width="48" height="48"/></a><br/><sub><b>Redis</b></sub></td>
+<td align="center" width="90"><a href="https://git-scm.com" title="Git"><img src="https://skillicons.dev/icons?i=git&theme=dark" width="48" height="48"/></a><br/><sub><b>Git</b></sub></td>
 </tr></table>
 
 <br/>
@@ -128,10 +128,10 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 </div>
 
 <table align="center"><tr>
-<td align="center"><a href="https://react.dev" title="React"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://nextjs.org" title="Next.js"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://tailwindcss.com" title="Tailwind CSS"><img src="https://skillicons.dev/icons?i=tailwind&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://github.com" title="GitHub"><img src="https://skillicons.dev/icons?i=github&theme=dark" width="48" height="48"/></a></td>
+<td align="center" width="90"><a href="https://react.dev" title="React"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" height="48"/></a><br/><sub><b>React</b></sub></td>
+<td align="center" width="90"><a href="https://nextjs.org" title="Next.js"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48"/></a><br/><sub><b>Next.js</b></sub></td>
+<td align="center" width="90"><a href="https://tailwindcss.com" title="Tailwind CSS"><img src="https://skillicons.dev/icons?i=tailwind&theme=dark" width="48" height="48"/></a><br/><sub><b>Tailwind CSS</b></sub></td>
+<td align="center" width="90"><a href="https://github.com" title="GitHub"><img src="https://skillicons.dev/icons?i=github&theme=dark" width="48" height="48"/></a><br/><sub><b>GitHub</b></sub></td>
 </tr></table>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
