@@ -104,7 +104,6 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <table align="center"><tr>
 <td align="center" width="90"><a href="https://pytorch.org" title="PyTorch"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48"/></a><br/><sub><b>PyTorch</b></sub></td>
 <td align="center" width="90"><a href="https://tensorflow.org" title="TensorFlow"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="48" height="48"/></a><br/><sub><b>TensorFlow</b></sub></td>
-<td align="center" width="90"><a href="https://scikit-learn.org" title="Scikit-learn"><img src="https://skillicons.dev/icons?i=sklearn&theme=dark" width="48" height="48"/></a><br/><sub><b>Scikit-learn</b></sub></td>
 <td align="center" width="90"><a href="https://streamlit.io" title="Streamlit"><img src="https://skillicons.dev/icons?i=streamlit&theme=dark" width="48" height="48"/></a><br/><sub><b>Streamlit</b></sub></td>
 <td align="center" width="90"><a href="https://opencv.org" title="OpenCV"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" width="48" height="48"/></a><br/><sub><b>OpenCV</b></sub></td>
 </tr></table>
@@ -137,10 +136,8 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <td align="center" width="90"><a href="https://react.dev" title="React"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" height="48"/></a><br/><sub><b>React</b></sub></td>
 <td align="center" width="90"><a href="https://nextjs.org" title="Next.js"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48"/></a><br/><sub><b>Next.js</b></sub></td>
 <td align="center" width="90"><a href="https://tailwindcss.com" title="Tailwind CSS"><img src="https://skillicons.dev/icons?i=tailwind&theme=dark" width="48" height="48"/></a><br/><sub><b>Tailwind CSS</b></sub></td>
-<td align="center" width="90"><a href="https://www.framer.com/motion" title="Framer Motion"><img src="https://skillicons.dev/icons?i=framer&theme=dark" width="48" height="48"/></a><br/><sub><b>Framer Motion</b></sub></td>
 <td align="center" width="90"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML"><img src="https://skillicons.dev/icons?i=html&theme=dark" width="48" height="48"/></a><br/><sub><b>HTML</b></sub></td>
 <td align="center" width="90"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS"><img src="https://skillicons.dev/icons?i=css&theme=dark" width="48" height="48"/></a><br/><sub><b>CSS</b></sub></td>
-<td align="center" width="90"><a href="https://jupyter.org" title="Jupyter"><img src="https://skillicons.dev/icons?i=jupyter&theme=dark" width="48" height="48"/></a><br/><sub><b>Jupyter</b></sub></td>
 </tr></table>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
