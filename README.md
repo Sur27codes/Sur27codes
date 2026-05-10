@@ -230,6 +230,12 @@ Dual-party approval, msg.value lock, MetaMask integration, full Hardhat test sui
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/training-run.svg" width="100%" alt="Live ML Training Session"/>
 </div>
 
+## Commit Spectrogram
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Code Activity Spectrogram"/>
+</div>
+
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
 ## Let's Connect
