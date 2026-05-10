@@ -53,29 +53,33 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <br/>
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-lang.svg" width="420" alt="Languages"/>
-
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-lang.svg" width="100%" alt="Languages"/>
+<br/>
 <img src="https://skillicons.dev/icons?i=python,r,ts,js,cpp,java,solidity&theme=dark" />
+</div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-ml.svg" width="420" alt="ML · AI · LLMs"/>
-
+<div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-ml.svg" width="100%" alt="ML · AI · LLMs"/>
+<br/>
 <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" />
+</div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-backend.svg" width="420" alt="Backend · Cloud · DevOps"/>
-
+<div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-backend.svg" width="100%" alt="Backend · Cloud · DevOps"/>
+<br/>
 <img src="https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark" />
+</div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-frontend.svg" width="420" alt="Frontend · Data"/>
-
+<div align="center">
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-frontend.svg" width="100%" alt="Frontend · Data"/>
+<br/>
 <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,github&theme=dark" />
-
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>

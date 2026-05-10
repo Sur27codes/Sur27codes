@@ -1,53 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="36" viewBox="0 0 420 36">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="44" viewBox="0 0 900 44">
   <defs>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="3.5" result="b"/>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#60A5FA" stop-opacity="0.8"/>
-      <stop offset="80%" stop-color="#60A5FA" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0f1e"/>
+      <stop offset="50%" stop-color="#0d1525"/>
+      <stop offset="100%" stop-color="#0a0f1e"/>
     </linearGradient>
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="48%" stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#60A5FA" stop-opacity="0.12"/>
+      <stop offset="52%" stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="900" height="44" rx="8"/></clipPath>
   </defs>
 
-  <!-- background pill -->
-  <rect x="85" y="4" width="250" height="28" rx="14"
-        fill="#60A5FA" fill-opacity="0.04" stroke="#60A5FA" stroke-opacity="0.15" stroke-width="1"/>
+  <!-- background -->
+  <rect width="900" height="44" rx="8" fill="url(#bg)"/>
+  <rect width="900" height="44" rx="8" fill="url(#sweep)"/>
 
-  <!-- outer glow ring pulse -->
-  <rect x="79" y="-1" width="262" height="38" rx="17"
-        fill="none" stroke="#60A5FA" stroke-width="1.5" filter="url(#glow)">
-    <animate attributeName="stroke-opacity" values="0;0.6;0;0.4;0" dur="3s" repeatCount="indefinite"/>
+  <!-- border -->
+  <rect x="0.5" y="0.5" width="899" height="43" rx="7.5" fill="none" stroke="#60A5FA" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.25;0.7;0.25" dur="2.4s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- left bracket -->
-  <text x="88" y="23" font-family="monospace" font-size="13" fill="#60A5FA" fill-opacity="0.5">⟨</text>
-  <!-- right bracket -->
-  <text x="318" y="23" font-family="monospace" font-size="13" fill="#60A5FA" fill-opacity="0.5">⟩</text>
+  <!-- left accent bar -->
+  <rect x="0" y="0" width="4" height="44" rx="2" fill="#60A5FA">
+    <animate attributeName="fill-opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+  <!-- right accent bar -->
+  <rect x="896" y="0" width="4" height="44" rx="2" fill="#60A5FA">
+    <animate attributeName="fill-opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite" begin="1.2s"/>
+  </rect>
+
+  <!-- side lines -->
+  <line x1="14" y1="22" x2="300" y2="22" stroke="#60A5FA" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 5"/>
+  <line x1="600" y1="22" x2="886" y2="22" stroke="#60A5FA" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 5"/>
+
+  <!-- tracer dot left -->
+  <circle r="2.5" fill="#60A5FA" filter="url(#glow)">
+    <animate attributeName="cx" from="14" to="300" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="22" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- tracer dot right -->
+  <circle r="2.5" fill="#60A5FA" filter="url(#glow)">
+    <animate attributeName="cx" from="886" to="600" dur="2s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="cy" values="22" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
 
   <!-- label -->
-  <text x="210" y="23" font-family="monospace" font-size="11" font-weight="bold"
-        fill="#60A5FA" fill-opacity="0.3" text-anchor="middle" dominant-baseline="central" letter-spacing="2">LANGUAGES</text>
-  <!-- bright animated label -->
-  <text x="210" y="23" font-family="monospace" font-size="11" font-weight="bold"
-        fill="#60A5FA" text-anchor="middle" dominant-baseline="central" letter-spacing="2" filter="url(#glow)">
-    <animate attributeName="fill-opacity" values="0.9;0.4;0.9;1;0.5;0.9" dur="4s" repeatCount="indefinite"/>
-    LANGUAGES
+  <text x="450" y="23" font-family="'Courier New',monospace" font-size="12" font-weight="bold"
+        fill="#60A5FA" fill-opacity="0.35" text-anchor="middle" dominant-baseline="central" letter-spacing="4">
+    ⟨  LANGUAGES  ⟩
   </text>
-
-  <!-- decorative side lines -->
-  <line x1="0" y1="18" x2="80" y2="18" stroke="url(#line-grad)" stroke-width="1" opacity="0.4"/>
-  <line x1="340" y1="18" x2="420" y2="18" stroke="url(#line-grad)" stroke-width="1" opacity="0.4"/>
-
-  <!-- animated dots on lines -->
-  <circle cx="0" cy="18" r="2" fill="#60A5FA">
-    <animate attributeName="cx" from="0" to="78" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="420" cy="18" r="2" fill="#60A5FA">
-    <animate attributeName="cx" from="420" to="342" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
-  </circle>
+  <text x="450" y="23" font-family="'Courier New',monospace" font-size="12" font-weight="bold"
+        fill="#60A5FA" text-anchor="middle" dominant-baseline="central" letter-spacing="4" filter="url(#glow)">
+    <animate attributeName="fill-opacity" values="1;0.5;1;0.8;1" dur="3s" repeatCount="indefinite"/>
+    ⟨  LANGUAGES  ⟩
+  </text>
 </svg>
