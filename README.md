@@ -43,10 +43,12 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)&nbsp;
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)&nbsp;
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)&nbsp;
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)&nbsp;
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)&nbsp;
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)&nbsp;
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)&nbsp;
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)&nbsp;
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)&nbsp;
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)&nbsp;
@@ -102,6 +104,8 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <table align="center"><tr>
 <td align="center" width="90"><a href="https://pytorch.org" title="PyTorch"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48"/></a><br/><sub><b>PyTorch</b></sub></td>
 <td align="center" width="90"><a href="https://tensorflow.org" title="TensorFlow"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="48" height="48"/></a><br/><sub><b>TensorFlow</b></sub></td>
+<td align="center" width="90"><a href="https://scikit-learn.org" title="Scikit-learn"><img src="https://skillicons.dev/icons?i=sklearn&theme=dark" width="48" height="48"/></a><br/><sub><b>Scikit-learn</b></sub></td>
+<td align="center" width="90"><a href="https://streamlit.io" title="Streamlit"><img src="https://skillicons.dev/icons?i=streamlit&theme=dark" width="48" height="48"/></a><br/><sub><b>Streamlit</b></sub></td>
 <td align="center" width="90"><a href="https://opencv.org" title="OpenCV"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" width="48" height="48"/></a><br/><sub><b>OpenCV</b></sub></td>
 </tr></table>
 
@@ -114,8 +118,10 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <table align="center"><tr>
 <td align="center" width="90"><a href="https://fastapi.tiangolo.com" title="FastAPI"><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="48" height="48"/></a><br/><sub><b>FastAPI</b></sub></td>
 <td align="center" width="90"><a href="https://flask.palletsprojects.com" title="Flask"><img src="https://skillicons.dev/icons?i=flask&theme=dark" width="48" height="48"/></a><br/><sub><b>Flask</b></sub></td>
+<td align="center" width="90"><a href="https://nodejs.org" title="Node.js"><img src="https://skillicons.dev/icons?i=nodejs&theme=dark" width="48" height="48"/></a><br/><sub><b>Node.js</b></sub></td>
 <td align="center" width="90"><a href="https://docker.com" title="Docker"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" height="48"/></a><br/><sub><b>Docker</b></sub></td>
 <td align="center" width="90"><a href="https://aws.amazon.com" title="AWS"><img src="https://skillicons.dev/icons?i=aws&theme=dark" width="48" height="48"/></a><br/><sub><b>AWS</b></sub></td>
+<td align="center" width="90"><a href="https://vercel.com" title="Vercel"><img src="https://skillicons.dev/icons?i=vercel&theme=dark" width="48" height="48"/></a><br/><sub><b>Vercel</b></sub></td>
 <td align="center" width="90"><a href="https://postgresql.org" title="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="48" height="48"/></a><br/><sub><b>PostgreSQL</b></sub></td>
 <td align="center" width="90"><a href="https://redis.io" title="Redis"><img src="https://skillicons.dev/icons?i=redis&theme=dark" width="48" height="48"/></a><br/><sub><b>Redis</b></sub></td>
 <td align="center" width="90"><a href="https://git-scm.com" title="Git"><img src="https://skillicons.dev/icons?i=git&theme=dark" width="48" height="48"/></a><br/><sub><b>Git</b></sub></td>
