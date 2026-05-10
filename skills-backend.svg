@@ -1,60 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="44" viewBox="0 0 900 44">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="48" viewBox="0 0 860 48">
   <defs>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1a0a12"/>
-      <stop offset="50%" stop-color="#200d18"/>
-      <stop offset="100%" stop-color="#1a0a12"/>
-    </linearGradient>
-    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F472B6" stop-opacity="0"/>
-      <stop offset="48%" stop-color="#F472B6" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#F472B6" stop-opacity="0.12"/>
-      <stop offset="52%" stop-color="#F472B6" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
-      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="2.8s" repeatCount="indefinite"/>
-    </linearGradient>
-    <clipPath id="clip"><rect width="900" height="44" rx="8"/></clipPath>
+    <clipPath id="c"><rect width="860" height="48" rx="8"/></clipPath>
   </defs>
 
-  <rect width="900" height="44" rx="8" fill="url(#bg)"/>
-  <rect width="900" height="44" rx="8" fill="url(#sweep)"/>
+  <rect width="860" height="48" rx="8" fill="#0d1117"/>
+  <rect width="860" height="48" rx="8" fill="#F472B6" fill-opacity="0.06"/>
 
-  <rect x="0.5" y="0.5" width="899" height="43" rx="7.5" fill="none" stroke="#F472B6" stroke-width="1">
-    <animate attributeName="stroke-opacity" values="0.25;0.7;0.25" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+  <rect clip-path="url(#c)" x="-180" y="0" width="180" height="48" fill="#F472B6" fill-opacity="0.09">
+    <animate attributeName="x" from="-180" to="860" dur="2.4s" repeatCount="indefinite" calcMode="ease-in-out" begin="0.8s"/>
   </rect>
 
-  <rect x="0" y="0" width="4" height="44" rx="2" fill="#F472B6">
-    <animate attributeName="fill-opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
-  </rect>
-  <rect x="896" y="0" width="4" height="44" rx="2" fill="#F472B6">
-    <animate attributeName="fill-opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" begin="1.9s"/>
+  <rect x="1" y="1" width="858" height="46" rx="7" fill="none" stroke="#F472B6" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
   </rect>
 
-  <line x1="14" y1="22" x2="270" y2="22" stroke="#F472B6" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 5"/>
-  <line x1="630" y1="22" x2="886" y2="22" stroke="#F472B6" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 5"/>
+  <rect x="0" y="0" width="5" height="48" rx="3" fill="#F472B6">
+    <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+  </rect>
+  <rect x="855" y="0" width="5" height="48" rx="3" fill="#F472B6">
+    <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite" begin="1.9s"/>
+  </rect>
 
-  <circle r="2.5" fill="#F472B6" filter="url(#glow)">
-    <animate attributeName="cx" from="14" to="270" dur="1.9s" repeatCount="indefinite" begin="0.2s"/>
-    <animate attributeName="cy" values="22" dur="1.9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="1.9s" repeatCount="indefinite" begin="0.2s"/>
+  <line x1="16" y1="24" x2="240" y2="24" stroke="#F472B6" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="4 6"/>
+  <line x1="620" y1="24" x2="844" y2="24" stroke="#F472B6" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="4 6"/>
+
+  <circle cy="24" r="3" fill="#F472B6">
+    <animate attributeName="cx" from="16" to="240" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.85;1" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
   </circle>
-  <circle r="2.5" fill="#F472B6" filter="url(#glow)">
-    <animate attributeName="cx" from="886" to="630" dur="1.9s" repeatCount="indefinite" begin="1.3s"/>
-    <animate attributeName="cy" values="22" dur="1.9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="1.9s" repeatCount="indefinite" begin="1.3s"/>
+  <circle cy="24" r="3" fill="#F472B6">
+    <animate attributeName="cx" from="844" to="620" dur="1.8s" repeatCount="indefinite" begin="1.4s"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.85;1" dur="1.8s" repeatCount="indefinite" begin="1.4s"/>
   </circle>
 
-  <text x="450" y="23" font-family="'Courier New',monospace" font-size="12" font-weight="bold"
-        fill="#F472B6" fill-opacity="0.35" text-anchor="middle" dominant-baseline="central" letter-spacing="4">
+  <text x="430" y="25" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="bold"
+        fill="#F472B6" fill-opacity="0.2" text-anchor="middle" dominant-baseline="central" letter-spacing="5">
     ⟨  BACKEND · CLOUD · DEVOPS  ⟩
   </text>
-  <text x="450" y="23" font-family="'Courier New',monospace" font-size="12" font-weight="bold"
-        fill="#F472B6" text-anchor="middle" dominant-baseline="central" letter-spacing="4" filter="url(#glow)">
-    <animate attributeName="fill-opacity" values="1;0.5;1;0.8;1" dur="2.8s" repeatCount="indefinite" begin="0.8s"/>
+  <text x="430" y="25" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="bold"
+        text-anchor="middle" dominant-baseline="central" letter-spacing="5">
+    <animate attributeName="fill" values="#F472B6;#F9A8D4;#F472B6" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+    <animate attributeName="fill-opacity" values="1;0.7;1" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
     ⟨  BACKEND · CLOUD · DEVOPS  ⟩
   </text>
 </svg>
