@@ -224,10 +224,10 @@ Dual-party approval, msg.value lock, MetaMask integration, full Hardhat test sui
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## Neural Network
+## Skill Galaxy
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/neural-net.svg" width="100%" alt="Neural Network Forward Propagation"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/galaxy.svg" width="100%" alt="Skill Galaxy — Technologies in Orbit"/>
 </div>
 
 ## Contribution Skyline

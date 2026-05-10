@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="270" viewBox="0 0 860 270">
+  <defs>
+    <!-- Filters -->
+    <filter id="cg" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="pg" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sg" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Orbit paths (hidden — used by animateMotion) -->
+    <path id="o1" d="M 510,135 A 80,28 0 0 1 430,163 A 80,28 0 0 1 350,135 A 80,28 0 0 1 430,107 A 80,28 0 0 1 510,135"/>
+    <path id="o2" d="M 575,135 A 145,50 0 0 1 430,185 A 145,50 0 0 1 285,135 A 145,50 0 0 1 430,85 A 145,50 0 0 1 575,135"/>
+    <path id="o3" d="M 640,135 A 210,72 0 0 1 430,207 A 210,72 0 0 1 220,135 A 210,72 0 0 1 430,63 A 210,72 0 0 1 640,135"/>
+
+    <!-- Gradients -->
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%"  stop-color="#06091a"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#e9d5ff"/>
+      <stop offset="45%"  stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Star tile pattern -->
+    <pattern id="stars" x="0" y="0" width="130" height="95" patternUnits="userSpaceOnUse">
+      <circle cx="12"  cy="18"  r="0.7"  fill="white" fill-opacity="0.55"/>
+      <circle cx="55"  cy="7"   r="1.1"  fill="white" fill-opacity="0.40"/>
+      <circle cx="100" cy="42"  r="0.8"  fill="white" fill-opacity="0.65"/>
+      <circle cx="38"  cy="72"  r="1.3"  fill="white" fill-opacity="0.30"/>
+      <circle cx="88"  cy="78"  r="0.6"  fill="white" fill-opacity="0.70"/>
+      <circle cx="118" cy="14"  r="0.9"  fill="white" fill-opacity="0.50"/>
+      <circle cx="22"  cy="52"  r="1.0"  fill="white" fill-opacity="0.45"/>
+      <circle cx="72"  cy="35"  r="0.5"  fill="white" fill-opacity="0.60"/>
+      <circle cx="5"   cy="88"  r="0.8"  fill="white" fill-opacity="0.35"/>
+      <circle cx="128" cy="60"  r="0.7"  fill="white" fill-opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <!-- ── SPACE BACKGROUND ── -->
+  <rect width="860" height="270" rx="10" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <rect width="860" height="270" rx="10" fill="url(#stars)">
+    <animate attributeName="fill-opacity" values="0.85;1;0.85" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Nebula wisps (far corners) -->
+  <ellipse cx="120" cy="70"  rx="160" ry="70" fill="#4c1d95" fill-opacity="0.06"/>
+  <ellipse cx="750" cy="200" rx="140" ry="60" fill="#0e7490" fill-opacity="0.07"/>
+
+  <!-- Border pulse -->
+  <rect x="1" y="1" width="858" height="268" rx="9" fill="none" stroke="#a78bfa" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.15;0.4;0.15" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ── ORBIT RINGS ── -->
+  <ellipse cx="430" cy="135" rx="80"  ry="28" fill="none" stroke="#1e2a50" stroke-width="1" stroke-dasharray="3 9"/>
+  <ellipse cx="430" cy="135" rx="145" ry="50" fill="none" stroke="#1e2a50" stroke-width="1" stroke-dasharray="3 9"/>
+  <ellipse cx="430" cy="135" rx="210" ry="72" fill="none" stroke="#1e2a50" stroke-width="1" stroke-dasharray="3 9"/>
+
+  <!-- ── CENTRAL CORE ── -->
+  <!-- Outer aura -->
+  <circle cx="430" cy="135" r="52" fill="#6d28d9" fill-opacity="0.07" filter="url(#cg)">
+    <animate attributeName="r"            values="48;56;48"   dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.05;0.12;0.05" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Inner glow sphere -->
+  <circle cx="430" cy="135" r="26" fill="url(#core)" filter="url(#cg)">
+    <animate attributeName="r"            values="24;28;24"   dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Core face -->
+  <circle cx="430" cy="135" r="16" fill="#0d0820"/>
+  <text x="430" y="132" font-family="'Courier New',Courier,monospace" font-size="7" font-weight="bold"
+        fill="#e9d5ff" text-anchor="middle" letter-spacing="1">AI · ML</text>
+  <text x="430" y="142" font-family="'Courier New',Courier,monospace" font-size="5"
+        fill="#a78bfa" fill-opacity="0.8" text-anchor="middle" letter-spacing="1">DATA SCI</text>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!--  INNER ORBIT  (period=7s, 3 planets, 2.33s stagger)        -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+
+  <!-- Python — blue #60a5fa -->
+  <g>
+    <animateMotion dur="7s" begin="0s" repeatCount="indefinite"><mpath href="#o1"/></animateMotion>
+    <circle r="9" fill="#60a5fa" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="8;10;8" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <text y="21" font-family="'Courier New',Courier,monospace" font-size="7" fill="#93c5fd" text-anchor="middle">PY</text>
+  </g>
+
+  <!-- PyTorch — amber #fb923c -->
+  <g>
+    <animateMotion dur="7s" begin="2.33s" repeatCount="indefinite"><mpath href="#o1"/></animateMotion>
+    <circle r="8" fill="#fb923c" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="7;9;7" dur="1.8s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <text y="20" font-family="'Courier New',Courier,monospace" font-size="7" fill="#fdba74" text-anchor="middle">PT</text>
+  </g>
+
+  <!-- TensorFlow — yellow #facc15 -->
+  <g>
+    <animateMotion dur="7s" begin="4.67s" repeatCount="indefinite"><mpath href="#o1"/></animateMotion>
+    <circle r="7" fill="#facc15" fill-opacity="0.85" filter="url(#pg)">
+      <animate attributeName="r" values="6;8;6" dur="2.4s" begin="0.9s" repeatCount="indefinite"/>
+    </circle>
+    <text y="19" font-family="'Courier New',Courier,monospace" font-size="7" fill="#fde047" text-anchor="middle">TF</text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!--  MIDDLE ORBIT  (period=13s, 4 planets, 3.25s stagger)      -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+
+  <!-- LangChain — green #34d399 -->
+  <g>
+    <animateMotion dur="13s" begin="0s" repeatCount="indefinite"><mpath href="#o2"/></animateMotion>
+    <circle r="8" fill="#34d399" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="7;9;7" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <text y="20" font-family="'Courier New',Courier,monospace" font-size="7" fill="#6ee7b7" text-anchor="middle">LC</text>
+  </g>
+
+  <!-- FastAPI — cyan #22d3ee -->
+  <g>
+    <animateMotion dur="13s" begin="3.25s" repeatCount="indefinite"><mpath href="#o2"/></animateMotion>
+    <circle r="9" fill="#22d3ee" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="8;10;8" dur="1.7s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <text y="21" font-family="'Courier New',Courier,monospace" font-size="7" fill="#67e8f9" text-anchor="middle">API</text>
+  </g>
+
+  <!-- HuggingFace — pink #f472b6 -->
+  <g>
+    <animateMotion dur="13s" begin="6.5s" repeatCount="indefinite"><mpath href="#o2"/></animateMotion>
+    <circle r="7" fill="#f472b6" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="6;8;6" dur="2.3s" begin="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <text y="19" font-family="'Courier New',Courier,monospace" font-size="7" fill="#f9a8d4" text-anchor="middle">HF</text>
+  </g>
+
+  <!-- scikit-learn — purple #a78bfa -->
+  <g>
+    <animateMotion dur="13s" begin="9.75s" repeatCount="indefinite"><mpath href="#o2"/></animateMotion>
+    <circle r="7" fill="#a78bfa" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="6;8;6" dur="1.9s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text y="19" font-family="'Courier New',Courier,monospace" font-size="7" fill="#c4b5fd" text-anchor="middle">SK</text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!--  OUTER ORBIT  (period=22s, 4 planets, 5.5s stagger)        -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+
+  <!-- React — sky blue #38bdf8 -->
+  <g>
+    <animateMotion dur="22s" begin="0s" repeatCount="indefinite"><mpath href="#o3"/></animateMotion>
+    <circle r="8" fill="#38bdf8" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="7;9;7" dur="2.2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <text y="20" font-family="'Courier New',Courier,monospace" font-size="7" fill="#7dd3fc" text-anchor="middle">RE</text>
+  </g>
+
+  <!-- AWS — amber #f59e0b -->
+  <g>
+    <animateMotion dur="22s" begin="5.5s" repeatCount="indefinite"><mpath href="#o3"/></animateMotion>
+    <circle r="9" fill="#f59e0b" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="8;10;8" dur="2.5s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <text y="21" font-family="'Courier New',Courier,monospace" font-size="7" fill="#fcd34d" text-anchor="middle">AWS</text>
+  </g>
+
+  <!-- Docker — teal #06b6d4 -->
+  <g>
+    <animateMotion dur="22s" begin="11s" repeatCount="indefinite"><mpath href="#o3"/></animateMotion>
+    <circle r="8" fill="#06b6d4" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="7;9;7" dur="1.8s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <text y="20" font-family="'Courier New',Courier,monospace" font-size="7" fill="#67e8f9" text-anchor="middle">DK</text>
+  </g>
+
+  <!-- PostgreSQL — ice blue #7dd3fc -->
+  <g>
+    <animateMotion dur="22s" begin="16.5s" repeatCount="indefinite"><mpath href="#o3"/></animateMotion>
+    <circle r="7" fill="#7dd3fc" fill-opacity="0.9" filter="url(#pg)">
+      <animate attributeName="r" values="6;8;6" dur="2.1s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text y="19" font-family="'Courier New',Courier,monospace" font-size="7" fill="#bfdbfe" text-anchor="middle">PG</text>
+  </g>
+
+  <!-- ── SHOOTING STARS ── -->
+  <!-- Star 1 — top-left to center-right, appears every 9s -->
+  <line x1="-50" y1="0" x2="0" y2="0" stroke="white" stroke-linecap="round" stroke-width="1.5">
+    <animateMotion path="M 80,30 L 450,140" dur="9s" begin="2s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.9;0.4;0;0;0;0;0;0" keyTimes="0;0.01;0.06;0.1;0.15;0.3;0.5;0.7;0.9;1" dur="9s" begin="2s" repeatCount="indefinite"/>
+  </line>
+  <!-- Star 2 — right to bottom-left, appears every 13s -->
+  <line x1="-45" y1="0" x2="0" y2="0" stroke="white" stroke-linecap="round" stroke-width="1.2">
+    <animateMotion path="M 820,50 L 350,200" dur="13s" begin="6s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="stroke-opacity" values="0;0;0.8;0.3;0;0;0;0;0;0;0;0;0" keyTimes="0;0.01;0.05;0.08;0.12;0.2;0.4;0.6;0.7;0.8;0.9;0.95;1" dur="13s" begin="6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- ── CAPTION ── -->
+  <text x="430" y="257" font-family="'Courier New',Courier,monospace" font-size="8" fill="#2d3a5a" text-anchor="middle" letter-spacing="3">
+    SKILL GALAXY  ·  TECHNOLOGIES IN ORBIT
+  </text>
+</svg>
