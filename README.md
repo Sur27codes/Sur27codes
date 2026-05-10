@@ -104,6 +104,7 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <table align="center"><tr>
 <td align="center" width="90"><a href="https://pytorch.org" title="PyTorch"><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48"/></a><br/><sub><b>PyTorch</b></sub></td>
 <td align="center" width="90"><a href="https://tensorflow.org" title="TensorFlow"><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="48" height="48"/></a><br/><sub><b>TensorFlow</b></sub></td>
+<td align="center" width="90"><a href="https://streamlit.io" title="Streamlit"><img src="https://skillicons.dev/icons?i=streamlit&theme=dark" width="48" height="48"/></a><br/><sub><b>Streamlit</b></sub></td>
 <td align="center" width="90"><a href="https://opencv.org" title="OpenCV"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" width="48" height="48"/></a><br/><sub><b>OpenCV</b></sub></td>
 </tr></table>
 
