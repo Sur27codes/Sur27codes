@@ -224,13 +224,13 @@ Dual-party approval, msg.value lock, MetaMask integration, full Hardhat test sui
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## What I'm Building
+## Neural Network
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/git-status.svg" width="100%" alt="Current Work"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/neural-net.svg" width="100%" alt="Neural Network Forward Propagation"/>
 </div>
 
-## Commit Spectrogram
+## Contribution Skyline
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Code Activity Spectrogram"/>

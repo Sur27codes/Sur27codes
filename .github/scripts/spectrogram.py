@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 """
-Renders GitHub contribution data as a code activity spectrogram SVG.
-Intensity mapped to a dark→violet→purple→cyan color scale (like a signal spectrogram).
+Renders GitHub contribution data as a city skyline at night.
+Each week column = one building. Height = weekly commit count.
 """
 
-import os
-import sys
-import requests
+import os, sys, requests
 from datetime import datetime
 
 USERNAME = os.environ.get('GITHUB_USERNAME', 'Sur27codes')
@@ -30,162 +28,161 @@ def fetch():
     return r.json()['data']['user']['contributionsCollection']['contributionCalendar']
 
 
-def color_for(n):
-    # plasma-inspired: black → deep violet → purple → lavender → cyan → ice white
-    if n == 0:  return '#0d1117'
-    if n <= 1:  return '#1e1040'
-    if n <= 3:  return '#3b0764'
-    if n <= 6:  return '#6d28d9'
-    if n <= 11: return '#8b5cf6'
-    if n <= 18: return '#a78bfa'
-    if n <= 28: return '#38bdf8'
-    return '#e0f9ff'
-
-
 def render(cal):
-    weeks = cal['weeks']
-    total = cal['totalContributions']
-    today = datetime.now().strftime('%Y-%m-%d')
+    weeks  = cal['weeks']
+    total  = cal['totalContributions']
+    today  = datetime.now().strftime('%Y-%m-%d')
+    NW     = len(weeks)
 
-    # ── Layout constants ──────────────────────────────────────────────────────
-    CELL  = 12          # cell square size
-    GAP   = 2           # gap between cells
-    STEP  = CELL + GAP  # 14 px per column/row
-    LM    = 38          # left margin (day labels)
-    TM    = 54          # top margin (header)
-    NW    = len(weeks)  # number of week columns
-    GRID_W = NW * STEP
-    GRID_H = 7  * STEP  # 98 px
-    CB_X  = LM + GRID_W + 18   # colorbar x
-    SVG_W = CB_X + 56          # total width
-    SVG_H = TM + GRID_H + 52   # header + grid + x-axis + sparkline + footer
+    # ── Layout ──────────────────────────────────────────────────────────────
+    SVG_W   = 860
+    FLOOR_Y = 175          # y of the ground line
+    MAX_H   = 130          # tallest building height (px)
+    MIN_H   = 8            # quietest week still gets a sliver
+    COL_W   = (SVG_W - 20) / NW   # width per column
+    GAP     = max(1, int(COL_W * 0.12))
+    B_W     = max(4, int(COL_W - GAP))
+    SVG_H   = 240
+
+    # weekly totals
+    week_totals = []
+    month_marks = {}
+    prev_month  = None
+    for w_idx, wk in enumerate(weeks):
+        s = sum(d['contributionCount'] for d in wk['contributionDays'])
+        week_totals.append(s)
+        if wk['contributionDays']:
+            dt = datetime.strptime(wk['contributionDays'][0]['date'], '%Y-%m-%d')
+            m  = dt.strftime('%b')
+            if m != prev_month:
+                month_marks[m] = w_idx
+                prev_month = m
+
+    max_t = max(week_totals) if week_totals else 1
+
+    def building_h(t):
+        if t == 0: return MIN_H // 2
+        frac = (t / max_t) ** 0.55   # power curve — small weeks still visible
+        return int(MIN_H + frac * (MAX_H - MIN_H))
+
+    def building_color(t):
+        """Gradient: very dim → purple → lavender → near-white based on height."""
+        if t == 0: return '#111827', '#1a2035'
+        frac = t / max_t
+        if frac < 0.25: return '#1e1040', '#2d1878'
+        if frac < 0.50: return '#4c1d95', '#6d28d9'
+        if frac < 0.75: return '#7c3aed', '#a78bfa'
+        return '#a78bfa', '#e0d7ff'
 
     L = []
     def e(s): L.append(s)
 
-    # ── SVG header ────────────────────────────────────────────────────────────
-    e(f'<svg xmlns="http://www.w3.org/2000/svg" '
-      f'width="{SVG_W}" height="{SVG_H}" viewBox="0 0 {SVG_W} {SVG_H}">')
+    # ── SVG open ────────────────────────────────────────────────────────────
+    e(f'<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{SVG_H}" viewBox="0 0 {SVG_W} {SVG_H}">')
+    e(f'<defs>')
+    e(f'  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">')
+    e(f'    <stop offset="0%"  stop-color="#050810"/>')
+    e(f'    <stop offset="70%" stop-color="#0a0d1a"/>')
+    e(f'    <stop offset="100%" stop-color="#0f1330"/>')
+    e(f'  </linearGradient>')
+    # Horizon glow
+    e(f'  <radialGradient id="hglow" cx="50%" cy="100%" r="60%">')
+    e(f'    <stop offset="0%"  stop-color="#6d28d9" stop-opacity="0.18"/>')
+    e(f'    <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>')
+    e(f'  </radialGradient>')
+    # Reflection gradient (buildings reflected below ground)
+    e(f'  <linearGradient id="ref" x1="0" y1="0" x2="0" y2="1">')
+    e(f'    <stop offset="0%"  stop-color="#000000" stop-opacity="0.5"/>')
+    e(f'    <stop offset="100%" stop-color="#000000" stop-opacity="0"/>')
+    e(f'  </linearGradient>')
+    e(f'  <clipPath id="skycp"><rect x="0" y="0" width="{SVG_W}" height="{FLOOR_Y}"/></clipPath>')
+    e(f'  <clipPath id="refcp"><rect x="0" y="{FLOOR_Y}" width="{SVG_W}" height="{SVG_H - FLOOR_Y - 30}"/></clipPath>')
+    e(f'</defs>')
 
-    # Background
-    e(f'<rect width="{SVG_W}" height="{SVG_H}" rx="10" fill="#0d1117"/>')
+    # Sky background
+    e(f'<rect width="{SVG_W}" height="{SVG_H}" fill="url(#sky)"/>')
 
-    # Left accent bar
-    e(f'<rect x="0" y="0" width="3" height="{SVG_H}" rx="1" fill="#a78bfa" fill-opacity="0.85"/>')
+    # Stars (scattered dots)
+    import random; random.seed(42)
+    for _ in range(60):
+        sx = random.randint(10, SVG_W - 10)
+        sy = random.randint(8, FLOOR_Y - 20)
+        sr = round(random.uniform(0.4, 1.2), 1)
+        so = round(random.uniform(0.3, 0.9), 1)
+        bd = round(random.uniform(1.5, 4.0), 1)
+        bb = round(random.uniform(0, 2.0), 1)
+        e(f'<circle cx="{sx}" cy="{sy}" r="{sr}" fill="#ffffff" fill-opacity="{so}">'
+          f'<animate attributeName="fill-opacity" values="{so};{max(0.1,so-0.4)};{so}" dur="{bd}s" begin="{bb}s" repeatCount="indefinite"/>'
+          f'</circle>')
 
-    # Pulsing border
-    e(f'<rect x="1" y="1" width="{SVG_W-2}" height="{SVG_H-2}" rx="9" '
-      f'fill="none" stroke="#a78bfa" stroke-width="1">'
-      f'<animate attributeName="stroke-opacity" values="0.18;0.5;0.18" dur="3s" repeatCount="indefinite"/>'
+    # Horizon glow
+    e(f'<rect width="{SVG_W}" height="{SVG_H}" fill="url(#hglow)"/>')
+
+    # Border
+    e(f'<rect x="1" y="1" width="{SVG_W-2}" height="{SVG_H-2}" rx="9" fill="none" stroke="#a78bfa" stroke-width="1">'
+      f'<animate attributeName="stroke-opacity" values="0.2;0.45;0.2" dur="3s" repeatCount="indefinite"/>'
       f'</rect>')
 
-    # ── Header text ───────────────────────────────────────────────────────────
-    e(f'<text x="{LM}" y="20" font-family="\'Courier New\',Courier,monospace" '
-      f'font-size="11" font-weight="bold" fill="#a78bfa" letter-spacing="3">'
-      f'CODE ACTIVITY SPECTROGRAM</text>')
-    e(f'<text x="{SVG_W-8}" y="20" font-family="\'Courier New\',Courier,monospace" '
-      f'font-size="10" fill="#6e7681" text-anchor="end">{USERNAME}</text>')
-    e(f'<text x="{LM}" y="36" font-family="\'Courier New\',Courier,monospace" '
-      f'font-size="9" fill="#4d5562" letter-spacing="1">'
-      f'TEMPORAL FREQUENCY ANALYSIS  ·  COMMIT INTENSITY  ·  12 MONTHS</text>')
+    # ── Buildings (above ground) ──────────────────────────────────────────
+    # Group: clip to sky area so buildings don't go into footer
+    e(f'<g clip-path="url(#skycp)">')
+    for w_idx, t in enumerate(week_totals):
+        h     = building_h(t)
+        x     = 10 + w_idx * COL_W
+        bx    = int(x + GAP / 2)
+        by    = FLOOR_Y - h
+        dark, light = building_color(t)
 
-    # Header separator
-    e(f'<line x1="{LM}" y1="44" x2="{LM+GRID_W}" y2="44" stroke="#21262d" stroke-width="1"/>')
+        # Building body (vertical gradient via two rects)
+        e(f'<rect x="{bx}" y="{by}" width="{B_W}" height="{h}" fill="{dark}"/>')
+        # Top highlight
+        e(f'<rect x="{bx}" y="{by}" width="{B_W}" height="{min(4, h)}" fill="{light}" fill-opacity="0.9"/>')
 
-    # ── Day labels ────────────────────────────────────────────────────────────
-    DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-    for i, d in enumerate(DAYS):
-        y = TM + i*STEP + CELL//2
-        e(f'<text x="{LM-4}" y="{y}" font-family="\'Courier New\',Courier,monospace" '
-          f'font-size="9" fill="#6e7681" text-anchor="end" dominant-baseline="central">{d}</text>')
+        # Windows (tiny lit squares) for non-trivial buildings
+        if t >= 2 and h > 14:
+            win_rows = max(1, (h - 6) // 6)
+            win_cols = max(1, (B_W - 2) // 5)
+            for wr in range(win_rows):
+                for wc in range(win_cols):
+                    wx = bx + 2 + wc * 5
+                    wy = by + 4 + wr * 6
+                    brightness = min(1.0, t / max_t + 0.2)
+                    # random seed per window for stable pattern
+                    rs = hash((w_idx, wr, wc)) % 100
+                    if rs > 35:  # ~65% windows lit
+                        wop = round(0.4 + brightness * 0.5, 2)
+                        e(f'<rect x="{wx}" y="{wy}" width="2" height="2" fill="{light}" fill-opacity="{wop}"/>')
 
-    # ── Contribution cells ────────────────────────────────────────────────────
-    month_labels = {}  # month_abbr → x
-    prev_month   = None
-    weekly_totals = []
+    e(f'</g>')
 
-    for w_idx, week in enumerate(weeks):
-        x = LM + w_idx * STEP
-        w_total = 0
+    # ── Ground line ──────────────────────────────────────────────────────
+    e(f'<line x1="10" y1="{FLOOR_Y}" x2="{SVG_W-10}" y2="{FLOOR_Y}" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.35"/>')
 
-        # Month label: mark first week of each new month
-        if week['contributionDays']:
-            d0 = datetime.strptime(week['contributionDays'][0]['date'], '%Y-%m-%d')
-            m  = d0.strftime('%b')
-            if m != prev_month:
-                month_labels[m] = x
-                prev_month = m
+    # ── Reflection (buildings mirrored below ground, fading) ─────────────
+    e(f'<g clip-path="url(#refcp)" transform="translate(0,{2*FLOOR_Y}) scale(1,-1)">')
+    for w_idx, t in enumerate(week_totals):
+        h     = building_h(t)
+        x     = 10 + w_idx * COL_W
+        bx    = int(x + GAP / 2)
+        by    = FLOOR_Y - h
+        dark, _ = building_color(t)
+        e(f'<rect x="{bx}" y="{by}" width="{B_W}" height="{h}" fill="{dark}" fill-opacity="0.3"/>')
+    e(f'</g>')
+    # Fade out reflection
+    e(f'<rect x="0" y="{FLOOR_Y}" width="{SVG_W}" height="{SVG_H - FLOOR_Y - 30}" fill="url(#ref)"/>')
 
-        for day in week['contributionDays']:
-            # GitHub weekday: 0=Sun → remap to row 0=Mon
-            row   = (day['weekday'] + 6) % 7
-            y     = TM + row * STEP
-            count = day['contributionCount']
-            w_total += count
-            col   = color_for(count)
-            e(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" fill="{col}"/>')
+    # ── Month labels ──────────────────────────────────────────────────────
+    for m, widx in month_marks.items():
+        mx = int(10 + widx * COL_W)
+        e(f'<text x="{mx}" y="{FLOOR_Y + 16}" font-family="\'Courier New\',Courier,monospace" '
+          f'font-size="9" fill="#4d5562">{m}</text>')
 
-        weekly_totals.append(w_total)
-
-    # ── X-axis line ───────────────────────────────────────────────────────────
-    GRID_BOT = TM + GRID_H
-    e(f'<line x1="{LM}" y1="{GRID_BOT+2}" x2="{LM+GRID_W}" y2="{GRID_BOT+2}" '
-      f'stroke="#21262d" stroke-width="1"/>')
-
-    # Month labels
-    Y_MONTH = GRID_BOT + 14
-    for m, mx in month_labels.items():
-        e(f'<text x="{mx}" y="{Y_MONTH}" font-family="\'Courier New\',Courier,monospace" '
-          f'font-size="9" fill="#6e7681">{m}</text>')
-
-    # ── Weekly power-spectrum sparkline ───────────────────────────────────────
-    # Drawn as small bars below month labels — mimics spectrogram power profile
-    max_t = max(weekly_totals) if weekly_totals else 1
-    SPARK_BOT = GRID_BOT + 34   # bottom of sparkline
-    SPARK_H   = 10              # max bar height
-
-    for i, t in enumerate(weekly_totals):
-        if t == 0:
-            continue
-        bh = max(1, int((t / max_t) * SPARK_H))
-        sx = LM + i * STEP
-        sy = SPARK_BOT - bh
-        e(f'<rect x="{sx}" y="{sy}" width="{CELL}" height="{bh}" rx="1" '
-          f'fill="#a78bfa" fill-opacity="0.35"/>')
-
-    # Sparkline base line
-    e(f'<line x1="{LM}" y1="{SPARK_BOT}" x2="{LM+GRID_W}" y2="{SPARK_BOT}" '
-      f'stroke="#21262d" stroke-width="1" stroke-dasharray="2 4"/>')
-
-    # ── Colorbar ──────────────────────────────────────────────────────────────
-    CB_ITEMS = [
-        ('28+', '#e0f9ff'),
-        ('28',  '#38bdf8'),
-        ('18',  '#a78bfa'),
-        ('11',  '#8b5cf6'),
-        ('6',   '#6d28d9'),
-        ('3',   '#3b0764'),
-        ('1',   '#1e1040'),
-        ('0',   '#0d1117'),
-    ]
-    CB_CELL = GRID_H // len(CB_ITEMS)
-    e(f'<text x="{CB_X+10}" y="{TM-9}" font-family="\'Courier New\',Courier,monospace" '
-      f'font-size="8" fill="#4d5562" text-anchor="middle">n</text>')
-
-    for i, (label, col) in enumerate(CB_ITEMS):
-        cy = TM + i * CB_CELL
-        e(f'<rect x="{CB_X}" y="{cy}" width="12" height="{CB_CELL-1}" fill="{col}" rx="1"/>')
-        e(f'<text x="{CB_X+16}" y="{cy + CB_CELL//2}" '
-          f'font-family="\'Courier New\',Courier,monospace" font-size="7" '
-          f'fill="#6e7681" dominant-baseline="central">{label}</text>')
-
-    # ── Footer ────────────────────────────────────────────────────────────────
-    FY = SVG_H - 8
-    e(f'<text x="{LM}" y="{FY}" font-family="\'Courier New\',Courier,monospace" font-size="9" fill="#6e7681">'
-      f'<tspan fill="#a78bfa" font-weight="bold">{total}</tspan>'
-      f' contributions in the last year</text>')
-    e(f'<text x="{SVG_W-8}" y="{FY}" font-family="\'Courier New\',Courier,monospace" '
-      f'font-size="9" fill="#4d5562" text-anchor="end">generated {today}</text>')
+    # ── Footer ────────────────────────────────────────────────────────────
+    fy = SVG_H - 8
+    e(f'<text x="10" y="{fy}" font-family="\'Courier New\',Courier,monospace" font-size="9" fill="#4d5562">'
+      f'<tspan fill="#a78bfa" font-weight="bold">{total}</tspan> contributions  ·  {today}</text>')
+    e(f'<text x="{SVG_W-10}" y="{fy}" font-family="\'Courier New\',Courier,monospace" font-size="9" '
+      f'fill="#4d5562" text-anchor="end">CONTRIBUTION SKYLINE</text>')
 
     e('</svg>')
     return '\n'.join(L)
@@ -196,13 +193,9 @@ if __name__ == '__main__':
     try:
         cal = fetch()
     except Exception as ex:
-        print(f'ERROR: {ex}', file=sys.stderr)
-        sys.exit(1)
-
+        print(f'ERROR: {ex}', file=sys.stderr); sys.exit(1)
     print(f'Total: {cal["totalContributions"]}  Weeks: {len(cal["weeks"])}')
     svg = render(cal)
-
-    out = 'contrib.svg'
-    with open(out, 'w') as f:
+    with open('contrib.svg', 'w') as f:
         f.write(svg)
-    print(f'Saved {out}  ({len(svg)} bytes)')
+    print(f'Saved contrib.svg  ({len(svg)} bytes)')
