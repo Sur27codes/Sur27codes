@@ -56,7 +56,18 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 </div>
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,ts,react,fastapi,docker,aws,postgres,redis,nextjs,langchain&theme=dark" />
+<img src="https://skillicons.dev/icons?i=python&theme=dark" title="Python" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" title="PyTorch" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" title="TensorFlow" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=ts&theme=dark" title="TypeScript" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=react&theme=dark" title="React" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=fastapi&theme=dark" title="FastAPI" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=docker&theme=dark" title="Docker" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=aws&theme=dark" title="AWS" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=postgres&theme=dark" title="PostgreSQL" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=redis&theme=dark" title="Redis" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=nextjs&theme=dark" title="Next.js" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=langchain&theme=dark" title="LangChain" width="48" height="48"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
@@ -72,7 +83,13 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-lang.svg" width="100%" alt="Languages"/>
 <br/>
-<img src="https://skillicons.dev/icons?i=python,r,ts,js,cpp,java,solidity&theme=dark" />
+<img src="https://skillicons.dev/icons?i=python&theme=dark" title="Python" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=r&theme=dark" title="R" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=ts&theme=dark" title="TypeScript" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=js&theme=dark" title="JavaScript" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=cpp&theme=dark" title="C++" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=java&theme=dark" title="Java" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=solidity&theme=dark" title="Solidity" width="48" height="48"/>
 </div>
 
 <br/>
@@ -80,7 +97,9 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-ml.svg" width="100%" alt="ML · AI · LLMs"/>
 <br/>
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" />
+<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" title="PyTorch" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" title="TensorFlow" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=opencv&theme=dark" title="OpenCV" width="48" height="48"/>
 </div>
 
 <br/>
@@ -88,7 +107,13 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-backend.svg" width="100%" alt="Backend · Cloud · DevOps"/>
 <br/>
-<img src="https://skillicons.dev/icons?i=fastapi,flask,docker,aws,postgres,redis,git&theme=dark" />
+<img src="https://skillicons.dev/icons?i=fastapi&theme=dark" title="FastAPI" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=flask&theme=dark" title="Flask" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=docker&theme=dark" title="Docker" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=aws&theme=dark" title="AWS" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=postgres&theme=dark" title="PostgreSQL" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=redis&theme=dark" title="Redis" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=git&theme=dark" title="Git" width="48" height="48"/>
 </div>
 
 <br/>
@@ -96,7 +121,10 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/skills-frontend.svg" width="100%" alt="Frontend · Data"/>
 <br/>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,github&theme=dark" />
+<img src="https://skillicons.dev/icons?i=react&theme=dark" title="React" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=nextjs&theme=dark" title="Next.js" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=tailwind&theme=dark" title="Tailwind CSS" width="48" height="48"/>
+<img src="https://skillicons.dev/icons?i=github&theme=dark" title="GitHub" width="48" height="48"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
