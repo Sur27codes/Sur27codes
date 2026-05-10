@@ -137,6 +137,11 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <td align="center" width="90"><a href="https://react.dev" title="React"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" height="48"/></a><br/><sub><b>React</b></sub></td>
 <td align="center" width="90"><a href="https://nextjs.org" title="Next.js"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48"/></a><br/><sub><b>Next.js</b></sub></td>
 <td align="center" width="90"><a href="https://tailwindcss.com" title="Tailwind CSS"><img src="https://skillicons.dev/icons?i=tailwind&theme=dark" width="48" height="48"/></a><br/><sub><b>Tailwind CSS</b></sub></td>
+<td align="center" width="90"><a href="https://vitejs.dev" title="Vite"><img src="https://skillicons.dev/icons?i=vite&theme=dark" width="48" height="48"/></a><br/><sub><b>Vite</b></sub></td>
+<td align="center" width="90"><a href="https://www.framer.com/motion" title="Framer Motion"><img src="https://skillicons.dev/icons?i=framer&theme=dark" width="48" height="48"/></a><br/><sub><b>Framer Motion</b></sub></td>
+<td align="center" width="90"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML"><img src="https://skillicons.dev/icons?i=html&theme=dark" width="48" height="48"/></a><br/><sub><b>HTML</b></sub></td>
+<td align="center" width="90"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS"><img src="https://skillicons.dev/icons?i=css&theme=dark" width="48" height="48"/></a><br/><sub><b>CSS</b></sub></td>
+<td align="center" width="90"><a href="https://jupyter.org" title="Jupyter"><img src="https://skillicons.dev/icons?i=jupyter&theme=dark" width="48" height="48"/></a><br/><sub><b>Jupyter</b></sub></td>
 <td align="center" width="90"><a href="https://github.com" title="GitHub"><img src="https://skillicons.dev/icons?i=github&theme=dark" width="48" height="48"/></a><br/><sub><b>GitHub</b></sub></td>
 </tr></table>
 
