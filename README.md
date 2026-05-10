@@ -224,10 +224,10 @@ Dual-party approval, msg.value lock, MetaMask integration, full Hardhat test sui
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## Neural Architecture
+## Model Card
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Neural Network"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/model-card.svg" width="100%" alt="SurV-1.0 Model Card"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
