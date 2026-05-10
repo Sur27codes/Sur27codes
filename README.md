@@ -67,7 +67,6 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <td align="center"><a href="https://postgresql.org" title="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="48" height="48"/></a></td>
 <td align="center"><a href="https://redis.io" title="Redis"><img src="https://skillicons.dev/icons?i=redis&theme=dark" width="48" height="48"/></a></td>
 <td align="center"><a href="https://nextjs.org" title="Next.js"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48"/></a></td>
-<td align="center"><a href="https://langchain.com" title="LangChain"><img src="https://skillicons.dev/icons?i=langchain&theme=dark" width="48" height="48"/></a></td>
 </tr></table>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
