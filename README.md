@@ -148,25 +148,40 @@ I'm drawn to people and teams who care about curiosity, clarity, ownership, and 
 <tr>
 <td width="50%" valign="top">
 
-### 🔹 [SAARTHI](https://github.com/Sur27codes/SAARTHI)
-**Voice-first clinical monitoring platform**
-> Retell AI calls · Claude transcript analysis · FastAPI · PostgreSQL · Next.js · FastMCP · Groq
+### 🔹 [LI Traffic Analytics](https://github.com/shaneap/AMS-597-Project)
+**Geospatial crash clustering & severity research**
+> R · Python · DBSCAN · FAMD · XGBoost · SHAP · GeoPandas · ggplot2
 
-Tri-level personalized ML models, zero form-filling ENS cohort extraction. HackRare 2026.
+12 hotspot clusters, 4 risk archetypes, AUC-ROC 0.7185 on 33K records. KDE heatmaps + osmnx road-graph overlays.
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-CC785C?style=flat-square&logo=anthropic&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
 
+### 🔹 [SAARTHI](https://github.com/Sur27codes/SAARTHI)
+**Voice-first rare-disease clinical monitor · HackRare 2026**
+> Python · FastAPI · Groq · Claude · Retell AI · Scikit-learn · PostgreSQL · Next.js · FastMCP
+
+Tri-level ML prediction, zero form-filling, multi-LLM routing. Welford O(1) streaming baselines.
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-CC785C?style=flat-square&logo=anthropic&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 🔹 [InsightX](https://github.com/Sur27codes/Insight-X)
 **Real-time enterprise forecasting & BI platform**
-> Prophet · XGBoost · ARIMA · Redis · WebSocket · Docker · MLflow · FastAPI
+> Python · FastAPI · Next.js · Prophet · XGBoost · ARIMA · Redis · PostgreSQL · MLflow · Docker
 
-+33% accuracy, 7-service stack, K-S drift detection, AI copilot MCP.
++33% accuracy via ensemble, K-S drift detection, 7-service Docker stack, War Games simulator.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -174,15 +189,13 @@ Tri-level personalized ML models, zero form-filling ENS cohort extraction. HackR
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🔹 [EchoMindAI](https://github.com/Sur27codes/EchoMindAI)
 **Multimodal RAG assistant · 16 live agentic tools**
-> LangChain · FAISS · GPT-4o · DALL-E 3 · Groq · HuggingFace · Streamlit
+> Python · Streamlit · LangChain · GPT-4o · FAISS · HuggingFace · Groq · DALL-E 3 · FastMCP
 
-7.5× STT speed, +300% engagement, 4-layer recovery, 100+ language translation.
+7.5× STT speed, 4-layer recovery cut failures 90%, +300% engagement, 100+ language translation.
 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
@@ -190,46 +203,20 @@ Tri-level personalized ML models, zero form-filling ENS cohort extraction. HackR
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
 </td>
-<td width="50%" valign="top">
-
-### 🔹 [LI Traffic Analytics](https://github.com/shaneap/AMS-597-Project)
-**Geospatial crash clustering & severity research**
-> XGBoost · SHAP · DBSCAN · GeoPandas · osmnx · NetworkX · R
-
-AUC-ROC 0.7185, 12 hotspot clusters, 33K records, FAMD k-Means (silh=0.43).
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-
-</td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td colspan="2" align="center" valign="top">
 
 ### 🔹 [Decentralized Escrow](https://github.com/Sur27codes/Decentralized_Escrow_Website)
 **Trustless P2P escrow platform on Ethereum Sepolia**
-> Solidity · React · TypeScript · ethers.js · Hardhat · Cloudflare Workers · Upstash Redis
+> Solidity · React · TypeScript · ethers.js · Hardhat · Cloudflare Workers · Upstash Redis · Hono.js
 
-Dual-party approval, msg.value lock, MetaMask integration, Hono.js backend.
+Dual-party approval, msg.value lock, MetaMask integration, full Hardhat test suite.
 
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-
-</td>
-<td width="50%" valign="top">
-
-### 🔹 [Vehicle Detection](https://github.com/Sur27codes)
-**YOLOv5 real-time vehicle detection system**
-> YOLOv5 · OpenCV · PyTorch · Python
-
-Real-time detection pipeline with custom-trained model on traffic datasets.
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
 </td>
 </tr>
