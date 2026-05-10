@@ -224,10 +224,10 @@ Dual-party approval, msg.value lock, MetaMask integration, full Hardhat test sui
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
 
-## Model Card
+## Live Training Run
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/model-card.svg" width="100%" alt="SurV-1.0 Model Card"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/training-run.svg" width="100%" alt="Live ML Training Session"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
