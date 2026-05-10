@@ -230,10 +230,10 @@ Dual-party approval, msg.value lock, MetaMask integration, full Hardhat test sui
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/galaxy.svg" width="100%" alt="Skill Galaxy — Technologies in Orbit"/>
 </div>
 
-## Contribution Skyline
+## Year in Orbit
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Code Activity Spectrogram"/>
+<img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/contrib.svg" width="100%" alt="Year in Orbit — Contributions as Radial Frequency"/>
 </div>
 
 <img src="https://raw.githubusercontent.com/Sur27codes/Sur27codes/main/wave-sep.svg" width="100%"/>
